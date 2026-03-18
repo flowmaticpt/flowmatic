@@ -46,19 +46,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     els.forEach(el => obs.observe(el));
 
-    // Form
+    // Form — envia via Formspree
     const form = document.getElementById('contactForm');
     form.addEventListener('submit', e => {
         e.preventDefault();
         const btn = form.querySelector('button');
-        btn.textContent = 'Mensagem enviada!';
-        btn.style.background = '#16a34a';
+        const originalText = btn.textContent;
+        btn.textContent = 'A enviar...';
         btn.disabled = true;
-        setTimeout(() => {
-            btn.textContent = 'Agendar reunião gratuita';
-            btn.style.background = '';
-            btn.disabled = false;
-            form.reset();
-        }, 3000);
+
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+        }).then(r => {
+            if (r.ok) {
+                btn.textContent = 'Mensagem enviada!';
+                btn.style.background = '#16a34a';
+                form.reset();
+            } else {
+                btn.textContent = 'Erro — tente novamente';
+                btn.style.background = '#dc2626';
+            }
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = '';
+                btn.disabled = false;
+            }, 3000);
+        }).catch(() => {
+            btn.textContent = 'Erro — tente novamente';
+            btn.style.background = '#dc2626';
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = '';
+                btn.disabled = false;
+            }, 3000);
+        });
     });
 });
