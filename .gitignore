@@ -1,0 +1,17 @@
+# Ficheiros sensíveis — NÃO publicar
+leads*.csv
+escolas_*.csv
+enviados.log
+enviar_emails*.py
+criar_pptx.py
+contexto*.md
+guiao-*.html
+guiao-*.md
+demo-grancoop.html
+proposta-*.html
+grancoop/
+apresentacao-flowmatic.pptx
+WhatsApp*
+.DS_Store
+*.jpeg
+*.png.bak
