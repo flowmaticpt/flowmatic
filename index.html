@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt-PT" id="htmlRoot">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowmatic — Automatização de Processos</title>
-    <meta name="description" content="Automatizamos tarefas repetitivas para empresas portuguesas.">
+    <title data-i18n="title">Flowmatic — Automatização de Processos</title>
+    <meta name="description" content="Automatizamos tarefas repetitivas para empresas portuguesas." data-i18n-attr="content" data-i18n="metaDesc">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif&display=swap" rel="stylesheet">
@@ -16,12 +16,13 @@
             <a href="#" class="logo"><img src="assets/logo.png" alt="Flowmatic"></a>
             <div class="nav-right">
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#processo">Processo</a></li>
-                    <li><a href="#equipa">Equipa</a></li>
+                    <li><a href="#servicos" data-i18n="navServicos">Serviços</a></li>
+                    <li><a href="#processo" data-i18n="navProcesso">Processo</a></li>
+                    <li><a href="#equipa" data-i18n="navEquipa">Equipa</a></li>
                 </ul>
-                <a href="#contacto" class="nav-cta">Marcar reunião</a>
+                <a href="#contacto" class="nav-cta" data-i18n="navCta">Marcar reunião</a>
             </div>
+            <button class="lang-toggle" id="langToggle">EN</button>
             <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
         </div>
     </nav>
@@ -30,14 +31,14 @@
     <header class="hero">
         <div class="wrap">
             <div class="hero-top">
-                <h1>A sua empresa ainda perde<br>horas em tarefas que podiam<br>ser <em>automáticas</em>?</h1>
+                <h1 data-i18n="heroTitle">A sua empresa ainda perde<br>horas em tarefas que podiam<br>ser <em>automáticas</em>?</h1>
             </div>
             <div class="hero-bottom">
-                <p class="hero-desc">Cobranças enviadas à mão. Dados copiados de um sistema para outro. Documentos preenchidos um a um. Nós eliminamos esse trabalho — para que a sua equipa se foque no que realmente importa.</p>
+                <p class="hero-desc" data-i18n="heroDesc">Cobranças enviadas à mão. Dados copiados de um sistema para outro. Documentos preenchidos um a um. Nós eliminamos esse trabalho — para que a sua equipa se foque no que realmente importa.</p>
                 <div class="hero-card">
-                    <p>Diagnóstico gratuito de 30 min</p>
-                    <span>Analisamos os seus processos e mostramos o que pode ser automatizado. Sem custos, sem compromisso.</span>
-                    <a href="#contacto" class="btn">Agendar reunião</a>
+                    <p data-i18n="heroCardTitle">Diagnóstico gratuito de 30 min</p>
+                    <span data-i18n="heroCardDesc">Analisamos os seus processos e mostramos o que pode ser automatizado. Sem custos, sem compromisso.</span>
+                    <a href="#contacto" class="btn" data-i18n="heroCardBtn">Agendar reunião</a>
                 </div>
             </div>
         </div>
@@ -47,14 +48,14 @@
     <section class="section" id="servicos">
         <div class="wrap">
             <div class="section-intro">
-                <span class="label">Serviços</span>
-                <h2>O que automatizamos</h2>
+                <span class="label" data-i18n="svcLabel">Serviços</span>
+                <h2 data-i18n="svcTitle">O que automatizamos</h2>
             </div>
             <div class="bento">
                 <div class="bento-item bento-wide">
-                    <span class="bento-tag">Gestão de Condomínios</span>
-                    <h3>Cobranças, recibos, atas e comunicação com condóminos — tudo no piloto automático.</h3>
-                    <ul>
+                    <span class="bento-tag" data-i18n="svcCondoTag">Gestão de Condomínios</span>
+                    <h3 data-i18n="svcCondoTitle">Cobranças, recibos, atas e comunicação com condóminos — tudo no piloto automático.</h3>
+                    <ul data-i18n-list="svcCondoItems">
                         <li>Envio automático de avisos de pagamento</li>
                         <li>Recibos gerados e enviados sem intervenção</li>
                         <li>Atas criadas a partir de templates</li>
@@ -63,9 +64,9 @@
                     </ul>
                 </div>
                 <div class="bento-item">
-                    <span class="bento-tag">Contabilidade</span>
-                    <h3>Menos copy-paste, menos erros, mais clientes.</h3>
-                    <ul>
+                    <span class="bento-tag" data-i18n="svcContabTag">Contabilidade</span>
+                    <h3 data-i18n="svcContabTitle">Menos copy-paste, menos erros, mais clientes.</h3>
+                    <ul data-i18n-list="svcContabItems">
                         <li>Recolha automática de faturas</li>
                         <li>Integração com AT e e-Fatura</li>
                         <li>Alertas de prazos fiscais</li>
@@ -73,9 +74,9 @@
                     </ul>
                 </div>
                 <div class="bento-item">
-                    <span class="bento-tag">Imobiliárias</span>
-                    <h3>Publique em vários portais com um clique.</h3>
-                    <ul>
+                    <span class="bento-tag" data-i18n="svcImobTag">Imobiliárias</span>
+                    <h3 data-i18n="svcImobTitle">Publique em vários portais com um clique.</h3>
+                    <ul data-i18n-list="svcImobItems">
                         <li>Sincronização com Idealista, Imovirtual e outros</li>
                         <li>Follow-up automático de leads</li>
                         <li>Agendamento de visitas integrado</li>
@@ -83,27 +84,27 @@
                     </ul>
                 </div>
                 <div class="bento-item">
-                    <span class="bento-tag">Clínicas</span>
-                    <h3>Consultas organizadas sem trocas de emails.</h3>
-                    <ul>
+                    <span class="bento-tag" data-i18n="svcClinicTag">Clínicas</span>
+                    <h3 data-i18n="svcClinicTitle">Consultas organizadas sem trocas de emails.</h3>
+                    <ul data-i18n-list="svcClinicItems">
                         <li>Lembretes por SMS e WhatsApp</li>
                         <li>Agendamento online</li>
                         <li>Fichas digitais de pacientes</li>
                     </ul>
                 </div>
                 <div class="bento-item">
-                    <span class="bento-tag">Oficinas Auto</span>
-                    <h3>Chega de fichas em papel e cadernos de marcações.</h3>
-                    <ul>
+                    <span class="bento-tag" data-i18n="svcAutoTag">Oficinas Auto</span>
+                    <h3 data-i18n="svcAutoTitle">Chega de fichas em papel e cadernos de marcações.</h3>
+                    <ul data-i18n-list="svcAutoItems">
                         <li>Fichas digitais por viatura</li>
                         <li>Lembretes de revisão e IPO</li>
                         <li>Marcações online</li>
                     </ul>
                 </div>
                 <div class="bento-item bento-cta">
-                    <h3>Outro setor?</h3>
-                    <p>Se tem tarefas repetitivas, provavelmente conseguimos automatizá-las.</p>
-                    <a href="#contacto" class="link">Fale connosco &rarr;</a>
+                    <h3 data-i18n="svcOutroTitle">Outro setor?</h3>
+                    <p data-i18n="svcOutroDesc">Se tem tarefas repetitivas, provavelmente conseguimos automatizá-las.</p>
+                    <a href="#contacto" class="link" data-i18n="svcOutroLink">Fale connosco &rarr;</a>
                 </div>
             </div>
         </div>
@@ -113,8 +114,8 @@
     <section class="section" id="processo">
         <div class="wrap">
             <div class="section-intro">
-                <span class="label">Processo</span>
-                <h2>Como trabalhamos</h2>
+                <span class="label" data-i18n="procLabel">Processo</span>
+                <h2 data-i18n="procTitle">Como trabalhamos</h2>
             </div>
             <div class="process">
                 <div class="process-item">
@@ -123,9 +124,9 @@
                         <span class="line"></span>
                     </div>
                     <div class="process-content">
-                        <h3>Conversamos</h3>
-                        <p>30 minutos, presencial ou videochamada. Percebemos o dia-a-dia da empresa, que tarefas consomem tempo e que ferramentas usam.</p>
-                        <span class="process-detail">Gratuito, sem compromisso</span>
+                        <h3 data-i18n="proc1Title">Conversamos</h3>
+                        <p data-i18n="proc1Desc">30 minutos, presencial ou videochamada. Percebemos o dia-a-dia da empresa, que tarefas consomem tempo e que ferramentas usam.</p>
+                        <span class="process-detail" data-i18n="proc1Detail">Gratuito, sem compromisso</span>
                     </div>
                 </div>
                 <div class="process-item">
@@ -134,9 +135,9 @@
                         <span class="line"></span>
                     </div>
                     <div class="process-content">
-                        <h3>Propomos</h3>
-                        <p>Em 48 horas enviamos uma proposta clara — o que vamos automatizar, como funciona e quanto custa. Sem letras pequenas.</p>
-                        <span class="process-detail">Proposta em 48h</span>
+                        <h3 data-i18n="proc2Title">Propomos</h3>
+                        <p data-i18n="proc2Desc">Em 48 horas enviamos uma proposta clara — o que vamos automatizar, como funciona e quanto custa. Sem letras pequenas.</p>
+                        <span class="process-detail" data-i18n="proc2Detail">Proposta em 48h</span>
                     </div>
                 </div>
                 <div class="process-item">
@@ -144,9 +145,9 @@
                         <span class="dot"></span>
                     </div>
                     <div class="process-content">
-                        <h3>Entregamos</h3>
-                        <p>Construímos, testamos consigo e pomos tudo a funcionar. Damos formação à equipa e ficamos disponíveis para qualquer ajuste.</p>
-                        <span class="process-detail">Suporte incluído</span>
+                        <h3 data-i18n="proc3Title">Entregamos</h3>
+                        <p data-i18n="proc3Desc">Construímos, testamos consigo e pomos tudo a funcionar. Damos formação à equipa e ficamos disponíveis para qualquer ajuste.</p>
+                        <span class="process-detail" data-i18n="proc3Detail">Suporte incluído</span>
                     </div>
                 </div>
             </div>
@@ -158,9 +159,9 @@
         <div class="wrap">
             <div class="about-grid">
                 <div class="about-text">
-                    <span class="label">Quem somos</span>
-                    <h2>Tecnologia e gestão, a trabalhar juntos.</h2>
-                    <p>Somos dois jovens com formação em Engenharia Informática e Gestão. Lançámos a Flowmatic porque vemos todos os dias empresas a perder horas em tarefas que podiam ser resolvidas com tecnologia simples. Sem buzzwords, sem complicações — soluções práticas que funcionam.</p>
+                    <span class="label" data-i18n="teamLabel">Quem somos</span>
+                    <h2 data-i18n="teamTitle">Tecnologia e gestão, a trabalhar juntos.</h2>
+                    <p data-i18n="teamDesc">Somos dois jovens com formação em Engenharia Informática e Gestão. Lançámos a Flowmatic porque vemos todos os dias empresas a perder horas em tarefas que podiam ser resolvidas com tecnologia simples. Sem buzzwords, sem complicações — soluções práticas que funcionam.</p>
                 </div>
                 <div class="about-members">
                     <div class="member">
@@ -168,10 +169,10 @@
                             <div class="avatar">RB</div>
                             <div>
                                 <h4>Ricardo Braz</h4>
-                                <span>Engenharia Informática</span>
+                                <span data-i18n="memberRBRole">Engenharia Informática</span>
                             </div>
                         </div>
-                        <p>Responsável pela parte técnica — desenvolvimento, integrações e automações.</p>
+                        <p data-i18n="memberRBDesc">Responsável pela parte técnica — desenvolvimento, integrações e automações.</p>
                         <a href="https://www.linkedin.com/in/ricardo-filipe-braz-0466b4290/" target="_blank" class="link">LinkedIn &rarr;</a>
                     </div>
                     <div class="member">
@@ -179,10 +180,10 @@
                             <div class="avatar">VT</div>
                             <div>
                                 <h4>Vasco Torres</h4>
-                                <span>Gestão</span>
+                                <span data-i18n="memberVTRole">Gestão</span>
                             </div>
                         </div>
-                        <p>Responsável pela análise de processos, relação com clientes e estratégia.</p>
+                        <p data-i18n="memberVTDesc">Responsável pela análise de processos, relação com clientes e estratégia.</p>
                         <a href="https://www.linkedin.com/in/vasco-torres-a83b45235/" target="_blank" class="link">LinkedIn &rarr;</a>
                     </div>
                 </div>
@@ -195,16 +196,16 @@
         <div class="wrap">
             <div class="contact-grid">
                 <div class="contact-left">
-                    <span class="label">Contacto</span>
-                    <h2>Agende um diagnóstico gratuito.</h2>
-                    <p>Sem custos, sem compromisso. Reunimos consigo para perceber o seu negócio e mostrar como podemos ajudar. Se fizer sentido, avançamos. Se não, fica com ideias úteis na mesma.</p>
+                    <span class="label" data-i18n="contactLabel">Contacto</span>
+                    <h2 data-i18n="contactTitle">Agende um diagnóstico gratuito.</h2>
+                    <p data-i18n="contactDesc">Sem custos, sem compromisso. Reunimos consigo para perceber o seu negócio e mostrar como podemos ajudar. Se fizer sentido, avançamos. Se não, fica com ideias úteis na mesma.</p>
                     <div class="contact-details">
                         <div class="detail">
                             <span class="detail-label">Email</span>
                             <span>flowmaticpt@gmail.com</span>
                         </div>
                         <div class="detail">
-                            <span class="detail-label">Localização</span>
+                            <span class="detail-label" data-i18n="contactLocation">Localização</span>
                             <span>Portugal</span>
                         </div>
                     </div>
@@ -212,7 +213,7 @@
                 <form class="form" id="contactForm" action="https://formspree.io/f/mlgpakwp" method="POST">
                     <div class="form-row">
                         <div class="field">
-                            <label for="nome">Nome *</label>
+                            <label for="nome" data-i18n="formNome">Nome *</label>
                             <input type="text" id="nome" name="nome" required>
                         </div>
                         <div class="field">
@@ -221,15 +222,15 @@
                         </div>
                     </div>
                     <div class="field">
-                        <label for="empresa">Empresa</label>
+                        <label for="empresa" data-i18n="formEmpresa">Empresa</label>
                         <input type="text" id="empresa" name="empresa">
                     </div>
                     <div class="field">
-                        <label for="mensagem">O que gostaria de automatizar?</label>
+                        <label for="mensagem" data-i18n="formMensagem">O que gostaria de automatizar?</label>
                         <textarea id="mensagem" name="mensagem" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-full">Agendar reunião gratuita</button>
-                    <p class="form-note">Respondemos em menos de 24 horas.</p>
+                    <button type="submit" class="btn btn-full" data-i18n="formBtn">Agendar reunião gratuita</button>
+                    <p class="form-note" data-i18n="formNote">Respondemos em menos de 24 horas.</p>
                 </form>
             </div>
         </div>
@@ -238,10 +239,10 @@
     <footer class="footer">
         <div class="wrap footer-inner">
             <a href="#" class="logo"><img src="assets/logo.png" alt="Flowmatic"></a>
-            <p>&copy; 2025 Flowmatic</p>
+            <p data-i18n="footer">&copy; 2025 Flowmatic</p>
         </div>
     </footer>
 
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=3"></script>
 </body>
 </html>

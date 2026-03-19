@@ -99,6 +99,25 @@ body {
 
 .nav-cta:hover { opacity: 0.85; }
 
+.lang-toggle {
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--text2);
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.lang-toggle:hover {
+    color: var(--text);
+    border-color: var(--text3);
+}
+
 .burger {
     display: none;
     flex-direction: column;
@@ -621,6 +640,10 @@ body {
 
     .nav-right.open .nav-cta {
         text-align: center;
+    }
+
+    .lang-toggle {
+        margin-right: 12px;
     }
 
     .hero { padding: 120px 0 64px; }
