@@ -93,7 +93,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .logo { display: flex; align-items: center; text-decoration: none; }
-.logo img { height: 28px; width: auto; filter: brightness(0) invert(1); }
+.logo img { height: 28px; width: auto; }
 
 .nav-links { display: flex; list-style: none; gap: 24px; }
 .nav-links a {
@@ -850,7 +850,7 @@ img { max-width: 100%; height: auto; display: block; }
     justify-content: space-between;
 }
 
-.footer .logo img { filter: brightness(0) invert(1); opacity: 0.3; }
+.footer .logo img { opacity: 0.5; }
 .footer p { font-size: 0.75rem; color: var(--white40); }
 
 /* ==============================
