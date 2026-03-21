@@ -175,13 +175,10 @@ img { max-width: 100%; height: auto; display: block; }
 .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 1200px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 0 40px;
-    display: grid;
-    grid-template-columns: 1fr 420px;
-    gap: 40px;
-    align-items: center;
+    text-align: center;
 }
 
 .hero-badge {
@@ -196,7 +193,7 @@ img { max-width: 100%; height: auto; display: block; }
     border: 1px solid rgba(96,165,250,0.2);
     padding: 6px 16px;
     border-radius: 100px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .hero-badge::before {
@@ -231,18 +228,22 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .hero-desc {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: var(--white70);
     line-height: 1.7;
-    max-width: 580px;
-    margin-bottom: 40px;
+    max-width: 540px;
+    margin: 0 auto;
 }
 
-.hero-actions {
+.hero-bottom {
+    position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 24px;
     flex-wrap: wrap;
+    padding: 0 40px 0;
 }
 
 .btn-lg {
@@ -264,20 +265,23 @@ img { max-width: 100%; height: auto; display: block; }
 .hero-visual {
     position: relative;
     width: 100%;
-    height: 420px;
+    max-width: 700px;
+    height: 480px;
+    margin: 40px auto 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .map-glow {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 420px;
+    height: 420px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: radial-gradient(circle, rgba(37,99,235,0.15) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(37,99,235,0.12) 0%, rgba(99,102,241,0.06) 40%, transparent 70%);
     border-radius: 50%;
     animation: mapGlowPulse 4s ease-in-out infinite;
 }
@@ -290,11 +294,11 @@ img { max-width: 100%; height: auto; display: block; }
 .portugal-img {
     position: relative;
     z-index: 1;
-    height: 380px;
+    height: 440px;
     width: auto;
     object-fit: contain;
-    filter: drop-shadow(0 0 40px rgba(96,165,250,0.12));
-    opacity: 0.85;
+    filter: drop-shadow(0 0 60px rgba(96,165,250,0.1));
+    opacity: 0.8;
 }
 
 .map-pill {
@@ -337,26 +341,26 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .pill-1 {
-    top: 6%;
-    left: -8%;
+    top: 8%;
+    left: 2%;
     animation: floatPill1 6s ease-in-out infinite;
 }
 
 .pill-2 {
-    top: 50%;
-    left: -14%;
+    bottom: 18%;
+    left: 0%;
     animation: floatPill2 7s ease-in-out infinite;
 }
 
 .pill-3 {
-    top: 22%;
-    right: -10%;
+    top: 12%;
+    right: 2%;
     animation: floatPill3 5.5s ease-in-out infinite;
 }
 
 .pill-4 {
-    bottom: 14%;
-    right: -12%;
+    bottom: 10%;
+    right: 0%;
     animation: floatPill4 6.5s ease-in-out infinite;
 }
 
@@ -1033,17 +1037,17 @@ img { max-width: 100%; height: auto; display: block; }
 
     .lang-toggle { margin-right: 8px; }
 
-    .hero { min-height: auto; padding: 140px 0 80px; }
-    .hero-content { padding: 0 20px; grid-template-columns: 1fr; }
-    .hero-visual { height: 320px; margin-top: 20px; }
+    .hero { min-height: auto; padding: 120px 0 60px; }
+    .hero-content { padding: 0 20px; }
+    .hero-visual { height: 360px; margin: 24px auto 24px; }
+    .hero-bottom { padding: 0 20px; flex-direction: column; }
     .map-pill { font-size: 0.7rem; padding: 6px 12px; }
-    .pill-1 { left: 0; }
+    .pill-1 { left: -2%; top: 5%; }
     .pill-2 { left: -4%; }
     .pill-3 { right: -2%; }
     .pill-4 { right: -4%; }
-    .portugal-img { height: 260px; }
+    .portugal-img { height: 300px; }
     .hero h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
-    .hero-actions { flex-direction: column; align-items: flex-start; }
     .hero-scroll-hint { display: none; }
 
     .section { padding: 80px 0; }
