@@ -175,9 +175,13 @@ img { max-width: 100%; height: auto; display: block; }
 .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 40px;
+    align-items: center;
 }
 
 .hero-badge {
@@ -251,6 +255,168 @@ img { max-width: 100%; height: auto; display: block; }
 .hero-note {
     font-size: 0.82rem;
     color: var(--white40);
+}
+
+/* ==============================
+   HERO VISUAL — Portugal map
+   ============================== */
+
+.hero-visual {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(37,99,235,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: mapGlowPulse 4s ease-in-out infinite;
+}
+
+@keyframes mapGlowPulse {
+    0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+}
+
+.portugal-svg {
+    width: auto;
+    height: 340px;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 0 30px rgba(96,165,250,0.1));
+}
+
+.portugal-outline {
+    fill: none;
+    stroke: var(--accent2);
+    stroke-width: 1;
+    stroke-opacity: 0.4;
+}
+
+.portugal-fill {
+    opacity: 0.8;
+}
+
+.city-dot {
+    fill: var(--accent2);
+    opacity: 0.8;
+    animation: cityPulse 3s ease-in-out infinite;
+}
+
+.city-dot:nth-child(3) { animation-delay: 0.5s; }
+.city-dot:nth-child(4) { animation-delay: 1s; }
+.city-dot:nth-child(5) { animation-delay: 1.5s; }
+
+.city-main {
+    fill: var(--accent);
+    opacity: 1;
+    filter: drop-shadow(0 0 6px rgba(37,99,235,0.6));
+}
+
+@keyframes cityPulse {
+    0%, 100% { opacity: 0.6; r: attr(r); }
+    50% { opacity: 1; }
+}
+
+.conn-line {
+    stroke: var(--accent2);
+    stroke-width: 0.6;
+    stroke-dasharray: 4 3;
+    stroke-opacity: 0.3;
+    animation: dashMove 3s linear infinite;
+}
+
+@keyframes dashMove {
+    to { stroke-dashoffset: -14; }
+}
+
+.map-pill {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(17,24,39,0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-light);
+    border-radius: 100px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--white70);
+    white-space: nowrap;
+    z-index: 2;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.map-pill:hover {
+    border-color: var(--accent);
+    color: var(--white);
+}
+
+.pill-dot {
+    width: 6px;
+    height: 6px;
+    background: #34d399;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(52,211,153,0.5);
+    animation: pillDotPulse 2s ease infinite;
+    flex-shrink: 0;
+}
+
+@keyframes pillDotPulse {
+    0%, 100% { box-shadow: 0 0 4px rgba(52,211,153,0.4); }
+    50% { box-shadow: 0 0 10px rgba(52,211,153,0.8); }
+}
+
+.pill-1 {
+    top: 6%;
+    left: -8%;
+    animation: floatPill1 6s ease-in-out infinite;
+}
+
+.pill-2 {
+    top: 50%;
+    left: -14%;
+    animation: floatPill2 7s ease-in-out infinite;
+}
+
+.pill-3 {
+    top: 22%;
+    right: -10%;
+    animation: floatPill3 5.5s ease-in-out infinite;
+}
+
+.pill-4 {
+    bottom: 14%;
+    right: -12%;
+    animation: floatPill4 6.5s ease-in-out infinite;
+}
+
+@keyframes floatPill1 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+@keyframes floatPill2 {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(6px) translateX(4px); }
+}
+@keyframes floatPill3 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+@keyframes floatPill4 {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(8px) translateX(-3px); }
 }
 
 .hero-scroll-hint {
@@ -910,7 +1076,14 @@ img { max-width: 100%; height: auto; display: block; }
     .lang-toggle { margin-right: 8px; }
 
     .hero { min-height: auto; padding: 140px 0 80px; }
-    .hero-content { padding: 0 20px; }
+    .hero-content { padding: 0 20px; grid-template-columns: 1fr; }
+    .hero-visual { height: 320px; margin-top: 20px; }
+    .map-pill { font-size: 0.7rem; padding: 6px 12px; }
+    .pill-1 { left: 0; }
+    .pill-2 { left: -4%; }
+    .pill-3 { right: -2%; }
+    .pill-4 { right: -4%; }
+    .portugal-svg { height: 280px; }
     .hero h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
     .hero-actions { flex-direction: column; align-items: flex-start; }
     .hero-scroll-hint { display: none; }
