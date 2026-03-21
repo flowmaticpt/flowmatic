@@ -287,56 +287,14 @@ img { max-width: 100%; height: auto; display: block; }
     50% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
 }
 
-.portugal-svg {
-    width: auto;
-    height: 340px;
+.portugal-img {
     position: relative;
     z-index: 1;
-    filter: drop-shadow(0 0 30px rgba(96,165,250,0.1));
-}
-
-.portugal-outline {
-    fill: none;
-    stroke: var(--accent2);
-    stroke-width: 1;
-    stroke-opacity: 0.4;
-}
-
-.portugal-fill {
-    opacity: 0.8;
-}
-
-.city-dot {
-    fill: var(--accent2);
-    opacity: 0.8;
-    animation: cityPulse 3s ease-in-out infinite;
-}
-
-.city-dot:nth-child(3) { animation-delay: 0.5s; }
-.city-dot:nth-child(4) { animation-delay: 1s; }
-.city-dot:nth-child(5) { animation-delay: 1.5s; }
-
-.city-main {
-    fill: var(--accent);
-    opacity: 1;
-    filter: drop-shadow(0 0 6px rgba(37,99,235,0.6));
-}
-
-@keyframes cityPulse {
-    0%, 100% { opacity: 0.6; r: attr(r); }
-    50% { opacity: 1; }
-}
-
-.conn-line {
-    stroke: var(--accent2);
-    stroke-width: 0.6;
-    stroke-dasharray: 4 3;
-    stroke-opacity: 0.3;
-    animation: dashMove 3s linear infinite;
-}
-
-@keyframes dashMove {
-    to { stroke-dashoffset: -14; }
+    height: 380px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 40px rgba(96,165,250,0.12));
+    opacity: 0.85;
 }
 
 .map-pill {
@@ -1083,7 +1041,7 @@ img { max-width: 100%; height: auto; display: block; }
     .pill-2 { left: -4%; }
     .pill-3 { right: -2%; }
     .pill-4 { right: -4%; }
-    .portugal-svg { height: 280px; }
+    .portugal-img { height: 260px; }
     .hero h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
     .hero-actions { flex-direction: column; align-items: flex-start; }
     .hero-scroll-hint { display: none; }
