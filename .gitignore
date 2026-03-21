@@ -2,7 +2,10 @@
 leads*.csv
 escolas_*.csv
 enviados.log
+todos_enviados.txt
+enviados_website.log
 enviar_emails*.py
+verificar*.py
 criar_pptx.py
 contexto*.md
 guiao-*.html
@@ -15,3 +18,20 @@ WhatsApp*
 .DS_Store
 *.jpeg
 *.png.bak
+
+# Python
+__pycache__/
+*.pyc
+
+# Pessoal
+RicardoBraz_cv.*
+
+# Ficheiros internos do CRM (scripts ficam no Google Apps Script)
+crm/*.gs
+crm/setup.md
+
+# Clientes — ficheiros internos
+letsgo/contexto-letsgo.md
+letsgo/guiao-letsgo.html
+letsgo/guiao-letsgo.md
+vitoria/

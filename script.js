@@ -73,47 +73,33 @@ document.addEventListener('DOMContentLoaded', () => {
             // Services
             svcLabel: 'Servi\u00e7os',
             svcTitle: 'O que automatizamos',
-            svcCondoTag: 'Gest\u00e3o de Condom\u00ednios',
-            svcCondoTitle: 'Cobran\u00e7as, recibos, atas e comunica\u00e7\u00e3o com cond\u00f3minos \u2014 tudo no piloto autom\u00e1tico.',
-            svcCondoItems: [
-                'Envio autom\u00e1tico de avisos de pagamento',
-                'Recibos gerados e enviados sem interven\u00e7\u00e3o',
-                'Atas criadas a partir de templates',
-                'Notifica\u00e7\u00f5es por email e WhatsApp',
-                'Painel com o estado de cada condom\u00ednio'
-            ],
-            svcContabTag: 'Contabilidade',
-            svcContabTitle: 'Menos copy-paste, menos erros, mais clientes.',
-            svcContabItems: [
-                'Recolha autom\u00e1tica de faturas',
-                'Integra\u00e7\u00e3o com AT e e-Fatura',
-                'Alertas de prazos fiscais',
-                'Relat\u00f3rios peri\u00f3dicos'
-            ],
-            svcImobTag: 'Imobili\u00e1rias',
-            svcImobTitle: 'Publique em v\u00e1rios portais com um clique.',
-            svcImobItems: [
-                'Sincroniza\u00e7\u00e3o com Idealista, Imovirtual e outros',
-                'Follow-up autom\u00e1tico de leads',
-                'Agendamento de visitas integrado',
-                'Gera\u00e7\u00e3o de contratos'
+            svcEscolaTag: 'Escolas de Condu\u00e7\u00e3o',
+            svcEscolaTitle: 'Marca\u00e7\u00f5es, alunos e comunica\u00e7\u00e3o \u2014 tudo organizado sem esfor\u00e7o.',
+            svcEscolaItems: [
+                'Website profissional para a escola',
+                'Sistema de marca\u00e7\u00e3o de aulas online',
+                'Lembretes autom\u00e1ticos de aulas e exames',
+                'Ficha digital de cada aluno',
+                'Notifica\u00e7\u00f5es por email e WhatsApp'
             ],
             svcClinicTag: 'Cl\u00ednicas',
-            svcClinicTitle: 'Consultas organizadas sem trocas de emails.',
+            svcClinicTitle: 'Consultas organizadas, pacientes informados.',
             svcClinicItems: [
+                'Website com servi\u00e7os e equipa',
+                'Agendamento online de consultas',
                 'Lembretes por SMS e WhatsApp',
-                'Agendamento online',
                 'Fichas digitais de pacientes'
             ],
-            svcAutoTag: 'Oficinas Auto',
-            svcAutoTitle: 'Chega de fichas em papel e cadernos de marca\u00e7\u00f5es.',
-            svcAutoItems: [
-                'Fichas digitais por viatura',
-                'Lembretes de revis\u00e3o e IPO',
-                'Marca\u00e7\u00f5es online'
+            svcGymTag: 'Gin\u00e1sios',
+            svcGymTitle: 'Membros, hor\u00e1rios e pagamentos sob controlo.',
+            svcGymItems: [
+                'Website com hor\u00e1rios e planos',
+                'Inscri\u00e7\u00f5es online',
+                'Lembretes de renova\u00e7\u00e3o de mensalidade',
+                'Comunica\u00e7\u00e3o autom\u00e1tica com membros'
             ],
             svcOutroTitle: 'Outro setor?',
-            svcOutroDesc: 'Se tem tarefas repetitivas, provavelmente conseguimos automatiz\u00e1-las.',
+            svcOutroDesc: 'Se tem tarefas repetitivas ou precisa de um website, provavelmente conseguimos ajudar.',
             svcOutroLink: 'Fale connosco \u2192',
 
             // Process
@@ -173,47 +159,33 @@ document.addEventListener('DOMContentLoaded', () => {
             // Services
             svcLabel: 'Services',
             svcTitle: 'What we automate',
-            svcCondoTag: 'Property Management',
-            svcCondoTitle: 'Billing, receipts, meeting minutes and tenant communication \u2014 all on autopilot.',
-            svcCondoItems: [
-                'Automatic payment reminders',
-                'Receipts generated and sent automatically',
-                'Meeting minutes from templates',
-                'Email and WhatsApp notifications',
-                'Dashboard with each property\u2019s status'
-            ],
-            svcContabTag: 'Accounting',
-            svcContabTitle: 'Less copy-paste, fewer errors, more clients.',
-            svcContabItems: [
-                'Automatic invoice collection',
-                'Tax authority integration',
-                'Tax deadline alerts',
-                'Periodic reports'
-            ],
-            svcImobTag: 'Real Estate',
-            svcImobTitle: 'Publish on multiple portals with one click.',
-            svcImobItems: [
-                'Sync with Idealista, Imovirtual and others',
-                'Automatic lead follow-up',
-                'Integrated visit scheduling',
-                'Contract generation'
+            svcEscolaTag: 'Driving Schools',
+            svcEscolaTitle: 'Bookings, students and communication \u2014 all organized effortlessly.',
+            svcEscolaItems: [
+                'Professional website for your school',
+                'Online lesson booking system',
+                'Automatic lesson and exam reminders',
+                'Digital student records',
+                'Email and WhatsApp notifications'
             ],
             svcClinicTag: 'Clinics',
-            svcClinicTitle: 'Organized appointments without email chains.',
+            svcClinicTitle: 'Organized appointments, informed patients.',
             svcClinicItems: [
+                'Website with services and team',
+                'Online appointment scheduling',
                 'SMS and WhatsApp reminders',
-                'Online scheduling',
                 'Digital patient records'
             ],
-            svcAutoTag: 'Auto Repair Shops',
-            svcAutoTitle: 'No more paper forms and appointment notebooks.',
-            svcAutoItems: [
-                'Digital vehicle records',
-                'Service and inspection reminders',
-                'Online bookings'
+            svcGymTag: 'Gyms',
+            svcGymTitle: 'Members, schedules and payments under control.',
+            svcGymItems: [
+                'Website with schedules and plans',
+                'Online sign-ups',
+                'Membership renewal reminders',
+                'Automatic member communication'
             ],
             svcOutroTitle: 'Another industry?',
-            svcOutroDesc: 'If you have repetitive tasks, we can probably automate them.',
+            svcOutroDesc: 'If you have repetitive tasks or need a website, we can probably help.',
             svcOutroLink: 'Get in touch \u2192',
 
             // Process

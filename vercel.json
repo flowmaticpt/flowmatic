@@ -1,0 +1,17 @@
+{
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/crm/(.*)",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    }
+  ],
+  "redirects": [
+    { "source": "/crm", "destination": "/crm/index.html" }
+  ]
+}
