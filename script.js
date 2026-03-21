@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const translations = {
         pt: {
-            title: 'Flowmatic \u2014 Automatiza\u00e7\u00e3o de Processos',
+            title: 'Flowmatica \u2014 Automatiza\u00e7\u00e3o de Processos',
             metaDesc: 'Automatizamos tarefas repetitivas para empresas portuguesas.',
 
             // Nav
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Team
             teamLabel: 'Quem somos',
             teamTitle: 'Tecnologia e gest\u00e3o, a trabalhar juntos.',
-            teamDesc: 'Somos dois jovens com forma\u00e7\u00e3o em Engenharia Inform\u00e1tica e Gest\u00e3o. Lan\u00e7\u00e1mos a Flowmatic porque vemos todos os dias empresas a perder horas em tarefas que podiam ser resolvidas com tecnologia simples. Sem buzzwords, sem complica\u00e7\u00f5es \u2014 solu\u00e7\u00f5es pr\u00e1ticas que funcionam.',
+            teamDesc: 'Somos dois jovens com forma\u00e7\u00e3o em Engenharia Inform\u00e1tica e Gest\u00e3o. Lan\u00e7\u00e1mos a Flowmatica porque vemos todos os dias empresas a perder horas em tarefas que podiam ser resolvidas com tecnologia simples. Sem buzzwords, sem complica\u00e7\u00f5es \u2014 solu\u00e7\u00f5es pr\u00e1ticas que funcionam.',
             memberRBRole: 'Engenharia Inform\u00e1tica',
             memberRBDesc: 'Respons\u00e1vel pela parte t\u00e9cnica \u2014 desenvolvimento, integra\u00e7\u00f5es e automa\u00e7\u00f5es.',
             memberVTRole: 'Gest\u00e3o',
@@ -136,11 +136,11 @@ document.addEventListener('DOMContentLoaded', () => {
             formNote: 'Respondemos em menos de 24 horas.',
 
             // Footer
-            footer: '\u00a9 2025 Flowmatic'
+            footer: '\u00a9 2025 Flowmatica'
         },
 
         en: {
-            title: 'Flowmatic \u2014 Process Automation',
+            title: 'Flowmatica \u2014 Process Automation',
             metaDesc: 'We automate repetitive tasks for businesses.',
 
             // Nav
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Team
             teamLabel: 'About us',
             teamTitle: 'Technology and management, working together.',
-            teamDesc: 'We\u2019re two young professionals with backgrounds in Computer Engineering and Management. We started Flowmatic because we see businesses losing hours every day on tasks that could be solved with simple technology. No buzzwords, no complications \u2014 practical solutions that work.',
+            teamDesc: 'We\u2019re two young professionals with backgrounds in Computer Engineering and Management. We started Flowmatica because we see businesses losing hours every day on tasks that could be solved with simple technology. No buzzwords, no complications \u2014 practical solutions that work.',
             memberRBRole: 'Computer Engineering',
             memberRBDesc: 'Responsible for the technical side \u2014 development, integrations and automations.',
             memberVTRole: 'Management',
@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
             formNote: 'We respond within 24 hours.',
 
             // Footer
-            footer: '\u00a9 2025 Flowmatic'
+            footer: '\u00a9 2025 Flowmatica'
         }
     };
 
@@ -261,18 +261,18 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.textContent = lang === 'pt' ? 'EN' : 'PT';
 
         // Save preference
-        localStorage.setItem('flowmatic-lang', lang);
+        localStorage.setItem('flowmatica-lang', lang);
     }
 
     // Language toggle button
     const langToggle = document.getElementById('langToggle');
     langToggle.addEventListener('click', () => {
-        const current = localStorage.getItem('flowmatic-lang') || 'pt';
+        const current = localStorage.getItem('flowmatica-lang') || 'pt';
         setLanguage(current === 'pt' ? 'en' : 'pt');
     });
 
     // Apply saved language on load (only if not PT)
-    const savedLang = localStorage.getItem('flowmatic-lang');
+    const savedLang = localStorage.getItem('flowmatica-lang');
     if (savedLang && savedLang !== 'pt') {
         setLanguage(savedLang);
     }

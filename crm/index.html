@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowmatic CRM</title>
+    <title>Flowmatica CRM</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -703,7 +703,7 @@
 <header class="header">
     <div class="header-left">
         <div class="header-logo">
-            <img src="../assets/logo.png" alt="Flowmatic" height="28">
+            <img src="../assets/logo.png" alt="Flowmatica" height="28">
             <span class="crm-badge">CRM</span>
         </div>
     </div>
@@ -910,7 +910,7 @@ const DEMO_ACTIVITIES = [
 // ==================== STATE ====================
 let currentLeads = [...DEMO_LEADS];
 let currentActivities = [...DEMO_ACTIVITIES];
-let webAppUrl = localStorage.getItem('flowmatic_crm_url') || '';
+let webAppUrl = localStorage.getItem('flowmatica_crm_url') || '';
 let sortCol = '';
 let sortDir = 'asc';
 
@@ -1428,7 +1428,7 @@ function saveConfig() {
     const status = document.getElementById('configStatus');
 
     if (!url) {
-        localStorage.removeItem('flowmatic_crm_url');
+        localStorage.removeItem('flowmatica_crm_url');
         webAppUrl = '';
         status.textContent = 'URL removido. A usar dados de exemplo.';
         status.style.color = '#555770';
@@ -1445,7 +1445,7 @@ function saveConfig() {
         .then(r => r.json())
         .then(data => {
             if (data.leads && data.activities) {
-                localStorage.setItem('flowmatic_crm_url', url);
+                localStorage.setItem('flowmatica_crm_url', url);
                 webAppUrl = url;
                 currentLeads = data.leads;
                 currentActivities = data.activities;
