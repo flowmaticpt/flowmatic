@@ -88,8 +88,8 @@ export function Hero() {
         </p>
       </div>
 
-      {/* Map visual */}
-      <MapVisual />
+      {/* Map visual — hidden until client authorization */}
+      {/* <MapVisual /> */}
 
       {/* Bottom CTA */}
       <div className="relative z-[2] flex items-center justify-center gap-6 flex-wrap px-10 max-md:px-5 max-md:flex-col">

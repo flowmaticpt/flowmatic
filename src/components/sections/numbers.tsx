@@ -36,18 +36,7 @@ export function Numbers() {
         ))}
       </div>
 
-      <div className="overflow-hidden" aria-label="Clientes">
-        <div className="inline-flex gap-4 animate-marquee-clients">
-          {[...clients, ...clients].map((name, i) => (
-            <span
-              key={i}
-              className="inline-flex items-center py-2.5 px-6 bg-bg-dark2 border border-flow-border-light rounded-full text-[0.85rem] font-semibold text-flow-white70 whitespace-nowrap transition-colors hover:border-flow-accent hover:text-white"
-            >
-              {name}
-            </span>
-          ))}
-        </div>
-      </div>
+      {/* Client marquee — hidden until authorization */}
     </section>
   );
 }
