@@ -18,7 +18,7 @@ interface Client {
 
 const clients: Client[] = [
   {
-    name: "Oficina do Condutor",
+    name: "Cliente A",
     sector: "Escola de Condu\u00e7\u00e3o",
     location: "Lisboa",
     x: 32,
@@ -27,7 +27,7 @@ const clients: Client[] = [
     floatDelay: 0,
   },
   {
-    name: "EC Vit\u00f3ria",
+    name: "Cliente B",
     sector: "Escola de Condu\u00e7\u00e3o",
     location: "Set\u00fabal",
     x: 35,
@@ -36,7 +36,7 @@ const clients: Client[] = [
     floatDelay: 0.5,
   },
   {
-    name: "Grancoop",
+    name: "Cliente C",
     sector: "Cooperativa",
     location: "Coimbra",
     x: 38,
@@ -45,7 +45,7 @@ const clients: Client[] = [
     floatDelay: 1,
   },
   {
-    name: "Let\u2019s Go",
+    name: "Cliente D",
     sector: "Escola de Condu\u00e7\u00e3o",
     location: "Porto",
     x: 40,

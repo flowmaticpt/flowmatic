@@ -3,7 +3,7 @@
 import { useTranslation } from "@/i18n/use-translation";
 import { motion } from "framer-motion";
 
-const clients = ["Oficina do Condutor", "EC Vit\u00f3ria", "Grancoop", "Let\u2019s Go"];
+const clients = ["Cliente A", "Cliente B", "Cliente C", "Cliente D"];
 
 export function Numbers() {
   const { t } = useTranslation();
