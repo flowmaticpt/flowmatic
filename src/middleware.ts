@@ -40,8 +40,13 @@ async function isValidSession(
 export async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
-  // Allow login page and API routes
-  if (pathname === "/crm/login" || pathname.startsWith("/api/crm/")) {
+  // Allow login page, API routes, and static CRM assets
+  if (
+    pathname.startsWith("/crm/login") ||
+    pathname.startsWith("/api/crm/") ||
+    pathname.endsWith(".html") ||
+    pathname.endsWith(".gs")
+  ) {
     return NextResponse.next();
   }
 
