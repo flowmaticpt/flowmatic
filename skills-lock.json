@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "skills": {
+    "appsec-expert": {
+      "source": "martinholovsky/claude-skills-generator",
+      "sourceType": "github",
+      "computedHash": "52113e0f9a1bd1d45dfcffd03a594dfc77168f2f7ab5cc82258da3ce68c03b88"
+    },
+    "compliance-check": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "computedHash": "50e71fe4c80639e4f7815d9f10cf8e677a1a30c82bdd68db2b071f2ab2f0e655"
+    },
+    "crm-automation": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "computedHash": "3802668496ec7e9099a90f43279700302faa78e6f767c6184be0cc05d86fde4f"
+    },
+    "email-writing": {
+      "source": "guia-matthieu/clawfu-skills",
+      "sourceType": "github",
+      "computedHash": "a02ad33f506e3d01e55372eebd00118f54fe41fd6ffcd33645df7ae9b9af46eb"
+    },
+    "engineering-skills": {
+      "source": "alirezarezvani/claude-skills",
+      "sourceType": "github",
+      "computedHash": "500fad0358b5c64e54168ebe76df864a685fba4653397fcf02580e3d79f008bb"
+    },
+    "google-apps-script": {
+      "source": "jezweb/claude-skills",
+      "sourceType": "github",
+      "computedHash": "04c8e918d62078cb75a3f5a8a5f941559942bceb0a10042ff70ebe9c5d90e4f4"
+    },
+    "marketing-email": {
+      "source": "gnoviawan/agentic-marketing",
+      "sourceType": "github",
+      "computedHash": "6f0f71c0cfb5d3b48fa2d5c7eb5678b727cda5b12ce31e1f183deb493aa5f3a5"
+    },
+    "sales-methodology-implementer": {
+      "source": "onewave-ai/claude-skills",
+      "sourceType": "github",
+      "computedHash": "d5b85c8a332919e5d0e810fd4abd08d3661e9ac206f967915586ba103c796130"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "computedHash": "a6a44d5498f7e8f68289902f3dedfc6f38ae0cee1e96527c80724cf27f727c2a"
+    },
+    "whatsapp-automation": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "computedHash": "e2d1e6e888803e24a5ac4bde08a9cac434d9911f0d3c2ba4e9cc7edf11dc5f08"
+    }
+  }
+}

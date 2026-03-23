@@ -35,3 +35,16 @@ letsgo/contexto-letsgo.md
 letsgo/guiao-letsgo.html
 letsgo/guiao-letsgo.md
 vitoria/
+
+# Environment
+.env.local
+.env*.local
+
+# Next.js
+.next/
+out/
+node_modules/
+
+# Misc
+*.tsbuildinfo
+next-env.d.ts
