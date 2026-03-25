@@ -1234,26 +1234,10 @@ let webAppUrl = localStorage.getItem('flowmatica_crm_url') || '';
 let sortCol = '';
 let sortDir = 'asc';
 
-// ==================== JSONP (contorna CORS do Google Apps Script) ====================
-function fetchJsonp(url) {
-    return new Promise(function(resolve, reject) {
-        var cbName = '_cb_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6);
-        var script = document.createElement('script');
-        var timeout = setTimeout(function() { cleanup(); reject(new Error('Timeout (15s)')); }, 15000);
-
-        function cleanup() {
-            clearTimeout(timeout);
-            delete window[cbName];
-            if (script.parentNode) script.parentNode.removeChild(script);
-        }
-
-        window[cbName] = function(data) { cleanup(); resolve(data); };
-        script.onerror = function() { cleanup(); reject(new Error('Falha ao carregar script')); };
-
-        var sep = url.indexOf('?') >= 0 ? '&' : '?';
-        script.src = url + sep + 'callback=' + cbName;
-        document.head.appendChild(script);
-    });
+// ==================== PROXY FETCH (contorna CORS via API route) ====================
+function proxyFetch(url) {
+    return fetch('/api/crm/proxy?url=' + encodeURIComponent(url))
+        .then(function(r) { return r.json(); });
 }
 
 // ==================== TOAST & CONFIRM ====================
@@ -2157,7 +2141,7 @@ function saveConfig() {
     status.textContent = 'A testar ligação...';
     status.style.color = '#555770';
 
-    fetchJsonp(url)
+    proxyFetch(url)
         .then(data => {
             if (data.emails !== undefined) {
                 localStorage.setItem('flowmatica_crm_url', url);
@@ -2186,7 +2170,7 @@ function refreshData() {
         return;
     }
 
-    fetchJsonp(webAppUrl)
+    proxyFetch(webAppUrl)
         .then(data => {
             if (data.leads) currentLeads = data.leads;
             if (data.activities) currentActivities = data.activities;
