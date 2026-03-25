@@ -1234,6 +1234,28 @@ let webAppUrl = localStorage.getItem('flowmatica_crm_url') || '';
 let sortCol = '';
 let sortDir = 'asc';
 
+// ==================== JSONP (contorna CORS do Google Apps Script) ====================
+function fetchJsonp(url) {
+    return new Promise(function(resolve, reject) {
+        var cbName = '_cb_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6);
+        var script = document.createElement('script');
+        var timeout = setTimeout(function() { cleanup(); reject(new Error('Timeout (15s)')); }, 15000);
+
+        function cleanup() {
+            clearTimeout(timeout);
+            delete window[cbName];
+            if (script.parentNode) script.parentNode.removeChild(script);
+        }
+
+        window[cbName] = function(data) { cleanup(); resolve(data); };
+        script.onerror = function() { cleanup(); reject(new Error('Falha ao carregar script')); };
+
+        var sep = url.indexOf('?') >= 0 ? '&' : '?';
+        script.src = url + sep + 'callback=' + cbName;
+        document.head.appendChild(script);
+    });
+}
+
 // ==================== TOAST & CONFIRM ====================
 function showToast(message, type = 'success') {
     const container = document.getElementById('toastContainer');
@@ -2135,21 +2157,20 @@ function saveConfig() {
     status.textContent = 'A testar ligação...';
     status.style.color = '#555770';
 
-    fetch(url)
-        .then(r => r.json())
+    fetchJsonp(url)
         .then(data => {
-            if (data.leads && data.activities) {
+            if (data.emails !== undefined) {
                 localStorage.setItem('flowmatica_crm_url', url);
                 webAppUrl = url;
-                currentLeads = data.leads;
-                currentActivities = data.activities;
-                if (data.emails) currentEmails = data.emails;
-                const emailCount = data.emails ? data.emails.length : 0;
-                status.textContent = 'Ligado com sucesso! ' + data.leads.length + ' leads, ' + emailCount + ' emails carregados.';
+                currentLeads = data.leads || [];
+                currentActivities = data.activities || [];
+                currentEmails = data.emails || [];
+                const emailCount = currentEmails.length;
+                status.textContent = 'Ligado com sucesso! ' + emailCount + ' emails carregados.';
                 status.style.color = '#16a34a';
                 renderAll();
             } else {
-                status.textContent = 'Resposta inválida. Verifique se o script devolve { leads: [...], activities: [...] }.';
+                status.textContent = 'Resposta inválida. Verifique se o script devolve { emails: [...] }.';
                 status.style.color = '#dc2626';
             }
         })
@@ -2165,8 +2186,7 @@ function refreshData() {
         return;
     }
 
-    fetch(webAppUrl)
-        .then(r => r.json())
+    fetchJsonp(webAppUrl)
         .then(data => {
             if (data.leads) currentLeads = data.leads;
             if (data.activities) currentActivities = data.activities;
