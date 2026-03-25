@@ -62,6 +62,16 @@ export function Navbar() {
                 {t("navEquipa") as string}
               </a>
             </li>
+            <li>
+              <a
+                href="https://escolaflow.flowmatica.pt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-orange-400 no-underline text-[0.82rem] font-medium transition-colors hover:text-orange-300"
+              >
+                EscolaFlow
+              </a>
+            </li>
           </ul>
           <a
             href="#contacto"
@@ -101,6 +111,16 @@ export function Navbar() {
                   className="text-flow-white70 no-underline text-[0.82rem] font-medium transition-colors hover:text-white"
                 >
                   {t("navEquipa") as string}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://escolaflow.flowmatica.pt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange-400 no-underline text-[0.82rem] font-medium transition-colors hover:text-orange-300"
+                >
+                  EscolaFlow
                 </a>
               </li>
             </ul>
