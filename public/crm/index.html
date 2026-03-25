@@ -921,6 +921,99 @@
         .date-relative {
             cursor: default;
         }
+
+        /* ==================== INBOX / EMAIL LIST ==================== */
+        .email-list { display: flex; flex-direction: column; }
+        .email-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.75rem 0.85rem;
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+            cursor: pointer;
+            transition: background 0.15s;
+            border-radius: 8px;
+        }
+        .email-item:hover { background: rgba(29,78,216,0.04); }
+        .email-item:last-child { border-bottom: none; }
+        .email-item.unread { background: rgba(29,78,216,0.03); }
+        .email-item.unread .email-subject { font-weight: 600; color: #1a1a2e; }
+        .email-item.unread .email-from { font-weight: 600; color: #1a1a2e; }
+        .email-unread-dot {
+            width: 8px; height: 8px; min-width: 8px;
+            border-radius: 50%;
+            background: #1d4ed8;
+            margin-top: 6px;
+        }
+        .email-unread-dot.read { background: transparent; }
+        .email-body { flex: 1; min-width: 0; }
+        .email-top { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
+        .email-from {
+            font-size: 0.82rem; font-weight: 500; color: #555770;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 220px;
+        }
+        .email-date { font-size: 0.7rem; color: #999; white-space: nowrap; }
+        .email-subject {
+            font-size: 0.82rem; color: #333; margin-top: 0.15rem;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+        .email-snippet {
+            font-size: 0.75rem; color: #999; margin-top: 0.1rem;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+        .email-badges { display: flex; gap: 0.3rem; margin-top: 0.3rem; }
+        .email-badge-thread {
+            font-size: 0.62rem; font-weight: 600; color: #555770;
+            background: #f1f5f9; padding: 0.1rem 0.4rem; border-radius: 4px;
+        }
+        .email-empty {
+            text-align: center; padding: 2.5rem 1rem;
+            color: #999; font-size: 0.85rem;
+        }
+        .email-empty-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .inbox-header {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        .inbox-filter {
+            display: flex; gap: 0.5rem; align-items: center;
+        }
+        .inbox-filter-btn {
+            font-size: 0.72rem; font-weight: 500; padding: 0.3rem 0.7rem;
+            border-radius: 6px; border: 1px solid #e5e7eb;
+            background: #fff; cursor: pointer; color: #555770;
+            transition: all 0.15s;
+        }
+        .inbox-filter-btn:hover { border-color: #1d4ed8; color: #1d4ed8; }
+        .inbox-filter-btn.active { background: #1d4ed8; color: #fff; border-color: #1d4ed8; }
+        .inbox-search {
+            display: flex; align-items: center; gap: 0.5rem;
+            background: #fff; border: 1px solid #e5e7eb; border-radius: 8px;
+            padding: 0.4rem 0.6rem; font-size: 0.8rem; width: 220px;
+        }
+        .inbox-search input {
+            border: none; outline: none; font-size: 0.8rem; width: 100%; background: transparent;
+        }
+        .inbox-search svg { width: 14px; height: 14px; color: #999; flex-shrink: 0; }
+
+        /* Mini email widget on dashboard */
+        .email-widget-item {
+            display: flex; align-items: center; gap: 0.6rem;
+            padding: 0.5rem 0.3rem;
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+        }
+        .email-widget-item:last-child { border-bottom: none; }
+        .email-widget-dot {
+            width: 6px; height: 6px; min-width: 6px;
+            border-radius: 50%; background: #1d4ed8;
+        }
+        .email-widget-dot.read { background: #e5e7eb; }
+        .email-widget-from { font-size: 0.78rem; font-weight: 500; color: #333; min-width: 100px; }
+        .email-widget-subject {
+            font-size: 0.78rem; color: #555770; flex: 1;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+        .email-widget-time { font-size: 0.68rem; color: #999; white-space: nowrap; }
     </style>
 </head>
 <body>
@@ -973,6 +1066,7 @@
 <!-- Nav Tabs -->
 <nav class="nav-tabs" id="navTabs">
     <div class="nav-tab active" data-tab="dashboard">Dashboard</div>
+    <div class="nav-tab" data-tab="inbox">Inbox</div>
     <div class="nav-tab" data-tab="leads">Leads</div>
     <div class="nav-tab" data-tab="config">Configura&ccedil;&otilde;es</div>
 </nav>
@@ -1010,11 +1104,37 @@
             </div>
         </div>
 
+        <!-- Email Widget -->
+        <div class="card-panel">
+            <div class="section-title" style="display:flex;justify-content:space-between;align-items:center;">
+                Emails Recentes <span class="count" id="emailWidgetCount"></span>
+                <span style="font-size:0.72rem;font-weight:500;color:#1d4ed8;cursor:pointer;" onclick="document.querySelector('.nav-tab[data-tab=inbox]').click()">Ver todos &rarr;</span>
+            </div>
+            <div id="emailWidgetList"></div>
+        </div>
+
         <!-- Sector Chart -->
         <div class="card-panel">
             <div class="section-title">Leads por Setor</div>
             <ul class="sector-list" id="sectorList"></ul>
             <div class="sector-legend" id="sectorLegend"></div>
+        </div>
+    </div>
+
+    <!-- ==================== TAB: INBOX ==================== -->
+    <div class="tab-content" id="tab-inbox">
+        <div class="inbox-header">
+            <div class="inbox-filter">
+                <button class="inbox-filter-btn active" data-filter="all" onclick="filterInbox('all', this)">Todos</button>
+                <button class="inbox-filter-btn" data-filter="unread" onclick="filterInbox('unread', this)">N&atilde;o lidos</button>
+            </div>
+            <div class="inbox-search">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" id="inboxSearch" placeholder="Pesquisar emails..." oninput="renderInbox()">
+            </div>
+        </div>
+        <div class="card-panel" style="padding:0;">
+            <div class="email-list" id="emailList"></div>
         </div>
     </div>
 
@@ -1099,74 +1219,17 @@
 // Real data based on leads.csv + enviados.log + client files
 // When Google Sheets is connected, this is replaced by live data
 
-const DEMO_LEADS = [
-    // ---- CLIENTES ATIVOS (Ganho) ----
-    { id: 1, empresa: "Oficina do Condutor", setor: "Escola de Condução", contacto: "Maria Ribeiro", email: "geral@oficinadocondutor.pt", telefone: "224 016 906", localizacao: "Matosinhos", origem: "Email prospeção", estado: "Ganho", dataContacto: "2026-03-13", dataAtividade: "2026-03-19", proximaAcao: "Implementar lembretes automáticos", dataProximaAcao: "2026-03-22", responsavel: "Ricardo", valorSetup: 400, valorMensal: 80, notas: "Coordenadora Maria. Usa Pugnatrix. 10-15 staff." },
-    { id: 2, empresa: "EC Vitória", setor: "Escola de Condução", contacto: "", email: "escolavitoria@sapo.pt", telefone: "", localizacao: "Beja", origem: "Email prospeção", estado: "Ganho", dataContacto: "2026-03-18", dataAtividade: "2026-03-19", proximaAcao: "Setup do site", dataProximaAcao: "2026-03-21", responsavel: "Ricardo", valorSetup: 350, valorMensal: 0, notas: "Site entregue. Cliente satisfeito." },
-    { id: 3, empresa: "Grancoop", setor: "Cooperativa Agrícola", contacto: "", email: "", telefone: "", localizacao: "Portugal", origem: "Referência", estado: "Ganho", dataContacto: "2026-03-14", dataAtividade: "2026-03-18", proximaAcao: "Acompanhamento mensal", dataProximaAcao: "2026-04-18", responsavel: "Ricardo", valorSetup: 500, valorMensal: 100, notas: "Automatização de processos agrícolas." },
-    { id: 4, empresa: "Let's Go", setor: "Ginásio", contacto: "", email: "lets.go@sapo.pt", telefone: "", localizacao: "Portugal", origem: "Email prospeção", estado: "Ganho", dataContacto: "2026-03-19", dataAtividade: "2026-03-20", proximaAcao: "Implementação inicial", dataProximaAcao: "2026-03-25", responsavel: "Vasco", valorSetup: 300, valorMensal: 60, notas: "Ginásio — automatização de gestão de membros." },
+const DEMO_LEADS = [];
+// Leads reais carregam via Google Sheets — configurar na tab Configurações
 
-    // ---- PROPOSTA ENVIADA ----
-    { id: 5, empresa: "EC Portuense", setor: "Escola de Condução", contacto: "", email: "info@portuense.net", telefone: "222 052 072", localizacao: "Porto", origem: "Email prospeção", estado: "Proposta", dataContacto: "2026-03-15", dataAtividade: "2026-03-17", proximaAcao: "Follow-up proposta", dataProximaAcao: "2026-03-22", responsavel: "Ricardo", valorSetup: 400, valorMensal: 80, notas: "" },
-    { id: 6, empresa: "EC Briosa", setor: "Escola de Condução", contacto: "", email: "mail@ecbriosa.com", telefone: "239 401 452", localizacao: "Coimbra", origem: "Email prospeção", estado: "Proposta", dataContacto: "2026-03-15", dataAtividade: "2026-03-18", proximaAcao: "Aguardar decisão", dataProximaAcao: "2026-03-21", responsavel: "Vasco", valorSetup: 350, valorMensal: 70, notas: "" },
-
-    // ---- REUNIÃO ----
-    { id: 7, empresa: "Centro Fisioterapia Lisboa", setor: "Clínica de Fisioterapia", contacto: "", email: "geral@centrofisioterapialisboa.pt", telefone: "933 028 449", localizacao: "Lisboa", origem: "Email prospeção", estado: "Reuniao", dataContacto: "2026-03-15", dataAtividade: "2026-03-19", proximaAcao: "Reunião agendada", dataProximaAcao: "2026-03-22", responsavel: "Vasco", valorSetup: 400, valorMensal: 80, notas: "Interessados em agendamento online." },
-    { id: 8, empresa: "FlexGym", setor: "Ginásio", contacto: "", email: "geral@flexgym.pt", telefone: "253 264 628", localizacao: "Braga", origem: "Email prospeção", estado: "Reuniao", dataContacto: "2026-03-15", dataAtividade: "2026-03-18", proximaAcao: "Preparar demo", dataProximaAcao: "2026-03-21", responsavel: "Ricardo", valorSetup: 350, valorMensal: 70, notas: "" },
-
-    // ---- RESPONDEU ----
-    { id: 9, empresa: "EC São Lázaro", setor: "Escola de Condução", contacto: "", email: "geral@escolasaolazaro.pt", telefone: "218 885 254", localizacao: "Lisboa", origem: "Email prospeção", estado: "Respondeu", dataContacto: "2026-03-15", dataAtividade: "2026-03-17", proximaAcao: "Agendar reunião", dataProximaAcao: "2026-03-21", responsavel: "Ricardo", valorSetup: 0, valorMensal: 0, notas: "Pediu mais informação." },
-    { id: 10, empresa: "Psinove", setor: "Clínica de Psicologia", contacto: "", email: "contacto@psinove.com", telefone: "211 327 638", localizacao: "Lisboa", origem: "Email prospeção", estado: "Respondeu", dataContacto: "2026-03-15", dataAtividade: "2026-03-18", proximaAcao: "Enviar caso de uso", dataProximaAcao: "2026-03-20", responsavel: "Vasco", valorSetup: 0, valorMensal: 0, notas: "Interessados mas querem ver exemplos." },
-    { id: 11, empresa: "Facto Hair", setor: "Cabeleireiro", contacto: "", email: "info@factohair.com", telefone: "213 478 821", localizacao: "Lisboa", origem: "Email prospeção", estado: "Respondeu", dataContacto: "2026-03-15", dataAtividade: "2026-03-16", proximaAcao: "Agendar chamada", dataProximaAcao: "2026-03-20", responsavel: "Ricardo", valorSetup: 0, valorMensal: 0, notas: "" },
-
-    // ---- CONTACTADO (sample — the rest from enviados.log) ----
-    { id: 12, empresa: "Integralis Clinic", setor: "Clínica Dentária", contacto: "", email: "geral@integralisclinic.pt", telefone: "911 068 517", localizacao: "Lisboa", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-13", dataAtividade: "2026-03-13", proximaAcao: "", dataProximaAcao: "", responsavel: "Ricardo", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 13, empresa: "SpotClinic", setor: "Clínica Dentária", contacto: "", email: "info@spotclinic.pt", telefone: "214 072 407", localizacao: "Lisboa", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-13", dataAtividade: "2026-03-13", proximaAcao: "", dataProximaAcao: "", responsavel: "Ricardo", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 14, empresa: "IMPECLimpa", setor: "Empresa de Limpeza", contacto: "", email: "geral@impeclimpa.pt", telefone: "964 557 746", localizacao: "Lisboa", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-13", dataAtividade: "2026-03-13", proximaAcao: "", dataProximaAcao: "", responsavel: "Ricardo", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 15, empresa: "Eleven Restaurant", setor: "Restaurante", contacto: "", email: "11@restauranteleven.com", telefone: "213 862 211", localizacao: "Lisboa", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-13", dataAtividade: "2026-03-13", proximaAcao: "", dataProximaAcao: "", responsavel: "Ricardo", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 16, empresa: "Pinto Lopes Viagens", setor: "Agência de Viagens", contacto: "", email: "geral@pintolopesviagens.com", telefone: "", localizacao: "Lisboa", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-13", dataAtividade: "2026-03-13", proximaAcao: "", dataProximaAcao: "", responsavel: "Vasco", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 17, empresa: "WASHOUSE", setor: "Lavandaria", contacto: "", email: "geral@washouse.pt", telefone: "226 090 332", localizacao: "Porto", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-13", dataAtividade: "2026-03-13", proximaAcao: "", dataProximaAcao: "", responsavel: "Vasco", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 18, empresa: "Farmácia Portugal", setor: "Farmácia", contacto: "", email: "geral@farmaciaportugal.pt", telefone: "265 539 060", localizacao: "Setúbal", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-13", dataAtividade: "2026-03-13", proximaAcao: "", dataProximaAcao: "", responsavel: "Ricardo", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 19, empresa: "SOC Segurança Privada", setor: "Segurança", contacto: "", email: "geral@soc.com.pt", telefone: "218 209 979", localizacao: "Cascais", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-13", dataAtividade: "2026-03-13", proximaAcao: "", dataProximaAcao: "", responsavel: "Vasco", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 20, empresa: "EC Paranhos", setor: "Escola de Condução", contacto: "", email: "geral@ecparanhos.com", telefone: "914 876 879", localizacao: "Porto", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-13", dataAtividade: "2026-03-13", proximaAcao: "", dataProximaAcao: "", responsavel: "Ricardo", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 21, empresa: "Ginásios Da Vinci", setor: "Centro de Explicações", contacto: "", email: "ginasios@davinci.com.pt", telefone: "289 108 105", localizacao: "Portugal", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-13", dataAtividade: "2026-03-13", proximaAcao: "", dataProximaAcao: "", responsavel: "Vasco", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 22, empresa: "EC Prodígio", setor: "Escola de Condução", contacto: "", email: "geral@ecprodigio.pt", telefone: "223 166 109", localizacao: "Vila Nova de Gaia", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-13", dataAtividade: "2026-03-13", proximaAcao: "", dataProximaAcao: "", responsavel: "Ricardo", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 23, empresa: "Segurança Máxima", setor: "Escola de Condução", contacto: "", email: "geral@gruposegurancamaxima.com", telefone: "800 200 530", localizacao: "Lisboa", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-15", dataAtividade: "2026-03-15", proximaAcao: "", dataProximaAcao: "", responsavel: "Ricardo", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 24, empresa: "Physiokinesis", setor: "Clínica de Fisioterapia", contacto: "", email: "geral@physiokinesis.pt", telefone: "211 316 703", localizacao: "Lisboa", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-15", dataAtividade: "2026-03-15", proximaAcao: "", dataProximaAcao: "", responsavel: "Vasco", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 25, empresa: "Vitacentro Estética", setor: "Centro de Estética", contacto: "", email: "clisboa@vitacentro.com", telefone: "218 446 644", localizacao: "Lisboa", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-15", dataAtividade: "2026-03-15", proximaAcao: "", dataProximaAcao: "", responsavel: "Vasco", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 26, empresa: "Gym Tónico Wellness Center", setor: "Ginásio", contacto: "", email: "geral@gymtonico.com", telefone: "253 263 004", localizacao: "Braga", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-15", dataAtividade: "2026-03-15", proximaAcao: "", dataProximaAcao: "", responsavel: "Ricardo", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 27, empresa: "Dance Spot", setor: "Escola de Dança", contacto: "", email: "geral@dancespot.pt", telefone: "214 003 877", localizacao: "Lisboa", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-15", dataAtividade: "2026-03-15", proximaAcao: "", dataProximaAcao: "", responsavel: "Vasco", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 28, empresa: "Combo Escola de Música", setor: "Escola de Música", contacto: "", email: "geral@combomusic.pt", telefone: "964 910 989", localizacao: "Porto", origem: "Email prospeção", estado: "Contactado", dataContacto: "2026-03-15", dataAtividade: "2026-03-15", proximaAcao: "", dataProximaAcao: "", responsavel: "Ricardo", valorSetup: 0, valorMensal: 0, notas: "" },
-
-    // ---- PROSPECTO (from leads.csv but not yet emailed) ----
-    { id: 29, empresa: "Clínica Dentária Dr. José Vasconcelos Tavares", setor: "Clínica Dentária", contacto: "", email: "info@clinicajavt.pt", telefone: "218 513 482", localizacao: "Lisboa", origem: "Email prospeção", estado: "Prospecto", dataContacto: "", dataAtividade: "", proximaAcao: "Enviar email", dataProximaAcao: "", responsavel: "", valorSetup: 0, valorMensal: 0, notas: "" },
-    { id: 30, empresa: "Clínica Médica e Dentária do Lumiar", setor: "Clínica Dentária", contacto: "", email: "geral@clinicadolumiar.com", telefone: "217 591 887", localizacao: "Lisboa", origem: "Email prospeção", estado: "Prospecto", dataContacto: "", dataAtividade: "", proximaAcao: "Enviar email", dataProximaAcao: "", responsavel: "", valorSetup: 0, valorMensal: 0, notas: "" },
-];
-
-const DEMO_ACTIVITIES = [
-    { data: "2026-03-20 09:00", empresa: "Let's Go", tipo: "Reunião", resumo: "Reunião inicial — definir scope de automatização", responsavel: "Vasco" },
-    { data: "2026-03-19 15:30", empresa: "Oficina do Condutor", tipo: "Proposta", resumo: "Proposta enviada — pacote lembretes + WA Business", responsavel: "Ricardo" },
-    { data: "2026-03-19 14:00", empresa: "Centro Fisioterapia Lisboa", tipo: "Chamada", resumo: "Chamada — agendar reunião para 22 Mar", responsavel: "Vasco" },
-    { data: "2026-03-19 11:00", empresa: "Psinove", tipo: "Email Recebido", resumo: "Resposta positiva — pedem exemplos concretos", responsavel: "Vasco" },
-    { data: "2026-03-19 10:30", empresa: "EC São Lázaro", tipo: "Email Recebido", resumo: "Resposta — querem saber mais sobre automatização", responsavel: "Ricardo" },
-    { data: "2026-03-18 16:49", empresa: "EC Vitória", tipo: "Email Enviado", resumo: "Email de prospeção enviado", responsavel: "Ricardo" },
-    { data: "2026-03-18 14:00", empresa: "FlexGym", tipo: "Chamada", resumo: "Follow-up — confirmaram interesse em reunião", responsavel: "Ricardo" },
-    { data: "2026-03-18 10:00", empresa: "EC Briosa", tipo: "Proposta", resumo: "Proposta enviada — pacote standard", responsavel: "Vasco" },
-    { data: "2026-03-17 16:00", empresa: "Grancoop", tipo: "Reunião", resumo: "Reunião de acompanhamento mensal", responsavel: "Ricardo" },
-    { data: "2026-03-17 11:00", empresa: "EC Portuense", tipo: "Proposta", resumo: "Proposta enviada — automatização completa", responsavel: "Ricardo" },
-    { data: "2026-03-16 17:15", empresa: "AtivTOC", tipo: "Email Enviado", resumo: "Email de prospeção enviado", responsavel: "Ricardo" },
-    { data: "2026-03-16 17:20", empresa: "TOC Solutions", tipo: "Email Enviado", resumo: "Email de prospeção enviado", responsavel: "Ricardo" },
-    { data: "2026-03-15 23:00", empresa: "Facto Hair", tipo: "Email Enviado", resumo: "Email de prospeção enviado", responsavel: "Ricardo" },
-    { data: "2026-03-15 23:37", empresa: "Psinove", tipo: "Email Enviado", resumo: "Email de prospeção enviado", responsavel: "Vasco" },
-    { data: "2026-03-14 10:00", empresa: "Oficina do Condutor", tipo: "Email Recebido", resumo: "Maria Ribeiro respondeu — quer reunião", responsavel: "Ricardo" },
-    { data: "2026-03-13 13:47", empresa: "Oficina do Condutor", tipo: "Email Enviado", resumo: "Email de prospeção enviado", responsavel: "Ricardo" },
-    { data: "2026-03-13 12:45", empresa: "Integralis Clinic", tipo: "Email Enviado", resumo: "Email de prospeção enviado", responsavel: "Ricardo" },
-    { data: "2026-03-12 15:41", empresa: "Big R Condomínios", tipo: "Email Enviado", resumo: "Email de prospeção enviado (1.o batch)", responsavel: "Ricardo" },
-];
+const DEMO_ACTIVITIES = [];
+// Atividades reais carregam via Google Sheets
 
 // ==================== STATE ====================
 let currentLeads = [...DEMO_LEADS];
 let currentActivities = [...DEMO_ACTIVITIES];
+let currentEmails = [];
+let inboxFilter = 'all';
 let webAppUrl = localStorage.getItem('flowmatica_crm_url') || '';
 let sortCol = '';
 let sortDir = 'asc';
@@ -1204,7 +1267,7 @@ function confirmAction(title, message, onConfirm) {
 // ==================== TIME HELPERS ====================
 function timeAgo(dateStr) {
     if (!dateStr) return '—';
-    const today = new Date('2026-03-20');
+    const today = new Date();
     const date = new Date(dateStr);
     const diffMs = today - date;
     const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
@@ -1270,8 +1333,10 @@ function renderAll() {
     renderPipeline();
     renderActivityFeed();
     renderAlerts();
+    renderEmailWidget();
     renderSectorChart();
     renderLeadsTable();
+    renderInbox();
     populateSectorFilter();
     updateStatus();
     animateCards();
@@ -1287,7 +1352,7 @@ function animateCards() {
 // ==================== METRICS ====================
 function renderMetrics() {
     const leads = currentLeads;
-    const today = new Date('2026-03-20');
+    const today = new Date();
 
     // 1. MRR — sum of valorMensal for "Ganho"
     const ganhos = leads.filter(l => l.estado === 'Ganho');
@@ -1498,6 +1563,12 @@ function renderPipeline() {
 // ==================== ACTIVITY FEED ====================
 function renderActivityFeed() {
     const list = document.getElementById('activityList');
+
+    if (currentActivities.length === 0) {
+        list.innerHTML = '<li class="activity-item" style="color:#999;font-size:0.8rem;padding:1rem;">Conecte ao Google Sheets para ver atividades.</li>';
+        return;
+    }
+
     const recent = currentActivities.slice(0, 15);
 
     const icons = {
@@ -1528,7 +1599,7 @@ function renderActivityFeed() {
 // ==================== ALERTS ====================
 function renderAlerts() {
     const list = document.getElementById('alertList');
-    const today = new Date('2026-03-20');
+    const today = new Date();
     const alerts = [];
 
     currentLeads.forEach(l => {
@@ -1766,7 +1837,7 @@ function renderLeadsTable() {
     }
 
     const stateKey = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z]/g, '');
-    const today = new Date('2026-03-20');
+    const today = new Date();
 
     tbody.innerHTML = filtered.map(l => {
         // Enhanced state badge
@@ -1884,6 +1955,124 @@ function executeEstadoUpdate(email, novoEstado) {
     }
 }
 
+// ==================== INBOX ====================
+function renderInbox() {
+    const list = document.getElementById('emailList');
+    if (!list) return;
+
+    const search = (document.getElementById('inboxSearch')?.value || '').toLowerCase();
+
+    let filtered = currentEmails.filter(e => {
+        if (inboxFilter === 'unread' && !e.unread) return false;
+        if (search && !(
+            (e.from || '').toLowerCase().includes(search) ||
+            (e.subject || '').toLowerCase().includes(search) ||
+            (e.snippet || '').toLowerCase().includes(search)
+        )) return false;
+        return true;
+    });
+
+    const countEl = document.getElementById('inboxCount');
+    if (countEl) {
+        const unreadCount = currentEmails.filter(e => e.unread).length;
+        countEl.textContent = unreadCount > 0 ? unreadCount + ' não lidos' : filtered.length + ' emails';
+    }
+
+    if (filtered.length === 0) {
+        if (!webAppUrl) {
+            list.innerHTML = '<div class="email-empty"><div class="email-empty-icon">&#9993;</div>Conecte ao Google Sheets nas Configurações para ver os seus emails.</div>';
+        } else if (currentEmails.length === 0) {
+            list.innerHTML = '<div class="email-empty"><div class="email-empty-icon">&#9993;</div>Nenhum email encontrado. Clique Atualizar para sincronizar.</div>';
+        } else {
+            list.innerHTML = '<div class="email-empty">Nenhum email corresponde à pesquisa.</div>';
+        }
+        return;
+    }
+
+    list.innerHTML = filtered.map(e => {
+        const fromName = extractName(e.from);
+        const dateObj = new Date(e.date);
+        const isToday = new Date().toDateString() === dateObj.toDateString();
+        const dateDisplay = isToday
+            ? dateObj.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' })
+            : dateObj.toLocaleDateString('pt-PT', { day: 'numeric', month: 'short' });
+        const threadBadge = e.messageCount > 1 ? `<span class="email-badge-thread">${e.messageCount}</span>` : '';
+
+        return `<div class="email-item ${e.unread ? 'unread' : ''}" onclick="openEmail('${e.gmailUrl || '#'}')">
+            <div class="email-unread-dot ${e.unread ? '' : 'read'}"></div>
+            <div class="email-body">
+                <div class="email-top">
+                    <span class="email-from">${escapeHtml(fromName)}</span>
+                    <span class="email-date">${dateDisplay}</span>
+                </div>
+                <div class="email-subject">${escapeHtml(e.subject || '(sem assunto)')}</div>
+                <div class="email-snippet">${escapeHtml(e.snippet || '')}</div>
+                ${threadBadge ? `<div class="email-badges">${threadBadge}</div>` : ''}
+            </div>
+        </div>`;
+    }).join('');
+}
+
+function renderEmailWidget() {
+    const list = document.getElementById('emailWidgetList');
+    const countEl = document.getElementById('emailWidgetCount');
+    if (!list) return;
+
+    const unreadCount = currentEmails.filter(e => e.unread).length;
+    if (countEl) countEl.textContent = unreadCount > 0 ? unreadCount + ' não lidos' : '';
+
+    if (currentEmails.length === 0) {
+        if (!webAppUrl) {
+            list.innerHTML = '<div style="padding:0.75rem;font-size:0.8rem;color:#999;">Conecte ao Google Sheets para ver emails.</div>';
+        } else {
+            list.innerHTML = '<div style="padding:0.75rem;font-size:0.8rem;color:#999;">Sem emails recentes.</div>';
+        }
+        return;
+    }
+
+    const recent = currentEmails.slice(0, 7);
+    list.innerHTML = recent.map(e => {
+        const fromName = extractName(e.from);
+        const dateObj = new Date(e.date);
+        const isToday = new Date().toDateString() === dateObj.toDateString();
+        const timeStr = isToday
+            ? dateObj.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' })
+            : dateObj.toLocaleDateString('pt-PT', { day: 'numeric', month: 'short' });
+
+        return `<div class="email-widget-item" style="cursor:pointer;" onclick="openEmail('${e.gmailUrl || '#'}')">
+            <div class="email-widget-dot ${e.unread ? '' : 'read'}"></div>
+            <span class="email-widget-from">${escapeHtml(fromName)}</span>
+            <span class="email-widget-subject">${escapeHtml(e.subject || '(sem assunto)')}</span>
+            <span class="email-widget-time">${timeStr}</span>
+        </div>`;
+    }).join('');
+}
+
+function filterInbox(filter, btn) {
+    inboxFilter = filter;
+    document.querySelectorAll('.inbox-filter-btn').forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
+    renderInbox();
+}
+
+function openEmail(url) {
+    if (url && url !== '#') window.open(url, '_blank');
+}
+
+function extractName(fromStr) {
+    if (!fromStr) return 'Desconhecido';
+    // "Name <email>" → "Name"
+    const match = fromStr.match(/^(.+?)\s*<.+>$/);
+    if (match) return match[1].replace(/"/g, '').trim();
+    return fromStr;
+}
+
+function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+}
+
 function populateSectorFilter() {
     const select = document.getElementById('filterSetor');
     const sectors = [...new Set(currentLeads.map(l => l.setor))].sort();
@@ -1917,11 +2106,11 @@ function updateStatus() {
         }
     } else {
         dot.classList.add('offline');
-        text.textContent = 'Dados de exemplo';
+        text.textContent = 'Sem ligação';
         if (settingsStatus) {
             settingsStatus.classList.remove('connected');
             settingsStatus.classList.add('disconnected');
-            settingsText.textContent = 'Desconectado — dados de exemplo';
+            settingsText.textContent = 'Desconectado — configure o Google Sheets';
         }
     }
     update.textContent = 'Atualizado: ' + new Date().toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' });
@@ -1934,10 +2123,11 @@ function saveConfig() {
     if (!url) {
         localStorage.removeItem('flowmatica_crm_url');
         webAppUrl = '';
-        status.textContent = 'URL removido. A usar dados de exemplo.';
+        status.textContent = 'URL removido. Configure o Google Sheets para ver dados reais.';
         status.style.color = '#555770';
-        currentLeads = [...DEMO_LEADS];
-        currentActivities = [...DEMO_ACTIVITIES];
+        currentLeads = [];
+        currentActivities = [];
+        currentEmails = [];
         renderAll();
         return;
     }
@@ -1953,7 +2143,9 @@ function saveConfig() {
                 webAppUrl = url;
                 currentLeads = data.leads;
                 currentActivities = data.activities;
-                status.textContent = 'Ligado com sucesso! ' + data.leads.length + ' leads carregados.';
+                if (data.emails) currentEmails = data.emails;
+                const emailCount = data.emails ? data.emails.length : 0;
+                status.textContent = 'Ligado com sucesso! ' + data.leads.length + ' leads, ' + emailCount + ' emails carregados.';
                 status.style.color = '#16a34a';
                 renderAll();
             } else {
@@ -1978,6 +2170,7 @@ function refreshData() {
         .then(data => {
             if (data.leads) currentLeads = data.leads;
             if (data.activities) currentActivities = data.activities;
+            if (data.emails) currentEmails = data.emails;
             renderAll();
         })
         .catch(err => {
