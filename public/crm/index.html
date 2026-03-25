@@ -270,7 +270,7 @@
             margin-bottom: 0.45rem;
             border: none;
             border-left: 3px solid rgba(0,0,0,0.08);
-            cursor: default;
+            cursor: pointer;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         .pipeline-card:hover {
@@ -555,7 +555,7 @@
             text-overflow: ellipsis;
             white-space: nowrap;
         }
-        tr { transition: background 0.15s ease; }
+        tr { transition: background 0.15s ease; cursor: pointer; }
         tr:hover td { background: #f5f7fa; }
         .state-badge {
             font-size: 0.7rem;
@@ -996,6 +996,220 @@
         }
         .inbox-search svg { width: 14px; height: 14px; color: #999; flex-shrink: 0; }
 
+        /* ==================== LEAD DETAIL MODAL ==================== */
+        .lead-modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1002;
+            animation: fadeIn 0.15s ease;
+        }
+        .lead-modal {
+            background: #fff;
+            border-radius: 16px;
+            width: 95%;
+            max-width: 560px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            animation: modalIn 0.2s ease;
+        }
+        .lead-modal-header {
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .lead-modal-header h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.15rem;
+        }
+        .lead-modal-header .lead-modal-sub {
+            font-size: 0.78rem;
+            color: #555770;
+        }
+        .lead-modal-close {
+            background: none;
+            border: none;
+            font-size: 1.4rem;
+            cursor: pointer;
+            color: #8b8fa3;
+            padding: 0;
+            line-height: 1;
+        }
+        .lead-modal-close:hover { color: #1a1a2e; }
+        .lead-modal-body {
+            padding: 1.25rem 1.5rem;
+        }
+        .lead-modal-section {
+            margin-bottom: 1.15rem;
+        }
+        .lead-modal-section-title {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #8b8fa3;
+            margin-bottom: 0.45rem;
+        }
+        .lead-modal-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 0.35rem;
+            align-items: center;
+        }
+        .lead-modal-label {
+            font-size: 0.78rem;
+            color: #555770;
+            min-width: 80px;
+        }
+        .lead-modal-value {
+            font-size: 0.82rem;
+            font-weight: 500;
+        }
+        .lead-modal-value a {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+        .lead-modal select {
+            padding: 0.4rem 0.65rem;
+            border: 1px solid rgba(0,0,0,0.12);
+            border-radius: 8px;
+            font-size: 0.82rem;
+            font-family: inherit;
+            outline: none;
+            cursor: pointer;
+            background: #fff;
+        }
+        .lead-modal select:focus {
+            border-color: #1d4ed8;
+            box-shadow: 0 0 0 3px rgba(29,78,216,0.1);
+        }
+        .lead-modal textarea {
+            width: 100%;
+            min-height: 70px;
+            padding: 0.5rem 0.65rem;
+            border: 1px solid rgba(0,0,0,0.12);
+            border-radius: 8px;
+            font-size: 0.82rem;
+            font-family: inherit;
+            resize: vertical;
+            outline: none;
+        }
+        .lead-modal textarea:focus {
+            border-color: #1d4ed8;
+            box-shadow: 0 0 0 3px rgba(29,78,216,0.1);
+        }
+        .lead-modal-actions {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            padding: 1rem 1.5rem;
+            border-top: 1px solid rgba(0,0,0,0.06);
+        }
+        .lead-modal-actions .modal-btn {
+            flex: 1;
+            text-align: center;
+            min-width: 100px;
+        }
+        .modal-btn.primary {
+            background: #1d4ed8;
+            color: #fff;
+        }
+        .modal-btn.primary:hover { background: #1e40af; }
+        .modal-btn.success {
+            background: #f0fdf4;
+            color: #16a34a;
+            border: 1px solid #bbf7d0;
+        }
+        .modal-btn.success:hover { background: #dcfce7; }
+        .modal-btn.danger {
+            background: #fef2f2;
+            color: #dc2626;
+            border: 1px solid #fecaca;
+        }
+        .modal-btn.danger:hover { background: #fee2e2; }
+        .lead-email-history {
+            list-style: none;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .lead-email-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            padding: 0.45rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+            font-size: 0.78rem;
+        }
+        .lead-email-item:last-child { border-bottom: none; }
+        .lead-email-dir {
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 0.1rem 0.35rem;
+            border-radius: 4px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .lead-email-dir.sent { background: #eff6ff; color: #1d4ed8; }
+        .lead-email-dir.received { background: #f0fdf4; color: #16a34a; }
+        .lead-email-info { flex: 1; min-width: 0; }
+        .lead-email-subject {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .lead-email-date { color: #8b8fa3; font-size: 0.7rem; }
+        .lead-modal-calendar {
+            display: flex;
+            gap: 0.5rem;
+            align-items: flex-end;
+        }
+        .lead-modal-calendar input {
+            padding: 0.4rem 0.65rem;
+            border: 1px solid rgba(0,0,0,0.12);
+            border-radius: 8px;
+            font-size: 0.82rem;
+            font-family: inherit;
+            outline: none;
+            flex: 1;
+        }
+        .lead-modal-calendar input:focus {
+            border-color: #1d4ed8;
+            box-shadow: 0 0 0 3px rgba(29,78,216,0.1);
+        }
+        .lead-modal-empty {
+            font-size: 0.78rem;
+            color: #8b8fa3;
+            padding: 0.5rem 0;
+        }
+        /* Card note preview on pipeline cards */
+        .card-note-preview {
+            font-size: 0.65rem;
+            color: #8b8fa3;
+            margin-top: 0.2rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .card-meeting-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.2rem;
+            font-size: 0.62rem;
+            font-weight: 600;
+            padding: 0.12rem 0.4rem;
+            border-radius: 4px;
+            background: #fffbeb;
+            color: #d97706;
+            margin-top: 0.2rem;
+        }
+
         /* Mini email widget on dashboard */
         .email-widget-item {
             display: flex; align-items: center; gap: 0.6rem;
@@ -1234,6 +1448,47 @@ let webAppUrl = localStorage.getItem('flowmatica_crm_url') || '';
 let sortCol = '';
 let sortDir = 'asc';
 
+// ==================== LOCALSTORAGE PERSISTENCE ====================
+const STATES_KEY = 'flowmatica_crm_states';
+const STATE_ORDER = ['Prospecto', 'Contactado', 'Respondeu', 'Reuniao', 'Proposta', 'Ganho', 'Perdido'];
+
+function getSavedStates() {
+    try {
+        return JSON.parse(localStorage.getItem(STATES_KEY) || '{}');
+    } catch (e) {
+        return {};
+    }
+}
+
+function saveLeadState(email, data) {
+    const states = getSavedStates();
+    states[email.toLowerCase()] = Object.assign(states[email.toLowerCase()] || {}, data);
+    localStorage.setItem(STATES_KEY, JSON.stringify(states));
+}
+
+function getLeadState(email) {
+    return getSavedStates()[(email || '').toLowerCase()] || null;
+}
+
+function applySavedStates(leads) {
+    const states = getSavedStates();
+    return leads.map(function(lead) {
+        var saved = states[(lead.email || '').toLowerCase()];
+        if (saved && saved.estado) {
+            return Object.assign({}, lead, {
+                estado: saved.estado,
+                dataAtividade: saved.dataAtividade || lead.dataAtividade
+            });
+        }
+        return lead;
+    });
+}
+
+function stateIsMoreAdvanced(a, b) {
+    // Returns true if state a is more advanced than state b
+    return STATE_ORDER.indexOf(a) > STATE_ORDER.indexOf(b);
+}
+
 // ==================== DATA FETCH ====================
 function fetchEmails() {
     return fetch('/api/crm/emails?max=50')
@@ -1265,10 +1520,22 @@ function autoDetectStatus(leads, emails) {
         }
     });
 
+    // First: apply saved states from localStorage
+    leads = applySavedStates(leads);
+
     return leads.map(function(lead) {
         var email = (lead.email || '').toLowerCase();
         var reply = inboxEmails[email];
+        var saved = getLeadState(email);
+
         if (reply) {
+            // If saved state is more advanced than "Respondeu", keep it
+            if (saved && saved.estado && stateIsMoreAdvanced(saved.estado, 'Respondeu')) {
+                return Object.assign({}, lead, {
+                    ultimaResposta: reply.date,
+                    unread: reply.unread
+                });
+            }
             return Object.assign({}, lead, {
                 estado: 'Respondeu',
                 ultimaResposta: reply.date,
@@ -1600,16 +1867,16 @@ function renderPipeline() {
             let cardActions = '';
             if (l.estado === 'Respondeu' && l.email) {
                 cardActions = `<div class="card-actions">
-                    <button class="card-btn advance" onclick="updateLeadEstado('${l.email}', 'Reuniao')">Marcar Reunião</button>
+                    <button class="card-btn advance" onclick="event.stopPropagation();updateLeadEstado('${l.email}', 'Reuniao')">Marcar Reunião</button>
                 </div>`;
             } else if (l.estado === 'Reuniao' && l.email) {
                 cardActions = `<div class="card-actions">
-                    <button class="card-btn advance" onclick="updateLeadEstado('${l.email}', 'Proposta')">Enviar Contrato</button>
+                    <button class="card-btn advance" onclick="event.stopPropagation();updateLeadEstado('${l.email}', 'Proposta')">Enviar Contrato</button>
                 </div>`;
             } else if (l.estado === 'Proposta' && l.email) {
                 cardActions = `<div class="card-actions">
-                    <button class="card-btn advance" onclick="updateLeadEstado('${l.email}', 'Ganho')">Aceite</button>
-                    <button class="card-btn lose" onclick="updateLeadEstado('${l.email}', 'Perdido')">Perdido</button>
+                    <button class="card-btn advance" onclick="event.stopPropagation();updateLeadEstado('${l.email}', 'Ganho')">Aceite</button>
+                    <button class="card-btn lose" onclick="event.stopPropagation();updateLeadEstado('${l.email}', 'Perdido')">Perdido</button>
                 </div>`;
             }
 
@@ -1618,11 +1885,23 @@ function renderPipeline() {
                 ? `<div class="card-urgent-tag">&#9888; Contrato por enviar</div>`
                 : '';
 
-            html += `<div class="pipeline-card">
+            // Note preview and meeting badge from localStorage
+            const savedState = getLeadState(l.email);
+            const notePreview = savedState && savedState.notas
+                ? `<div class="card-note-preview" title="${escapeHtml(savedState.notas)}">&#9998; ${escapeHtml(savedState.notas)}</div>`
+                : '';
+            const meetingBadge = savedState && savedState.dataReuniao
+                ? `<div class="card-meeting-badge">&#128197; ${new Date(savedState.dataReuniao).toLocaleDateString('pt-PT', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}</div>`
+                : '';
+
+            const safeEmail = l.email.replace(/'/g, "\\'");
+            html += `<div class="pipeline-card" onclick="openLeadModal('${safeEmail}')">
                 ${urgentTag}
                 <div class="card-name">${l.empresa}</div>
                 <div class="card-sector">${l.setor}</div>
                 ${valueStr ? `<div class="card-value">${valueStr}</div>` : ''}
+                ${notePreview}
+                ${meetingBadge}
                 <div class="card-footer">
                     <span class="date-relative" title="${l.dataAtividade || ''}">${timeAgo(l.dataAtividade)}</span>
                     <span class="card-avatar ${avatarClass}">${avatar}</span>
@@ -1788,32 +2067,21 @@ function renderAlerts() {
 }
 
 function navigateToLead(empresa) {
-    // Switch to Leads tab
+    const lead = currentLeads.find(l => l.empresa === empresa);
+    if (lead) {
+        openLeadModal(lead.email);
+        return;
+    }
+    // Fallback: switch to leads tab filtered
     document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
     document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
     document.querySelector('.nav-tab[data-tab="leads"]').classList.add('active');
     document.getElementById('tab-leads').classList.add('active');
-
-    // Set search to empresa name
-    const searchInput = document.getElementById('searchInput');
-    searchInput.value = empresa;
-    // Reset filters
+    document.getElementById('searchInput').value = empresa;
     document.getElementById('filterState').value = '';
     document.getElementById('filterSetor').value = '';
     document.getElementById('filterResp').value = '';
     renderLeadsTable();
-
-    // Highlight the row briefly
-    setTimeout(() => {
-        const rows = document.querySelectorAll('#leadsTableBody tr');
-        rows.forEach(row => {
-            if (row.cells[0] && row.cells[0].textContent === empresa) {
-                row.style.background = 'rgba(29,78,216,0.08)';
-                row.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                setTimeout(() => row.style.background = '', 2000);
-            }
-        });
-    }, 100);
 }
 
 // ==================== SECTOR CHART ====================
@@ -1941,23 +2209,24 @@ function renderLeadsTable() {
         }
 
         // Action buttons per state
+        const safeEmail = l.email.replace(/'/g, "\\'");
         let actionsHtml = '';
         if (l.estado === 'Respondeu') {
             actionsHtml = `<div class="action-group">
-                <button class="btn-action advance" onclick="updateLeadEstado('${l.email}', 'Reuniao', this)">Marcar Reunião</button>
+                <button class="btn-action advance" onclick="event.stopPropagation();updateLeadEstado('${safeEmail}', 'Reuniao', this)">Marcar Reunião</button>
             </div>`;
         } else if (l.estado === 'Reuniao') {
             actionsHtml = `<div class="action-group">
-                <button class="btn-action advance" onclick="updateLeadEstado('${l.email}', 'Proposta', this)">Contrato Enviado</button>
+                <button class="btn-action advance" onclick="event.stopPropagation();updateLeadEstado('${safeEmail}', 'Proposta', this)">Contrato Enviado</button>
             </div>`;
         } else if (l.estado === 'Proposta') {
             actionsHtml = `<div class="action-group">
-                <button class="btn-action advance" onclick="updateLeadEstado('${l.email}', 'Ganho', this)">Aceite ✓</button>
-                <button class="btn-action lose" onclick="updateLeadEstado('${l.email}', 'Perdido', this)">Perdido ✗</button>
+                <button class="btn-action advance" onclick="event.stopPropagation();updateLeadEstado('${safeEmail}', 'Ganho', this)">Aceite ✓</button>
+                <button class="btn-action lose" onclick="event.stopPropagation();updateLeadEstado('${safeEmail}', 'Perdido', this)">Perdido ✗</button>
             </div>`;
         }
 
-        return `<tr>
+        return `<tr onclick="openLeadModal('${safeEmail}')">
             <td title="${l.empresa}">${l.empresa}</td>
             <td>${l.setor}</td>
             <td>${l.email}</td>
@@ -1997,6 +2266,12 @@ function executeEstadoUpdate(email, novoEstado) {
     const estadoLabels = { Reuniao: 'Reunião', Proposta: 'Proposta Enviada', Ganho: 'Fechado', Perdido: 'Perdido' };
     lead.estado = novoEstado;
     lead.dataAtividade = new Date().toISOString().split('T')[0];
+
+    // Persist to localStorage
+    saveLeadState(email, {
+        estado: novoEstado,
+        dataAtividade: lead.dataAtividade
+    });
 
     // Add local activity
     currentActivities.unshift({
@@ -2252,6 +2527,241 @@ function refreshData() {
         .catch(err => {
             console.error('Refresh failed:', err);
         });
+}
+
+// ==================== LEAD DETAIL MODAL ====================
+function openLeadModal(email) {
+    const lead = currentLeads.find(l => l.email === email);
+    if (!lead) return;
+
+    const saved = getLeadState(email) || {};
+    const notas = saved.notas || '';
+    const dataReuniao = saved.dataReuniao || '';
+
+    // Find related emails
+    const leadEmailAddr = (lead.email || '').toLowerCase();
+    const relatedEmails = currentEmails.filter(e => {
+        const from = (e.from || '').toLowerCase();
+        return from.includes(leadEmailAddr) || (e.to && e.to.toLowerCase().includes(leadEmailAddr));
+    });
+
+    // Build email history HTML
+    let emailHistoryHtml = '';
+    if (relatedEmails.length > 0) {
+        emailHistoryHtml = relatedEmails.map(e => {
+            const fromAddr = (e.from || '').toLowerCase();
+            const isSent = fromAddr.includes('flowmaticpt@gmail.com') || fromAddr.includes('geral@flowmatica.pt');
+            const dirClass = isSent ? 'sent' : 'received';
+            const dirLabel = isSent ? 'Enviado' : 'Recebido';
+            const dateObj = new Date(e.date);
+            const dateStr = dateObj.toLocaleDateString('pt-PT', { day: 'numeric', month: 'short' }) +
+                ' ' + dateObj.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' });
+            return `<li class="lead-email-item">
+                <span class="lead-email-dir ${dirClass}">${dirLabel}</span>
+                <div class="lead-email-info">
+                    <div class="lead-email-subject">${escapeHtml(e.subject || '(sem assunto)')}</div>
+                    <div class="lead-email-date">${dateStr}</div>
+                </div>
+            </li>`;
+        }).join('');
+    } else {
+        emailHistoryHtml = '<div class="lead-modal-empty">Nenhum email encontrado para esta lead.</div>';
+    }
+
+    // State dropdown options
+    const stateOptions = STATE_ORDER.map(s => {
+        const label = s === 'Reuniao' ? 'Reunião' : s;
+        const selected = s === lead.estado ? ' selected' : '';
+        return `<option value="${s}"${selected}>${label}</option>`;
+    }).join('');
+
+    const overlay = document.createElement('div');
+    overlay.className = 'lead-modal-overlay';
+    overlay.innerHTML = `
+        <div class="lead-modal">
+            <div class="lead-modal-header">
+                <div>
+                    <h2>${escapeHtml(lead.empresa)}</h2>
+                    <div class="lead-modal-sub">${escapeHtml(lead.setor)} · ${escapeHtml(lead.localizacao || '—')}</div>
+                </div>
+                <button class="lead-modal-close" id="leadModalClose">&times;</button>
+            </div>
+            <div class="lead-modal-body">
+                <div class="lead-modal-section">
+                    <div class="lead-modal-section-title">Estado</div>
+                    <select id="leadModalEstado">${stateOptions}</select>
+                </div>
+
+                <div class="lead-modal-section">
+                    <div class="lead-modal-section-title">Contacto</div>
+                    <div class="lead-modal-row">
+                        <span class="lead-modal-label">Email</span>
+                        <span class="lead-modal-value"><a href="mailto:${escapeHtml(lead.email)}">${escapeHtml(lead.email)}</a></span>
+                    </div>
+                    ${lead.telefone ? `<div class="lead-modal-row">
+                        <span class="lead-modal-label">Telefone</span>
+                        <span class="lead-modal-value"><a href="tel:${escapeHtml(lead.telefone)}">${escapeHtml(lead.telefone)}</a></span>
+                    </div>` : ''}
+                    ${lead.responsavel ? `<div class="lead-modal-row">
+                        <span class="lead-modal-label">Responsável</span>
+                        <span class="lead-modal-value">${escapeHtml(lead.responsavel)}</span>
+                    </div>` : ''}
+                </div>
+
+                <div class="lead-modal-section">
+                    <div class="lead-modal-section-title">Datas</div>
+                    <div class="lead-modal-row">
+                        <span class="lead-modal-label">1.º Contacto</span>
+                        <span class="lead-modal-value">${lead.contactado || lead.dataContacto || '—'}</span>
+                    </div>
+                    ${lead.ultimaResposta ? `<div class="lead-modal-row">
+                        <span class="lead-modal-label">Resposta</span>
+                        <span class="lead-modal-value">${new Date(lead.ultimaResposta).toLocaleDateString('pt-PT')}</span>
+                    </div>` : ''}
+                    <div class="lead-modal-row">
+                        <span class="lead-modal-label">Últ. Atividade</span>
+                        <span class="lead-modal-value">${lead.dataAtividade || '—'}</span>
+                    </div>
+                </div>
+
+                <div class="lead-modal-section">
+                    <div class="lead-modal-section-title">Agendar Reunião</div>
+                    <div class="lead-modal-calendar">
+                        <input type="datetime-local" id="leadModalReuniao" value="${dataReuniao}">
+                        <button class="modal-btn primary" id="leadModalCalendarBtn" style="white-space:nowrap;">Criar Evento</button>
+                    </div>
+                </div>
+
+                <div class="lead-modal-section">
+                    <div class="lead-modal-section-title">Notas</div>
+                    <textarea id="leadModalNotas" placeholder="Adicionar notas sobre esta lead...">${escapeHtml(notas)}</textarea>
+                </div>
+
+                <div class="lead-modal-section">
+                    <div class="lead-modal-section-title">Histórico de Emails</div>
+                    <ul class="lead-email-history">${emailHistoryHtml}</ul>
+                </div>
+            </div>
+            <div class="lead-modal-actions">
+                ${lead.estado !== 'Ganho' && lead.estado !== 'Perdido' ? `
+                <button class="modal-btn success" id="leadModalAdvance">Avançar &#9654;</button>
+                <button class="modal-btn danger" id="leadModalLose">Perdido &#10007;</button>
+                ` : ''}
+                <button class="modal-btn cancel" id="leadModalCancel">Fechar</button>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(overlay);
+
+    // Event: close
+    const closeModal = () => {
+        // Save notas before closing
+        const notasVal = document.getElementById('leadModalNotas').value;
+        const reuniaoVal = document.getElementById('leadModalReuniao').value;
+        saveLeadState(email, { notas: notasVal, dataReuniao: reuniaoVal });
+        overlay.remove();
+    };
+    overlay.querySelector('#leadModalClose').onclick = closeModal;
+    overlay.querySelector('#leadModalCancel').onclick = closeModal;
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
+
+    // Event: state change
+    overlay.querySelector('#leadModalEstado').onchange = function() {
+        const novoEstado = this.value;
+        if (novoEstado !== lead.estado) {
+            if (novoEstado === 'Perdido') {
+                confirmAction(
+                    'Marcar como perdido?',
+                    `Tens a certeza que queres marcar <strong>${lead.empresa}</strong> como perdido?`,
+                    () => { executeEstadoUpdate(email, novoEstado); overlay.remove(); }
+                );
+                this.value = lead.estado; // revert select until confirmed
+            } else {
+                executeEstadoUpdate(email, novoEstado);
+                overlay.remove();
+            }
+        }
+    };
+
+    // Event: advance
+    const advanceBtn = overlay.querySelector('#leadModalAdvance');
+    if (advanceBtn) {
+        advanceBtn.onclick = () => {
+            // Save notas first
+            const notasVal = document.getElementById('leadModalNotas').value;
+            saveLeadState(email, { notas: notasVal });
+            const idx = STATE_ORDER.indexOf(lead.estado);
+            // Skip to next non-terminal state
+            let nextState = STATE_ORDER[idx + 1];
+            if (nextState === 'Perdido') nextState = 'Ganho'; // advance goes to Ganho, not Perdido
+            if (nextState) {
+                executeEstadoUpdate(email, nextState);
+                overlay.remove();
+            }
+        };
+    }
+
+    // Event: lose
+    const loseBtn = overlay.querySelector('#leadModalLose');
+    if (loseBtn) {
+        loseBtn.onclick = () => {
+            const notasVal = document.getElementById('leadModalNotas').value;
+            saveLeadState(email, { notas: notasVal });
+            confirmAction(
+                'Marcar como perdido?',
+                `Tens a certeza que queres marcar <strong>${lead.empresa}</strong> como perdido?`,
+                () => { executeEstadoUpdate(email, 'Perdido'); overlay.remove(); }
+            );
+        };
+    }
+
+    // Event: calendar
+    overlay.querySelector('#leadModalCalendarBtn').onclick = () => {
+        const reuniaoDate = document.getElementById('leadModalReuniao').value;
+        if (!reuniaoDate) {
+            showToast('Seleciona uma data e hora para a reunião', 'error');
+            return;
+        }
+        createCalendarEvent(lead, reuniaoDate, overlay);
+    };
+}
+
+// ==================== GOOGLE CALENDAR ====================
+function createCalendarEvent(lead, dateTimeStr, modalOverlay) {
+    const btn = document.getElementById('leadModalCalendarBtn');
+    if (btn) { btn.disabled = true; btn.textContent = 'A criar...'; }
+
+    fetch('/api/crm/calendar', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            summary: `Reunião — ${lead.empresa}`,
+            description: `Lead: ${lead.empresa}\nSetor: ${lead.setor}\nEmail: ${lead.email}\nLocal: ${lead.localizacao || '—'}`,
+            dateTime: dateTimeStr,
+            durationMinutes: 60,
+        }),
+    })
+    .then(r => r.json())
+    .then(data => {
+        if (data.error) {
+            showToast('Erro Calendar: ' + data.error, 'error');
+            if (btn) { btn.disabled = false; btn.textContent = 'Criar Evento'; }
+            return;
+        }
+        // Save meeting date
+        saveLeadState(lead.email, { dataReuniao: dateTimeStr });
+        // Move to Reunião if not already past it
+        if (!stateIsMoreAdvanced(lead.estado, 'Reuniao') && lead.estado !== 'Reuniao') {
+            executeEstadoUpdate(lead.email, 'Reuniao');
+        }
+        showToast(`Reunião criada: ${lead.empresa}`, 'success');
+        if (modalOverlay) modalOverlay.remove();
+    })
+    .catch(err => {
+        showToast('Erro ao criar evento: ' + err.message, 'error');
+        if (btn) { btn.disabled = false; btn.textContent = 'Criar Evento'; }
+    });
 }
 </script>
 
