@@ -72,6 +72,14 @@ export function Navbar() {
                 EscolaFlow
               </a>
             </li>
+            <li>
+              <a
+                href="/crm/"
+                className="text-flow-white70 no-underline text-[0.82rem] font-medium transition-colors hover:text-white"
+              >
+                CRM
+              </a>
+            </li>
           </ul>
           <a
             href="#contacto"
@@ -121,6 +129,14 @@ export function Navbar() {
                   className="text-orange-400 no-underline text-[0.82rem] font-medium transition-colors hover:text-orange-300"
                 >
                   EscolaFlow
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/crm/"
+                  className="text-flow-white70 no-underline text-[0.82rem] font-medium transition-colors hover:text-white"
+                >
+                  CRM
                 </a>
               </li>
             </ul>
