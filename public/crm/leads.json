@@ -1,0 +1,4718 @@
+[
+  {
+    "empresa": "Integralis Clinic",
+    "setor": "Clínica Dentária",
+    "email": "geral@integralisclinic.pt",
+    "telefone": "911 068 517",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 12:45",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Dentária Dr. José Vasconcelos Tavares",
+    "setor": "Clínica Dentária",
+    "email": "info@clinicajavt.pt",
+    "telefone": "218 513 482",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 12:46",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "SpotClinic",
+    "setor": "Clínica Dentária",
+    "email": "info@spotclinic.pt",
+    "telefone": "214 072 407",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 12:47",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Médica e Dentária do Lumiar",
+    "setor": "Clínica Dentária",
+    "email": "geral@clinicadolumiar.com",
+    "telefone": "217 591 887",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 12:48",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clinical Dent Institute",
+    "setor": "Clínica Dentária",
+    "email": "info@clinicaldent.pt",
+    "telefone": "218 260 315",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 12:49",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "CMDP Centro de Medicina Dentária do Porto",
+    "setor": "Clínica Dentária",
+    "email": "c.m.dentaria.porto@gmail.com",
+    "telefone": "226 005 815",
+    "localizacao": "Porto",
+    "contactado": "2026-03-13 12:50",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "SA-Contabilidade",
+    "setor": "Contabilidade",
+    "email": "geral@sa-contabilidade.pt",
+    "telefone": "",
+    "localizacao": "Porto",
+    "contactado": "2026-03-13 12:51",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Contafidoc",
+    "setor": "Contabilidade",
+    "email": "geral@contafidoc.pt",
+    "telefone": "",
+    "localizacao": "Portugal",
+    "contactado": "2026-03-13 12:53",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "IMPECLimpa",
+    "setor": "Empresa de Limpeza",
+    "email": "geral@impeclimpa.pt",
+    "telefone": "964 557 746",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 12:54",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Gotalimpa",
+    "setor": "Empresa de Limpeza",
+    "email": "geral@gotalimpa.com",
+    "telefone": "",
+    "localizacao": "Portugal",
+    "contactado": "2026-03-13 12:55",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Tualimpa",
+    "setor": "Empresa de Limpeza",
+    "email": "geral@tualimpa.pt",
+    "telefone": "",
+    "localizacao": "Mirandela",
+    "contactado": "2026-03-13 12:57",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clean Organizer",
+    "setor": "Empresa de Limpeza",
+    "email": "geral@cleanorganizer.com",
+    "telefone": "",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 12:58",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "SuperLimpa",
+    "setor": "Empresa de Limpeza",
+    "email": "geral@superlimpa.pt",
+    "telefone": "",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 12:59",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Eleven Restaurant",
+    "setor": "Restaurante",
+    "email": "11@restauranteleven.com",
+    "telefone": "213 862 211",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 13:01",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Martinho da Arcada",
+    "setor": "Restaurante",
+    "email": "martinhodaarcada@sapo.pt",
+    "telefone": "218 879 259",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 13:02",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Lisboa à Noite",
+    "setor": "Restaurante",
+    "email": "info@lisboanoite.com",
+    "telefone": "213 468 557",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 13:03",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Ostras e Coisas",
+    "setor": "Restaurante",
+    "email": "geral@ostrasecoisas.pt",
+    "telefone": "",
+    "localizacao": "Porto",
+    "contactado": "2026-03-13 13:04",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Cateringpor",
+    "setor": "Catering",
+    "email": "geral@cateringpor.pt",
+    "telefone": "218 547 100",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:00",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Casa da Comida",
+    "setor": "Catering",
+    "email": "comercial@casadacomida.pt",
+    "telefone": "218 115 020",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 13:22",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Masstige Catering",
+    "setor": "Catering",
+    "email": "catering@masstige.pt",
+    "telefone": "913 788 978",
+    "localizacao": "Portugal",
+    "contactado": "2026-03-13 13:24",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "InsideOut Porto",
+    "setor": "Catering",
+    "email": "geral@insideoutporto.pt",
+    "telefone": "",
+    "localizacao": "Porto",
+    "contactado": "2026-03-13 13:25",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Pinto Lopes Viagens",
+    "setor": "Agência de Viagens",
+    "email": "geral@pintolopesviagens.com",
+    "telefone": "",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 13:26",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Space Viagens",
+    "setor": "Agência de Viagens",
+    "email": "space@spaceviagens.pt",
+    "telefone": "253 776 340",
+    "localizacao": "Braga",
+    "contactado": "2026-03-13 13:28",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Tours & Destinos",
+    "setor": "Agência de Viagens",
+    "email": "geral@toursedestinos.pt",
+    "telefone": "221 450 350",
+    "localizacao": "Porto",
+    "contactado": "2026-03-13 13:29",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Flores no Cais",
+    "setor": "Florista",
+    "email": "geral@floresnocais.pt",
+    "telefone": "924 701 603",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 13:30",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "A Florista Lisboa",
+    "setor": "Florista",
+    "email": "contacto@aflorista.pt",
+    "telefone": "935 722 076",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 13:31",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "WASHOUSE",
+    "setor": "Lavandaria",
+    "email": "geral@washouse.pt",
+    "telefone": "226 090 332",
+    "localizacao": "Porto",
+    "contactado": "2026-03-13 13:32",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Alvorada Lavandarias",
+    "setor": "Lavandaria",
+    "email": "geral@alvorada-lavandarias.com",
+    "telefone": "",
+    "localizacao": "Portugal",
+    "contactado": "2026-03-13 13:33",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Padaria Panisal",
+    "setor": "Padaria/Pastelaria",
+    "email": "geral@padariapanisal.pt",
+    "telefone": "212 243 613",
+    "localizacao": "Seixal",
+    "contactado": "2026-03-13 13:34",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Villa Três",
+    "setor": "Padaria/Pastelaria",
+    "email": "geral@villatres.pt",
+    "telefone": "215 863 474",
+    "localizacao": "Seixal",
+    "contactado": "2026-03-13 13:35",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Farmácia Portugal",
+    "setor": "Farmácia",
+    "email": "geral@farmaciaportugal.pt",
+    "telefone": "265 539 060",
+    "localizacao": "Setúbal",
+    "contactado": "2026-03-13 13:36",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Elo Farma",
+    "setor": "Rede de Farmácias",
+    "email": "geral@elofarma.com",
+    "telefone": "961 182 825",
+    "localizacao": "Portugal",
+    "contactado": "2026-03-13 13:37",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Nuno e Pereira Construção",
+    "setor": "Construção Civil",
+    "email": "geral@nunoepereira.pt",
+    "telefone": "258 762 037",
+    "localizacao": "Portugal",
+    "contactado": "2026-03-13 13:38",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "MRT Engenharia e Construção",
+    "setor": "Construção Civil",
+    "email": "geral@mrt.pt",
+    "telefone": "917 388 258",
+    "localizacao": "Portugal",
+    "contactado": "2026-03-13 13:39",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Niceastro",
+    "setor": "Construção Civil",
+    "email": "geral@niceastro.com",
+    "telefone": "",
+    "localizacao": "Portugal",
+    "contactado": "2026-03-13 13:40",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "SOC Segurança Privada",
+    "setor": "Segurança",
+    "email": "geral@soc.com.pt",
+    "telefone": "218 209 979",
+    "localizacao": "Cascais",
+    "contactado": "2026-03-13 13:41",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Ronsegur",
+    "setor": "Segurança",
+    "email": "geral@ronsegur.pt",
+    "telefone": "229 765 710",
+    "localizacao": "Portugal",
+    "contactado": "2026-03-13 13:43",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "GIS Segurança Privada",
+    "setor": "Segurança",
+    "email": "geral@gissegur.com",
+    "telefone": "227 831 803",
+    "localizacao": "Vila Nova de Gaia",
+    "contactado": "2026-03-13 13:44",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escolas de Condução Grupo MGA",
+    "setor": "Escola de Condução",
+    "email": "geral@escolasmga.pt",
+    "telefone": "238 609 505",
+    "localizacao": "Oliveira do Hospital",
+    "contactado": "2026-03-13 13:45",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Ecodrive",
+    "setor": "Escola de Condução",
+    "email": "geral@ecodrive.pt",
+    "telefone": "",
+    "localizacao": "Portugal",
+    "contactado": "2026-03-13 13:46",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Oficina do Condutor",
+    "setor": "Escola de Condução",
+    "email": "geral@oficinadocondutor.pt",
+    "telefone": "224 016 906",
+    "localizacao": "Matosinhos",
+    "contactado": "2026-03-13 13:47",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Prodígio",
+    "setor": "Escola de Condução",
+    "email": "geral@ecprodigio.pt",
+    "telefone": "223 166 109",
+    "localizacao": "Vila Nova de Gaia",
+    "contactado": "2026-03-13 13:49",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Santarém",
+    "setor": "Escola de Condução",
+    "email": "geral@ecsantarem.com",
+    "telefone": "243 372 579",
+    "localizacao": "Santarém",
+    "contactado": "2026-03-13 13:50",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Paranhos",
+    "setor": "Escola de Condução",
+    "email": "geral@ecparanhos.com",
+    "telefone": "914 876 879",
+    "localizacao": "Porto",
+    "contactado": "2026-03-13 13:51",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Veterinária do Campo Alegre",
+    "setor": "Clínica Veterinária",
+    "email": "geral@vetcampoalegre.com",
+    "telefone": "226 161 284",
+    "localizacao": "Porto",
+    "contactado": "2026-03-13 13:52",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Veterinária de Vilamoura",
+    "setor": "Clínica Veterinária",
+    "email": "info@clinicaveterinaria.pt",
+    "telefone": "289 312 709",
+    "localizacao": "Vilamoura",
+    "contactado": "2026-03-13 13:53",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Ginásios Da Vinci",
+    "setor": "Centro de Explicações",
+    "email": "ginasios@davinci.com.pt",
+    "telefone": "289 108 105",
+    "localizacao": "Portugal",
+    "contactado": "2026-03-13 13:54",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Ginásios Da Vinci Campo de Ourique",
+    "setor": "Centro de Explicações",
+    "email": "lx-campodeourique@davinci.edu.pt",
+    "telefone": "968 818 684",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 13:55",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "AFID Green",
+    "setor": "Jardinagem",
+    "email": "geral@afidgreen.pt",
+    "telefone": "",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-13 13:56",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Jardíssimo",
+    "setor": "Jardinagem",
+    "email": "geral@jardissimo.pt",
+    "telefone": "",
+    "localizacao": "Algarve",
+    "contactado": "2026-03-13 13:57",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Portuense",
+    "setor": "Escola de Condução",
+    "email": "info@portuense.net",
+    "telefone": "222 052 072",
+    "localizacao": "Porto",
+    "contactado": "2026-03-15 23:01",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Briosa",
+    "setor": "Escola de Condução",
+    "email": "mail@ecbriosa.com",
+    "telefone": "239 401 452",
+    "localizacao": "Coimbra",
+    "contactado": "2026-03-15 23:03",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC São Lázaro",
+    "setor": "Escola de Condução",
+    "email": "geral@escolasaolazaro.pt",
+    "telefone": "218 885 254",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:03",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Segurança Máxima",
+    "setor": "Escola de Condução",
+    "email": "geral@gruposegurancamaxima.com",
+    "telefone": "800 200 530",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:05",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC A Minhota",
+    "setor": "Escola de Condução",
+    "email": "info@ec-aminhota.pt",
+    "telefone": "253 279 990",
+    "localizacao": "Braga",
+    "contactado": "2026-03-15 23:06",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Alta Cilindrada",
+    "setor": "Escola de Condução",
+    "email": "geral@altacilindrada.pt",
+    "telefone": "234 138 671",
+    "localizacao": "Aveiro",
+    "contactado": "2026-03-15 23:06",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC HL Faro",
+    "setor": "Escola de Condução",
+    "email": "info@escola-hl.pt",
+    "telefone": "289 821 921",
+    "localizacao": "Faro",
+    "contactado": "2026-03-15 23:08",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Estrada Segura",
+    "setor": "Escola de Condução",
+    "email": "ecestrada.segura@gmail.com",
+    "telefone": "232 432 844",
+    "localizacao": "Viseu",
+    "contactado": "2026-03-15 23:09",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC IDAL",
+    "setor": "Escola de Condução",
+    "email": "geral@idal.pt",
+    "telefone": "218 485 588",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:10",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Esteves",
+    "setor": "Escola de Condução",
+    "email": "escola.esteves@gmail.com",
+    "telefone": "244 882 600",
+    "localizacao": "Leiria",
+    "contactado": "2026-03-15 23:11",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Caldas",
+    "setor": "Escola de Condução",
+    "email": "info@eccaldas.pt",
+    "telefone": "262 877 371",
+    "localizacao": "Caldas da Rainha",
+    "contactado": "2026-03-15 23:12",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Costa Azul",
+    "setor": "Escola de Condução",
+    "email": "esccondcostaazul@hotmail.com",
+    "telefone": "212 120 605",
+    "localizacao": "Setúbal",
+    "contactado": "2026-03-15 23:14",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Sameiro",
+    "setor": "Escola de Condução",
+    "email": "secretaria@escoladeconducaosameiro.com",
+    "telefone": "966 301 137",
+    "localizacao": "Braga",
+    "contactado": "2026-03-15 23:14",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Academia do Volante",
+    "setor": "Escola de Condução",
+    "email": "geral@academiadovolante.pt",
+    "telefone": "289 863 281",
+    "localizacao": "Faro",
+    "contactado": "2026-03-15 23:16",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Inovaguima",
+    "setor": "Escola de Condução",
+    "email": "geral@inovaguima.pt",
+    "telefone": "253 773 873",
+    "localizacao": "Guimarães",
+    "contactado": "2026-03-15 23:17",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Centro Fisioterapia Lisboa",
+    "setor": "Clínica de Fisioterapia",
+    "email": "geral@centrofisioterapialisboa.pt",
+    "telefone": "933 028 449",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:18",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Physiokinesis",
+    "setor": "Clínica de Fisioterapia",
+    "email": "geral@physiokinesis.pt",
+    "telefone": "211 316 703",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:19",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Fisio Roma",
+    "setor": "Clínica de Fisioterapia",
+    "email": "fisioroma@fisioroma.pt",
+    "telefone": "213 526 014",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:20",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Com Corpus",
+    "setor": "Clínica de Fisioterapia",
+    "email": "info@comcorpus.pt",
+    "telefone": "214 010 733",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:21",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "PhysioHub",
+    "setor": "Clínica de Fisioterapia",
+    "email": "geral@physiohub.pt",
+    "telefone": "211 620 200",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:23",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Facto Hair",
+    "setor": "Cabeleireiro",
+    "email": "info@factohair.com",
+    "telefone": "213 478 821",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:24",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Studio Fio de Ouro",
+    "setor": "Cabeleireiro",
+    "email": "fiodeouro@outlook.pt",
+    "telefone": "930 440 140",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:25",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Barbearia O Corvo",
+    "setor": "Barbearia",
+    "email": "ocorvolisboa@gmail.com",
+    "telefone": "934 110 539",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:27",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Barbearia Reis",
+    "setor": "Barbearia",
+    "email": "geral@barbeariareis.pt",
+    "telefone": "218 064 360",
+    "localizacao": "Montijo",
+    "contactado": "2026-03-15 23:28",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Labirinto dos Caracóis",
+    "setor": "Cabeleireiro",
+    "email": "labirintodoscaracois@gmail.com",
+    "telefone": "228 325 766",
+    "localizacao": "Porto",
+    "contactado": "2026-03-15 23:29",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Vitacentro Estética",
+    "setor": "Centro de Estética",
+    "email": "clisboa@vitacentro.com",
+    "telefone": "218 446 644",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:30",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "SensiSpa",
+    "setor": "Centro de Estética",
+    "email": "marketing@sensispa.pt",
+    "telefone": "253 215 019",
+    "localizacao": "Braga",
+    "contactado": "2026-03-15 23:32",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "TISCHA Centro de Estética",
+    "setor": "Centro de Estética",
+    "email": "centroesteticatischa@hotmail.com",
+    "telefone": "253 297 743",
+    "localizacao": "Braga",
+    "contactado": "2026-03-15 23:33",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Blossom Clinic",
+    "setor": "Centro de Estética",
+    "email": "info@blossomclinic.pt",
+    "telefone": "",
+    "localizacao": "Braga",
+    "contactado": "2026-03-15 23:34",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Avenue Clinic",
+    "setor": "Centro de Estética",
+    "email": "info@avenue.clinic",
+    "telefone": "919 992 774",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:36",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Psinove",
+    "setor": "Clínica de Psicologia",
+    "email": "contacto@psinove.com",
+    "telefone": "211 327 638",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:37",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Oficina de Psicologia",
+    "setor": "Clínica de Psicologia",
+    "email": "contacto@oficinadepsicologia.com",
+    "telefone": "220 973 751",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:38",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Privada do Porto",
+    "setor": "Clínica de Psicologia",
+    "email": "geral@clinicaprivadaporto.pt",
+    "telefone": "961 036 860",
+    "localizacao": "Porto",
+    "contactado": "2026-03-15 23:39",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Espaço Psicológico",
+    "setor": "Clínica de Psicologia",
+    "email": "espacopsicologico@gmail.com",
+    "telefone": "961 844 043",
+    "localizacao": "Coimbra",
+    "contactado": "2026-03-15 23:41",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "O Teu Lugar",
+    "setor": "Clínica de Psicologia",
+    "email": "geral@oteulugar.pt",
+    "telefone": "910 513 839",
+    "localizacao": "Coimbra",
+    "contactado": "2026-03-15 23:42",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "FlexGym",
+    "setor": "Ginásio",
+    "email": "geral@flexgym.pt",
+    "telefone": "253 264 628",
+    "localizacao": "Braga",
+    "contactado": "2026-03-15 23:43",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Gym Tónico Wellness Center",
+    "setor": "Ginásio",
+    "email": "geral@gymtonico.com",
+    "telefone": "253 263 004",
+    "localizacao": "Braga",
+    "contactado": "2026-03-15 23:45",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Knock-Out Health Club",
+    "setor": "Ginásio",
+    "email": "geral@ko-healthclub.com",
+    "telefone": "234 381 188",
+    "localizacao": "Aveiro",
+    "contactado": "2026-03-15 23:46",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Gim Line",
+    "setor": "Ginásio",
+    "email": "ginasiogimline@sapo.pt",
+    "telefone": "234 383 689",
+    "localizacao": "Aveiro",
+    "contactado": "2026-03-15 23:47",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Dynamic Fitness",
+    "setor": "Ginásio",
+    "email": "dynamicfitnessfaro@gmail.com",
+    "telefone": "963 773 733",
+    "localizacao": "Faro",
+    "contactado": "2026-03-15 23:48",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "António Saraiva Lda",
+    "setor": "Oficina Auto",
+    "email": "comercial.antoniosaraiva@gmail.com",
+    "telefone": "239 722 087",
+    "localizacao": "Coimbra",
+    "contactado": "2026-03-15 23:49",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Auto-Nogueira",
+    "setor": "Oficina Auto",
+    "email": "geral@autonogueira.pt",
+    "telefone": "253 674 078",
+    "localizacao": "Braga",
+    "contactado": "2026-03-15 23:50",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Popgare 2.0",
+    "setor": "Oficina Auto",
+    "email": "geral@popgare.pt",
+    "telefone": "253 694 854",
+    "localizacao": "Braga",
+    "contactado": "2026-03-15 23:51",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "LX Auto",
+    "setor": "Oficina Auto",
+    "email": "lx.auto@sapo.pt",
+    "telefone": "217 570 075",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:52",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Pereira & Gago",
+    "setor": "Oficina Auto",
+    "email": "geral@pereiraegago.pt",
+    "telefone": "281 326 628",
+    "localizacao": "Tavira",
+    "contactado": "2026-03-15 23:53",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Dance Spot",
+    "setor": "Escola de Dança",
+    "email": "geral@dancespot.pt",
+    "telefone": "214 003 877",
+    "localizacao": "Lisboa",
+    "contactado": "2026-03-15 23:55",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Backstage Escola de Dança",
+    "setor": "Escola de Dança",
+    "email": "escola@backstage.com.pt",
+    "telefone": "929 262 416",
+    "localizacao": "Braga",
+    "contactado": "2026-03-15 23:56",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Combo Escola de Música",
+    "setor": "Escola de Música",
+    "email": "geral@combomusic.pt",
+    "telefone": "964 910 989",
+    "localizacao": "Porto",
+    "contactado": "2026-03-15 23:57",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Música Santa Cecília",
+    "setor": "Escola de Música",
+    "email": "escola@musicasantacecilia.net",
+    "telefone": "225 488 003",
+    "localizacao": "Porto",
+    "contactado": "2026-03-15 23:58",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Academia Luísa Todi",
+    "setor": "Escola de Música",
+    "email": "luisatodi.academia@gmail.com",
+    "telefone": "265 522 563",
+    "localizacao": "Setúbal",
+    "contactado": "2026-03-15 23:59",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Big R Condomínios",
+    "setor": "",
+    "email": "geral.condominio@bigr.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 15:41",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Focovertical",
+    "setor": "",
+    "email": "geral@focovertical.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 15:44",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Lispátios",
+    "setor": "",
+    "email": "geral@lispatios.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 15:45",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Casa da Porteira",
+    "setor": "",
+    "email": "atendimento@casadaporteira.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 15:47",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Monte Olimpo",
+    "setor": "",
+    "email": "geral@monteolimpo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 15:48",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "FAS Maia",
+    "setor": "",
+    "email": "geral@fasmaia.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 15:49",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Predicado",
+    "setor": "",
+    "email": "geral@predicado.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 15:49",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Maxidominios",
+    "setor": "",
+    "email": "geral@maxidominios.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 15:51",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "CCN Condomínios",
+    "setor": "",
+    "email": "geral@ccn.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 15:52",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "GesCondomínios",
+    "setor": "",
+    "email": "geral@gescondominios.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 15:53",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Adminova",
+    "setor": "",
+    "email": "geral@adminova.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 15:54",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Lisboa Condomínios",
+    "setor": "",
+    "email": "geral@lisboacondominios.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 15:55",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "PluriQual",
+    "setor": "",
+    "email": "adcondominios@pluriqual.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 15:57",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Urbicare",
+    "setor": "",
+    "email": "contacto@urbicare.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:10",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "ContabilistaLisboa",
+    "setor": "",
+    "email": "geral@contabilistalisboa.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:10",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "CRN Contabilidade",
+    "setor": "",
+    "email": "info@crncontabilidade.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:11",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "DVD Contabilidade",
+    "setor": "",
+    "email": "contacto@contabilidade.dvdgroup.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:11",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "DROLES Contabilidade",
+    "setor": "",
+    "email": "geral@droles.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:12",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Pedro Oliveira Contabilidade",
+    "setor": "",
+    "email": "po.contab@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:13",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Legisconta",
+    "setor": "",
+    "email": "legisconta@legisconta.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:35",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Alívio Fiscal",
+    "setor": "",
+    "email": "geral@aliviofiscal.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:36",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "SULgestão",
+    "setor": "",
+    "email": "sulgestaolda@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:36",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Portugalissimmo",
+    "setor": "",
+    "email": "geral@portugalissimmo.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:37",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "PMF Imobiliária",
+    "setor": "",
+    "email": "geral@pmf-imobiliaria.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:39",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Casa Sólida",
+    "setor": "",
+    "email": "geral@casasolida.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:40",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Habita",
+    "setor": "",
+    "email": "geral@habita.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:41",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Hospital Veterinário de Lisboa",
+    "setor": "",
+    "email": "geral@hospitalveterinario.eu",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:42",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Vet. Telheiras",
+    "setor": "",
+    "email": "cvtelheiras@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:43",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Vet. Monte dos Burgos",
+    "setor": "",
+    "email": "geral@clivetmontesburgos.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:44",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "SPANIMAIS",
+    "setor": "",
+    "email": "clinica@spanimais.org",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:45",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Hospital Vet. Coimbra",
+    "setor": "",
+    "email": "info@hospvetcoimbra.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:47",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "VetPorto",
+    "setor": "",
+    "email": "geral@vetspaporto.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:48",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "MyAuto Oficina",
+    "setor": "",
+    "email": "oficina.myauto@redeeurorepar.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:49",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Feu Vert",
+    "setor": "",
+    "email": "ecommerce@feuvert.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:51",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Agility Mudanças",
+    "setor": "",
+    "email": "geral@agilitymudancas.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:52",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Mudamos a Sua Casa",
+    "setor": "",
+    "email": "geral@mudamosasuacasa.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:53",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Translowcost",
+    "setor": "",
+    "email": "translowcostportugal@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:54",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Mudanças Portugal",
+    "setor": "",
+    "email": "mudatudo@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:55",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "BarberShop Portugal",
+    "setor": "",
+    "email": "barbershopportugal.pt@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:56",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Antiga Barbearia de Bairro",
+    "setor": "",
+    "email": "contact@antigabarbeariadebairro.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:58",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Know+ Centro Estudos",
+    "setor": "",
+    "email": "info@knowmais.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 16:59",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Explicolândia Alvalade",
+    "setor": "",
+    "email": "lisboa.alvalade@explicolandia.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 17:00",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "4Brain",
+    "setor": "",
+    "email": "info@4brain.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 17:02",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Centro Estudos São Julião",
+    "setor": "",
+    "email": "info@centrodeestudossaojuliao.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 17:03",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Euroclean / Gabaritto",
+    "setor": "",
+    "email": "gabarittoop@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 17:04",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Ginásio Clube Português",
+    "setor": "",
+    "email": "info@gcp.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 17:05",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Lisboa Ginásio Clube",
+    "setor": "",
+    "email": "geral@lgc.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 17:06",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "O Clube de Ginástica",
+    "setor": "",
+    "email": "geral@clubedeginastica.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 17:08",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Restaurante Laurentina",
+    "setor": "",
+    "email": "info@restaurantelaurentina.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-12 17:09",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "AtivTOC",
+    "setor": "",
+    "email": "geral@ativtoc.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:15",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "MTeam",
+    "setor": "",
+    "email": "geral@mteam.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:16",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Douradotoc",
+    "setor": "",
+    "email": "geral@douradotoc.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:17",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Olga Morais TOC",
+    "setor": "",
+    "email": "geral@olgamorais-toc.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:18",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Contamust",
+    "setor": "",
+    "email": "geral@contamust.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:19",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "TOC Solutions",
+    "setor": "",
+    "email": "geral@tocsolutions.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:20",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "OsteoFisio lab",
+    "setor": "",
+    "email": "geral@osteofisiolab.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:22",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "FisioCare",
+    "setor": "",
+    "email": "geral@fisiocare.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:23",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "IPOC",
+    "setor": "",
+    "email": "geral@ipoc.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:24",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica de Saúde Integral",
+    "setor": "",
+    "email": "clinicadesaudeintegral2016@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:24",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Fisiovida",
+    "setor": "",
+    "email": "geral@fisiovida.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:26",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Projecto Condomínio",
+    "setor": "",
+    "email": "geral@projectocondominio.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:27",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Portugal Condomínios",
+    "setor": "",
+    "email": "geral@portugalcondominios.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:29",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "GPC Portugal",
+    "setor": "",
+    "email": "geral@gpcportugal.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:30",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Nós Administramos",
+    "setor": "",
+    "email": "geral@nosadministramos.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:31",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Arruma",
+    "setor": "",
+    "email": "geral@arruma.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:32",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica S.I.",
+    "setor": "",
+    "email": "geral@clinicasi.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:33",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica PCMFG",
+    "setor": "",
+    "email": "geral@clinicapcmfg.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:35",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "S.O.S Animal",
+    "setor": "",
+    "email": "geral@veterinarioviseu.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:36",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "DOGTEL",
+    "setor": "",
+    "email": "geral@dogtel.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:38",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "VETDINHA",
+    "setor": "",
+    "email": "geral@vetdinha.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:39",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Imperio Clean",
+    "setor": "",
+    "email": "geral@imperioclean.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:40",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "CleanTower",
+    "setor": "",
+    "email": "geral@cleantower.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:41",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "WellClean",
+    "setor": "",
+    "email": "geral@wellclean.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:43",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "RESTART Imobiliária",
+    "setor": "",
+    "email": "geral@restartimobiliaria.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:44",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Imobiliare",
+    "setor": "",
+    "email": "geral@imobiliare.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:45",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Auto Tech Oficina",
+    "setor": "",
+    "email": "geral@autotechoficina.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:46",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Rino Oficinas",
+    "setor": "",
+    "email": "geral@rino.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 17:47",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Tetraling",
+    "setor": "",
+    "email": "linguas@tetraling.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:20",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Eurolinguas",
+    "setor": "",
+    "email": "eurolinguasleiria@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:21",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "CrossFit LX",
+    "setor": "",
+    "email": "crossfitlx.geral@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:22",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "CrossFit Aveiro",
+    "setor": "",
+    "email": "geral@crossfitaveiro.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:23",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Quinta da Retorta",
+    "setor": "",
+    "email": "info@quintadaretorta.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:25",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Casas do Lupo",
+    "setor": "",
+    "email": "geral@casasdolupo.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:26",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Pet City",
+    "setor": "",
+    "email": "geral@petcity.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:27",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Patas e Pêlos",
+    "setor": "",
+    "email": "geral@patasepelos.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:28",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Pet's Park",
+    "setor": "",
+    "email": "lojas@petspark.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:29",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "O Cantinho dos Animais",
+    "setor": "",
+    "email": "geral.ocantinhodosanimais@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:31",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "FreeFlow",
+    "setor": "",
+    "email": "geral@freeflow.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:32",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Yoga",
+    "setor": "",
+    "email": "info@escoladeyoga.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:33",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Yogalab",
+    "setor": "",
+    "email": "geral@yogalab.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:34",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Festa Aluga",
+    "setor": "",
+    "email": "geral@festaluga.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:35",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Eventos by T",
+    "setor": "",
+    "email": "geral@eventosbyt.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:36",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "ADN Eventos",
+    "setor": "",
+    "email": "geral@adneventos.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:37",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Romã Eventos",
+    "setor": "",
+    "email": "geral@romaeventos.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-16 18:38",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Costa Cabral",
+    "setor": "",
+    "email": "ec-costacabral@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:03",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Mota Galiza",
+    "setor": "",
+    "email": "motagaliza@grupobordalo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:04",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Invicta",
+    "setor": "",
+    "email": "geral@invicta.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:05",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Franca",
+    "setor": "",
+    "email": "geral@escolaconducaofranca.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:06",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Nova do Porto",
+    "setor": "",
+    "email": "novadoporto@grupobordalo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:07",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "ACP - Escola de Conducao do Porto",
+    "setor": "",
+    "email": "escola.porto@acp.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:08",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Estadio",
+    "setor": "",
+    "email": "ecestadio@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:09",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Carvalhido",
+    "setor": "",
+    "email": "esc.cond.carvalhido@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:11",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Pincor",
+    "setor": "",
+    "email": "escolapincor@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:12",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Morarte",
+    "setor": "",
+    "email": "geral@morarte.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:14",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC da Boavista",
+    "setor": "",
+    "email": "boavista@ecboavista.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:15",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Hugo Vieira Aviz",
+    "setor": "",
+    "email": "geral@hugovieiraaviz.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:16",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Imperio",
+    "setor": "",
+    "email": "esc.cond.imperio@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:18",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Ramalde",
+    "setor": "",
+    "email": "geral@ecramalde.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:19",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC A1 Norte",
+    "setor": "",
+    "email": "ec.a1norte@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:20",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Almeida & Carmen (Auto Aguia)",
+    "setor": "",
+    "email": "ecautoaguia@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:21",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Lordelo",
+    "setor": "",
+    "email": "lordelo@ecboavista.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:23",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Bracarense Serra",
+    "setor": "",
+    "email": "geral@ecbracarense.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:38",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC de Tadim",
+    "setor": "",
+    "email": "geral@ectadim.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:39",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Braguesa / Lusiada",
+    "setor": "",
+    "email": "eclusiada@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:40",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Bom Jesus",
+    "setor": "",
+    "email": "ecbomjesus@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:41",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Quinta das Fontes",
+    "setor": "",
+    "email": "geral@ecquintadasfontes.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:42",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Universitaria",
+    "setor": "",
+    "email": "ec-universitaria@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:43",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Faial",
+    "setor": "",
+    "email": "e.c_faial@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:44",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Portas da Se",
+    "setor": "",
+    "email": "portasdase@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:44",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC da Meadela",
+    "setor": "",
+    "email": "geral@ecmeadela.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:46",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Vianense",
+    "setor": "",
+    "email": "ec.vianense@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:47",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Sonia",
+    "setor": "",
+    "email": "ec.sonia@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:48",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Caminhense",
+    "setor": "",
+    "email": "geral@eccaminhense.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:49",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Volante do Lima",
+    "setor": "",
+    "email": "volantedolima@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:50",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC de Ponte de Lima",
+    "setor": "",
+    "email": "escolaconducao_ptl@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:52",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Auto Cabril",
+    "setor": "",
+    "email": "geral@autocabril.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:53",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC JL",
+    "setor": "",
+    "email": "geral@escoladeconducaojl.com.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:54",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Auto-Real",
+    "setor": "",
+    "email": "auto.real@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:55",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Vilarealense",
+    "setor": "",
+    "email": "escolavilarealense@oniduo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:56",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Aleu",
+    "setor": "",
+    "email": "ecaleu@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:57",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC IP4",
+    "setor": "",
+    "email": "geral@escoladeconducaoip4.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 09:59",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Eurovia",
+    "setor": "",
+    "email": "eurovia@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 10:00",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Princesa",
+    "setor": "",
+    "email": "geral@escolaprincesa.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 10:01",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Exito",
+    "setor": "",
+    "email": "info@exito.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 10:02",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Cruzeiro",
+    "setor": "",
+    "email": "eccruzeiro@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 10:03",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC A Nova",
+    "setor": "",
+    "email": "geral@escoladeconducaoanova.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 10:04",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Nelmar Teofilo & Belarmino",
+    "setor": "",
+    "email": "ecnelmar338@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 10:06",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Fica",
+    "setor": "",
+    "email": "geral@escoladeconducaofica.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 10:07",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Automóveis do Centro",
+    "setor": "",
+    "email": "ecautomoveiscentro@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 10:08",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Rainha Santa",
+    "setor": "",
+    "email": "geral@escoladeconducaorainhasanta.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 10:09",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Quinta das Flores",
+    "setor": "",
+    "email": "quintadasflores2@outlook.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 10:10",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Abadias",
+    "setor": "",
+    "email": "info@ecabadias.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 10:11",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Lizauto",
+    "setor": "",
+    "email": "eclizauto@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-17 10:12",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Beira Mar",
+    "setor": "",
+    "email": "beiramar@ecbeiramar.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:08",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Marinhense",
+    "setor": "",
+    "email": "ecmarinhense@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:09",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Pombal",
+    "setor": "",
+    "email": "secretaria@ecpombal.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:10",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Triangular (Grupo Batalhense)",
+    "setor": "",
+    "email": "triangular@batalhense.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:11",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Alcobacense",
+    "setor": "",
+    "email": "esc.alcobacense@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:12",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Beneditense",
+    "setor": "",
+    "email": "esc.beneditense@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:14",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC NovaRainha",
+    "setor": "",
+    "email": "novarainha.ec@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:15",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Bordalo Pinheiro (Caldas da Rainha)",
+    "setor": "",
+    "email": "ec_bordalopinheiro@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:16",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Nova Viseu",
+    "setor": "",
+    "email": "ecnovaviseu@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:17",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Nova Técnica",
+    "setor": "",
+    "email": "novatecnicacb@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:19",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Técnica do Volante",
+    "setor": "",
+    "email": "info@tecnicadovolante.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:20",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC ACereja",
+    "setor": "",
+    "email": "escola.acereja@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:21",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução A Portuguesa",
+    "setor": "",
+    "email": "secretaria.aportuguesa@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:22",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Colombo",
+    "setor": "",
+    "email": "esc.conducaocolombo@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:23",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Laranjeiras",
+    "setor": "",
+    "email": "formar@eclaranjeiras.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:24",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Elite",
+    "setor": "",
+    "email": "elite@drivesafe.com.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:26",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Parque das Nações",
+    "setor": "",
+    "email": "ec.parquedasnacoes@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:49",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Damaia",
+    "setor": "",
+    "email": "geral@escolaconducaodamaia.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:50",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Ecodrive - EcoBrandoa",
+    "setor": "",
+    "email": "brandoa2@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:52",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Ecodrive Odivelas",
+    "setor": "",
+    "email": "ececodrive@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:53",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Ecodrive Colinas do Cruzeiro",
+    "setor": "",
+    "email": "ecodivelas@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:54",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Casal de Cambra (Ecodrive)",
+    "setor": "",
+    "email": "ecocambra@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:55",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Algés",
+    "setor": "",
+    "email": "ecalges@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:56",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Vila de Oeiras",
+    "setor": "",
+    "email": "escolavilaoeiras@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:58",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola Condução Seixalinho",
+    "setor": "",
+    "email": "econducao.seixalinho@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 10:59",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução A Barreirense",
+    "setor": "",
+    "email": "barreirense@barreirenseloios.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:00",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Net Rodas",
+    "setor": "",
+    "email": "ecnetrodas@netcabo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:01",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Previsegur",
+    "setor": "",
+    "email": "geral@previsegur.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:02",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução HP",
+    "setor": "",
+    "email": "escolaconducaohp@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:03",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola Condução Carreira & Confraria",
+    "setor": "",
+    "email": "agencia.carreira@net.novis.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:04",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Estrela do Nabão",
+    "setor": "",
+    "email": "ecestrelanabao@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:06",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Moderna de Tomar",
+    "setor": "",
+    "email": "modernatomar@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:07",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Torrejana",
+    "setor": "",
+    "email": "ec-torrejana@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:07",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Riomaiorense",
+    "setor": "",
+    "email": "ecriomaiorense@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:09",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Via Maior",
+    "setor": "",
+    "email": "escola.viamaior@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:10",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Gato Preto",
+    "setor": "",
+    "email": "ecgatopreto@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:11",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Fatimense",
+    "setor": "",
+    "email": "ecfatimense@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:12",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução de Campo Maior",
+    "setor": "",
+    "email": "campomaiorec@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:13",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC CCS Sao Ciro",
+    "setor": "",
+    "email": "geral.escolaccs@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:14",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Faro em Movimento",
+    "setor": "",
+    "email": "faromovimento.ec@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:15",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Estrela do Mar",
+    "setor": "",
+    "email": "e.c.estreladomar@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:18",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Penha ASA",
+    "setor": "",
+    "email": "info@ecpenha.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:19",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Antonio Viegas",
+    "setor": "",
+    "email": "ec_antonioviegas@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:20",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Portimonense",
+    "setor": "",
+    "email": "info@ecptm.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:22",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC A Mourinha Portimao",
+    "setor": "",
+    "email": "ec.amourinha@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:23",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC A Soberana de Portimao",
+    "setor": "",
+    "email": "geral@soberanaptm.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:24",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Dalvor",
+    "setor": "",
+    "email": "escoladalvor@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:25",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Amelia",
+    "setor": "",
+    "email": "infantesagresalbufeira@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 11:27",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Feel Porto",
+    "setor": "",
+    "email": "info@feelporto.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 12:51",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Casas d'Almedina",
+    "setor": "",
+    "email": "geral@casasdalmedina.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 12:53",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Alojamos",
+    "setor": "",
+    "email": "geral@alojamos-al.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 12:55",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Oestegest",
+    "setor": "",
+    "email": "geral@oestegest.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 12:57",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Alma Algarvia",
+    "setor": "",
+    "email": "geral@almaalgarvia.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 12:59",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "BeHappy Algarve",
+    "setor": "",
+    "email": "geral@behappyalgarve.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 13:02",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "By The Building",
+    "setor": "",
+    "email": "geral@bythebuilding.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 13:04",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "SeeWest",
+    "setor": "",
+    "email": "geral@seewest.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 13:06",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "My Choice",
+    "setor": "",
+    "email": "geral@mychoice.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 13:08",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "InLove Apartments",
+    "setor": "",
+    "email": "geral@gestaoalojamentolocal.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 13:10",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Hello Aveiro",
+    "setor": "",
+    "email": "geral@helloaveiro.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 13:13",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Hostz",
+    "setor": "",
+    "email": "geral@hostz.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 13:15",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "House Solutions",
+    "setor": "",
+    "email": "geral@housesolutions.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 14:15",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Ocasional",
+    "setor": "",
+    "email": "geral@ocasional.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 14:18",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "My Home Short Rent",
+    "setor": "",
+    "email": "geral@myhomeshortrent.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 14:20",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Allure Villas",
+    "setor": "",
+    "email": "geral@allurevillas.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 14:22",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "DA'HOME",
+    "setor": "",
+    "email": "geral@dahome.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 14:25",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "SuperAnfitriões",
+    "setor": "",
+    "email": "geral@superanfitrioes.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 14:27",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Homeful",
+    "setor": "",
+    "email": "geral@homeful.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 14:30",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "YourHost",
+    "setor": "",
+    "email": "geral@yourhost.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 14:32",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Escola de Condução Ouriquense",
+    "setor": "",
+    "email": "geral@ouriquense.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:34",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Loule Transito",
+    "setor": "",
+    "email": "louletransito@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:35",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Lagoense",
+    "setor": "",
+    "email": "lagoenseec@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:37",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Infante Sagres Lagoa",
+    "setor": "",
+    "email": "ec_infsagreslagoa@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:38",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Infante Sagres Lagos",
+    "setor": "",
+    "email": "infantesagreslagos@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:39",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Costa Vicentina",
+    "setor": "",
+    "email": "geral_conducaocostavicentina@outlook.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:40",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Olhanense",
+    "setor": "",
+    "email": "eco.olhanense@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:42",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Auto Quelfes",
+    "setor": "",
+    "email": "ec-auto-quelfes@educacao-rodoviaria.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:43",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Giraldo",
+    "setor": "",
+    "email": "esccgiraldo@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:44",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Vila Lusitano",
+    "setor": "",
+    "email": "geral@escolaconducaovilalusitano.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:45",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Calipolense",
+    "setor": "",
+    "email": "ec.calipolense@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:46",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Av. Estremocense",
+    "setor": "",
+    "email": "ecaestremocense@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:48",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Vitoria",
+    "setor": "",
+    "email": "escolavitoria@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:49",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Bejense",
+    "setor": "",
+    "email": "geral@escolabejense.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:50",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Palma e Dores",
+    "setor": "",
+    "email": "ecpalmaedores@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:51",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Serpense",
+    "setor": "",
+    "email": "serpense.324@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:52",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Apolo",
+    "setor": "",
+    "email": "ecdocarmo@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:53",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Vasco da Gama",
+    "setor": "",
+    "email": "ecvascodagama@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:54",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC A Mourinha Sao Teotonio",
+    "setor": "",
+    "email": "mourinhaec@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:56",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Ilha Verde",
+    "setor": "",
+    "email": "escolaconducao@ilhaverde.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:57",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Santa Clara",
+    "setor": "",
+    "email": "geral@ecsantaclara.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 16:58",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Prevencao Rodoviaria Acoreana",
+    "setor": "",
+    "email": "prevencao.rodoviaria@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:00",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "AFRA - Academia Formacao Rodoviaria Acores",
+    "setor": "",
+    "email": "geral@afra.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:01",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Atlantida",
+    "setor": "",
+    "email": "ecatlantida@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:02",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Progresso",
+    "setor": "",
+    "email": "progresso@estradamaxima.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:03",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Seguranca Maxima - Universidade do Condutor",
+    "setor": "",
+    "email": "gruposegurancamaxima@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:04",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Radical - Nova do Funchal",
+    "setor": "",
+    "email": "funchal@escoladeconducaoradical.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:05",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Radical - Barreiros",
+    "setor": "",
+    "email": "barreiros@escoladeconducaoradical.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:06",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Radical - Santo Antonio",
+    "setor": "",
+    "email": "santoantonio@escoladeconducaoradical.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:08",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Auto Instrutora",
+    "setor": "",
+    "email": "autoinstrutora1@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:09",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Francisco Pereira",
+    "setor": "",
+    "email": "ecfpereira@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:10",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Radical - Machico",
+    "setor": "",
+    "email": "machico@escoladeconducaoradical.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:11",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC de Santa Cruz (Seguranca Maxima)",
+    "setor": "",
+    "email": "segurancamaxima.santacruz@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:12",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Seguranca Maxima - Canico",
+    "setor": "",
+    "email": "segurancamaxima.canico@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:13",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "SFCM - Soc. Formacao Condutores Madeira",
+    "setor": "",
+    "email": "ecclobos@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:14",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC da Portela",
+    "setor": "",
+    "email": "ec-portela@artedeconduzir.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:17",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Opção",
+    "setor": "",
+    "email": "esc.cond.opcao@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:18",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Fénix",
+    "setor": "",
+    "email": "estremadura@iol.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:19",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Inês Castro",
+    "setor": "",
+    "email": "escola_conducao_inesdecastro@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:21",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Irmãos Gonçalves",
+    "setor": "",
+    "email": "ecirmaosgoncalves@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:23",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Elite EC",
+    "setor": "",
+    "email": "geral@escolaelite.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:23",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "ECAV",
+    "setor": "",
+    "email": "info@ecav.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:25",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Pontinha",
+    "setor": "",
+    "email": "esc.conducaocoimbrapontinha@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-18 17:26",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Academia Escolar D. Dinis",
+    "setor": "",
+    "email": "academiad.dinis@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:08",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Academia de Línguas da Madeira",
+    "setor": "",
+    "email": "alm@alm-madeira.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:10",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Pautas & Sílabas Centro de Estudos",
+    "setor": "",
+    "email": "artestudos@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:12",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "NADESP - Núcleo de Apoio e Desenvolvimento Escolar",
+    "setor": "",
+    "email": "nadesp121@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:12",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Explicamédia - Apoio Pedagógico Novas Tecnologias",
+    "setor": "",
+    "email": "geral@explicamedia.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:14",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Expectativa - Actividades Desportivas e Educativas",
+    "setor": "",
+    "email": "geral.expectativa@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:15",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Centro de Estudos Evoluir e Aprender",
+    "setor": "",
+    "email": "evoluir_aprender@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:16",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Palácio das Histórias",
+    "setor": "",
+    "email": "palaciodashistorias@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:18",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Farol do Saber Centro de Estudos",
+    "setor": "",
+    "email": "faroldosaber.pt@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:18",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "C. César - Escola Profissional de Informática e Dactilografia",
+    "setor": "",
+    "email": "ccesar@ccesar.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:20",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Fameli - Centro de Inglês de Famalicão",
+    "setor": "",
+    "email": "centroinglesfam@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:21",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Klinica PerioImplantológica Rainha D. Leonor",
+    "setor": "",
+    "email": "klinicaperioimplantes@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:22",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Glamorous Smile Clínica Médico Dentária",
+    "setor": "",
+    "email": "glamorousmile@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:23",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Centro Português de Medicina Dentária",
+    "setor": "",
+    "email": "geralcpmd@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:25",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Dentária Vila Nobre",
+    "setor": "",
+    "email": "cdvilanobre@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:26",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Médica Dentária Dr. Paulo Vieira",
+    "setor": "",
+    "email": "geral@clinicapaulovieira.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:27",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Médica Dentária Grão Vasco",
+    "setor": "",
+    "email": "clinicagraovasco@yahoo.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:28",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Dentopraxis - Clínica Médico Dentária",
+    "setor": "",
+    "email": "dentopraxislda@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:29",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Dentária Sorriso Bonito",
+    "setor": "",
+    "email": "sorrisobonitoodemira@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:31",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Dentária Ana Alves Norton",
+    "setor": "",
+    "email": "clinicanorton@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:32",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Centro Dentário Costa Azul",
+    "setor": "",
+    "email": "recepcaocdcostaazul@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:33",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica de Medicina Dentária Dr. Fernando Peres",
+    "setor": "",
+    "email": "peresdentaria@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:34",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica de Medicina Dentária da Trindade",
+    "setor": "",
+    "email": "clinicadentariatrindade@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:35",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clidon - Clínica Dentária",
+    "setor": "",
+    "email": "clidon@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:36",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Dentária ABC",
+    "setor": "",
+    "email": "clinicadentariaabc@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:37",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica do Estoril Médico Dentária",
+    "setor": "",
+    "email": "escritorio@clinicaestoril.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:38",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Dentária do Cacém",
+    "setor": "",
+    "email": "clinica.cdc21@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:39",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Médico-Dentária Santo André",
+    "setor": "",
+    "email": "clinicamedica.santoandre@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:41",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Dentária Santa Bárbara",
+    "setor": "",
+    "email": "joanameirarego@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:42",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Medicina Dentária Dr. Mário Vasconcelos",
+    "setor": "",
+    "email": "clinicamariovasconcelos@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:43",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Dentárias V-Promed",
+    "setor": "",
+    "email": "dvp@dentariasv-promed.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:44",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Ginásio Quinta do Valbom",
+    "setor": "",
+    "email": "ginasioquintadovalbom@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:45",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "InPulse Estúdio de Treino",
+    "setor": "",
+    "email": "inpulse.estudiotreino@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:46",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Megaginásio Montezelos",
+    "setor": "",
+    "email": "ajmm.mgmc@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:48",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Fitness Hut Amoreiras",
+    "setor": "",
+    "email": "marisafrancisca86@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:48",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Ginástica +50",
+    "setor": "",
+    "email": "mariaspratley@ginastica50.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:49",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Blam Academy",
+    "setor": "",
+    "email": "blamacademy@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:50",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Slim Studio",
+    "setor": "",
+    "email": "geral@slimstudio.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:51",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Let's Go",
+    "setor": "",
+    "email": "lets.go@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:52",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Década Vigente - Santo Tirso",
+    "setor": "",
+    "email": "marketing@focusfitness.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:53",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Brooklyn Fitboxing Areeiro",
+    "setor": "",
+    "email": "areeiro@brooklynfitboxing.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:54",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Inspire Studio",
+    "setor": "",
+    "email": "geral@ispirestudio.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:55",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Centro de Educação Física OT",
+    "setor": "",
+    "email": "cef@cef.co.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:57",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Crossfit Alpha Den",
+    "setor": "",
+    "email": "hello@crossfitalphaden.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 08:58",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Viva Fit & Pilates Fit",
+    "setor": "",
+    "email": "geral@novo-horizonte.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:00",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Dtfisio - Fisioterapia e Recuperação",
+    "setor": "",
+    "email": "dtfisio.maia@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:01",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica de Fisioterapia e Recuperação da Maia",
+    "setor": "",
+    "email": "fisiorecmaia@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:23",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Mefirea - Gabinete de Fisiatria",
+    "setor": "",
+    "email": "mefirea@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:24",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Dr. Diamantino Leal - Medicina Física e Reabilitação",
+    "setor": "",
+    "email": "geral@clinicadleal.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:26",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica de Reabilitação Dr. José Oliveira",
+    "setor": "",
+    "email": "geral@reabjoseoliveira.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:27",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Fisioestarreja - Clínica Médica",
+    "setor": "",
+    "email": "estarreja@cmm.com.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:28",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Motriviana",
+    "setor": "",
+    "email": "scola@motriviana.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:29",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "MCCB - Clínica Médica (V.N. Gaia)",
+    "setor": "",
+    "email": "geral@mccb.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:30",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Cliviseu - Centro Clínico",
+    "setor": "",
+    "email": "geral.cliviseu@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:31",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Clínica Central de Gaia",
+    "setor": "",
+    "email": "clinicacentralgaia@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:32",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "STDM - Investimentos Imobiliários",
+    "setor": "",
+    "email": "stdm-ii.porto@mail.telepac.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:33",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Dommus Imobiliária",
+    "setor": "",
+    "email": "geral@dommusimobiliaria.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:34",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "VPM",
+    "setor": "",
+    "email": "geral@vpm.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:35",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Portman",
+    "setor": "",
+    "email": "properties@portmanproperties.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:40",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Veigas Imobiliária - Caldas da Rainha",
+    "setor": "",
+    "email": "caldas@veigas.eu",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:42",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "ERA Esposende",
+    "setor": "",
+    "email": "esposende@era.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:43",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Chave Dourada - Sociedade de Mediação Imobiliária",
+    "setor": "",
+    "email": "comercial@chavedourada.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:44",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Remax Portalegre",
+    "setor": "",
+    "email": "portalegre@remax.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:45",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Medialba - Sociedade de Mediação Imobiliária",
+    "setor": "",
+    "email": "medialba.imobiliaria@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:46",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Veigas Imobiliária - Lisboa",
+    "setor": "",
+    "email": "lx@veigas.eu",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:47",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Imobiliária Mirandelense",
+    "setor": "",
+    "email": "geral@imobiliariamirandelense.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:48",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Acordata - Mediação Imobiliária",
+    "setor": "",
+    "email": "geral@acordata.net",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:49",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Grupo Totalkasa.com",
+    "setor": "",
+    "email": "geral@totalkasa.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:51",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Pearls of Portugal",
+    "setor": "",
+    "email": "info@pearlsofportugal.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:52",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Predial Promundo",
+    "setor": "",
+    "email": "predialpromundo@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 09:53",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Covilhanense",
+    "setor": "",
+    "email": "escolacovilhanense230@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:00",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Palmela",
+    "setor": "",
+    "email": "escolacondpalmela@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:01",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Via Vanda",
+    "setor": "",
+    "email": "escolaconducaoviavanda@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:02",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Fonseca",
+    "setor": "",
+    "email": "escoladeconducaofonseca@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:03",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "ALMACOOP",
+    "setor": "",
+    "email": "almacoop@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:04",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Ecodauto",
+    "setor": "",
+    "email": "ecodauto@portugalmail.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:05",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Torres Vedras",
+    "setor": "",
+    "email": "geral@escolaconducao-tv.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:06",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Sentido Obrigatório",
+    "setor": "",
+    "email": "s.obrigatorio@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:07",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Manobras",
+    "setor": "",
+    "email": "ec-manobras@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:08",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Nova Setúbal",
+    "setor": "",
+    "email": "novasetubal@grupocaldas.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:09",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Novo Século",
+    "setor": "",
+    "email": "escolanovoseculo@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:10",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Berlenga",
+    "setor": "",
+    "email": "geral@escberlenga.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:11",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC A Gomes",
+    "setor": "",
+    "email": "instrutor.fausto@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:12",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Margaride",
+    "setor": "",
+    "email": "ecmargaride@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:15",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Longra",
+    "setor": "",
+    "email": "escolalongra@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:16",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Penafidelense",
+    "setor": "",
+    "email": "ec.penafidelense@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:17",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Croca",
+    "setor": "",
+    "email": "escolaconducaocroca@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:18",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Projecto 4",
+    "setor": "",
+    "email": "projecto4cam@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:19",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Fénix (Rio Tinto)",
+    "setor": "",
+    "email": "escoladeconducaofenix@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:20",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Fénix (Águas Santas)",
+    "setor": "",
+    "email": "escola.aguassantas@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:21",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Joni",
+    "setor": "",
+    "email": "escolajoni@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:22",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Código & Norma",
+    "setor": "",
+    "email": "codigonorma@codigonorma.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:23",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC São Mamede Infesta",
+    "setor": "",
+    "email": "geral@conducaosmamede.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:24",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Nova de Matosinhos",
+    "setor": "",
+    "email": "novamatosinhos@grupobordalo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:25",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Norteca",
+    "setor": "",
+    "email": "escola_c_norteca@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:26",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Espinho",
+    "setor": "",
+    "email": "esc.cond.espinho@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:27",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Santa Maria (Vergada)",
+    "setor": "",
+    "email": "ec.sta.maria@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:28",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Santa Maria (Canedo)",
+    "setor": "",
+    "email": "canedo.conduzir@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:29",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Boavista Feira",
+    "setor": "",
+    "email": "boavista.aulas@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:30",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC 5Quinas",
+    "setor": "",
+    "email": "ec5quinas@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:31",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Medieval",
+    "setor": "",
+    "email": "ecmedieval1@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:32",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Ovarense",
+    "setor": "",
+    "email": "ecovarense@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:33",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Ideal de Ovar",
+    "setor": "",
+    "email": "geral@idealdeovar.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:34",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Auto-Fama",
+    "setor": "",
+    "email": "escola.fama@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:35",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Nº1 Miguel Silva",
+    "setor": "",
+    "email": "eca.miguel.agueda@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:36",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC do Entroncamento",
+    "setor": "",
+    "email": "escconducaoentroncamento@iol.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:37",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Porto Alto",
+    "setor": "",
+    "email": "escolaportoalto@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:38",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Aqueduto",
+    "setor": "",
+    "email": "aqueduto.escoladeconducao@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:39",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Vasco da Gama (Sines)",
+    "setor": "",
+    "email": "ec-vascodagama@iol.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:40",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Centro de Portugal",
+    "setor": "",
+    "email": "escoladeconducaocentroportugal@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:41",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Paço D'Arcos",
+    "setor": "",
+    "email": "geral@ecpa.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:42",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "Auto Montemor",
+    "setor": "",
+    "email": "automontemor@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 10:43",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC São Veríssimo",
+    "setor": "",
+    "email": "e.c.s.verissimo@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:00",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC FafeCidade (Faciforma)",
+    "setor": "",
+    "email": "igeral@ec-fafecidade.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:01",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Fafense",
+    "setor": "",
+    "email": "esc.cond.fafense@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:02",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Trifafe",
+    "setor": "",
+    "email": "trifafe.ec@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:03",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Assunção",
+    "setor": "",
+    "email": "escolaassuncao@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:04",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC A Lousadense",
+    "setor": "",
+    "email": "geral@alousadense.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:05",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Moderna de Lustosa",
+    "setor": "",
+    "email": "geral@amoderna.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:06",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Rainha Santa Mafalda",
+    "setor": "",
+    "email": "geral@ecrsm.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:07",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Cambrense",
+    "setor": "",
+    "email": "fccambrense@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:08",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Nova Cambra",
+    "setor": "",
+    "email": "ecnovacambra@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:09",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Santa Margarida",
+    "setor": "",
+    "email": "geral@ecsm.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:10",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Saturno",
+    "setor": "",
+    "email": "escola_saturno@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:11",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Marialvas (Grupo Mão)",
+    "setor": "",
+    "email": "cantanhede@grupomao.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:12",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Paionense",
+    "setor": "",
+    "email": "esconducaopaionense@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:13",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC de Soure (JME)",
+    "setor": "",
+    "email": "e.c.soure@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:14",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Granja do Ulmeiro",
+    "setor": "",
+    "email": "ecgranja@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:15",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Mondego",
+    "setor": "",
+    "email": "mondego@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:16",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Febres",
+    "setor": "",
+    "email": "ecfebres@educacao-rodoviaria.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:17",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Dom Pedro",
+    "setor": "",
+    "email": "ecdompedropi@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:18",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Europeia",
+    "setor": "",
+    "email": "escolaconducaoeuropeia@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:20",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Rolante",
+    "setor": "",
+    "email": "escolarolantefamalicao@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:21",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC São Miguel",
+    "setor": "",
+    "email": "ecsaomiguel77@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:22",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Santa Eulália",
+    "setor": "",
+    "email": "sta_eulalia@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:23",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Rio Vizela",
+    "setor": "",
+    "email": "escolariovizela@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:24",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Ala-Arriba",
+    "setor": "",
+    "email": "geral.alaarriba@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:25",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Bordalo Norte Póvoa",
+    "setor": "",
+    "email": "povoa@grupobordalo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:26",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Universal",
+    "setor": "",
+    "email": "ec_universal@live.com.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:27",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Guedes Vieira",
+    "setor": "",
+    "email": "geral@guedesvieira.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:28",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Nascimento",
+    "setor": "",
+    "email": "geral@ecnascimento.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:29",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Vilacondense",
+    "setor": "",
+    "email": "vilacondense374@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:30",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Benguiados",
+    "setor": "",
+    "email": "ec.benguiados@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:31",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC A Valenciana",
+    "setor": "",
+    "email": "e.c.valenciana@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:32",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Alto Minho",
+    "setor": "",
+    "email": "geral@ec-altominho.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:33",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Auto Meireles",
+    "setor": "",
+    "email": "escolaautomeireles@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:34",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Rota da Estrela (Seia)",
+    "setor": "",
+    "email": "rotadaestrela@rotadaestrela.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:35",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Rota da Estrela - Nelas",
+    "setor": "",
+    "email": "nelas@rotadaestrela.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:36",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Rota da Estrela - Gouveia",
+    "setor": "",
+    "email": "beatriz@rotadaestrela.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:37",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Rota da Estrela - Tondela",
+    "setor": "",
+    "email": "tondeluir@rotadaestrela.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:38",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Restauração (Alfragide)",
+    "setor": "",
+    "email": "geral@ecrestauracao.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:40",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Sinal Verde",
+    "setor": "",
+    "email": "escolaconducao.sinalverde@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:41",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC de Odivelas (ECO)",
+    "setor": "",
+    "email": "odete.mendes@netcabo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:42",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC X-PTO",
+    "setor": "",
+    "email": "geral@x-pto.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:43",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Via Odivelas",
+    "setor": "",
+    "email": "ec.viaodivelas@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:44",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "JC-Central / JC-Drive",
+    "setor": "",
+    "email": "geral@jc-central.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:45",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Pinheiro de Loures",
+    "setor": "",
+    "email": "ecpinheiroloures@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:46",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Triunfo (VFX)",
+    "setor": "",
+    "email": "ec.triunfo@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:47",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC AlvercaRio",
+    "setor": "",
+    "email": "e.c.alvercario@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:48",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Ericeirense",
+    "setor": "",
+    "email": "ec-ericeirense@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:49",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Mafrense",
+    "setor": "",
+    "email": "ec.mafrense@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:50",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Convento",
+    "setor": "",
+    "email": "ecconvento@sapo.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:51",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Queluz (Nogueira & Costa)",
+    "setor": "",
+    "email": "geral@escolaconducaoqueluz.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:52",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Infante de Queluz",
+    "setor": "",
+    "email": "infantequeluz@hotmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:53",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Cacém",
+    "setor": "",
+    "email": "info@escoladeconducaocacem.pt",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:54",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Prudentes do Volante",
+    "setor": "",
+    "email": "escola.prudentes@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:55",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC PMR Corroios",
+    "setor": "",
+    "email": "pmrcorroios@gmail.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:56",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Silvano Saraiva",
+    "setor": "",
+    "email": "geral@ecsilvanosaraiva.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:57",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Socartas",
+    "setor": "",
+    "email": "contacto@ec-socartas.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:58",
+    "estado": "Contactado"
+  },
+  {
+    "empresa": "EC Ouriense",
+    "setor": "",
+    "email": "ec-ouriense@espadaeoliveira.com",
+    "telefone": "",
+    "localizacao": "",
+    "contactado": "2026-03-19 11:59",
+    "estado": "Contactado"
+  }
+]

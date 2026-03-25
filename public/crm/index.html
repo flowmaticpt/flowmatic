@@ -1226,7 +1226,7 @@ const DEMO_ACTIVITIES = [];
 // Atividades reais carregam via Google Sheets
 
 // ==================== STATE ====================
-let currentLeads = [...DEMO_LEADS];
+let currentLeads = [];
 let currentActivities = [...DEMO_ACTIVITIES];
 let currentEmails = [];
 let inboxFilter = 'all';
@@ -1234,20 +1234,49 @@ let webAppUrl = localStorage.getItem('flowmatica_crm_url') || '';
 let sortCol = '';
 let sortDir = 'asc';
 
-// ==================== EMAIL FETCH (Gmail API direto ou proxy fallback) ====================
+// ==================== DATA FETCH ====================
 function fetchEmails() {
-    // Tentar Gmail API direto (não precisa de config manual)
     return fetch('/api/crm/emails?max=50')
         .then(function(r) {
             return r.json().then(function(data) {
                 if (data.error) {
-                    // Gmail API não configurada — tentar proxy se tiver URL
                     if (webAppUrl) return proxyFetch(webAppUrl);
                     throw new Error(data.error);
                 }
                 return data;
             });
         });
+}
+
+function fetchLeads() {
+    return fetch('/crm/leads.json')
+        .then(function(r) { return r.json(); });
+}
+
+function autoDetectStatus(leads, emails) {
+    // Extrair emails do inbox (quem nos respondeu)
+    var inboxEmails = {};
+    emails.forEach(function(e) {
+        var from = e.from || '';
+        var match = from.match(/<([^>]+)>/) || [null, from];
+        var addr = (match[1] || '').toLowerCase().trim();
+        if (addr && addr !== 'flowmaticpt@gmail.com' && addr !== 'geral@flowmatica.pt') {
+            inboxEmails[addr] = { date: e.date, unread: e.unread, subject: e.subject };
+        }
+    });
+
+    return leads.map(function(lead) {
+        var email = (lead.email || '').toLowerCase();
+        var reply = inboxEmails[email];
+        if (reply) {
+            return Object.assign({}, lead, {
+                estado: 'Respondeu',
+                ultimaResposta: reply.date,
+                unread: reply.unread
+            });
+        }
+        return lead;
+    });
 }
 
 function proxyFetch(url) {
@@ -1338,21 +1367,26 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('webAppUrl').value = webAppUrl;
     }
 
-    // Render
+    // Render placeholder
     renderAll();
 
-    // Auto-carregar emails via Gmail API
-    fetchEmails()
-        .then(function(data) {
-            if (data.emails) currentEmails = data.emails;
-            if (data.leads) currentLeads = data.leads;
-            if (data.activities) currentActivities = data.activities;
-            renderEmailWidget();
-            renderInbox();
-            updateStatus();
+    // Auto-carregar leads + emails em paralelo
+    Promise.all([fetchLeads(), fetchEmails()])
+        .then(function(results) {
+            var leads = results[0] || [];
+            var emailData = results[1] || {};
+            currentEmails = emailData.emails || [];
+            // Auto-detetar quem respondeu
+            currentLeads = autoDetectStatus(leads, currentEmails);
+            renderAll();
         })
         .catch(function(err) {
-            console.log('Auto-fetch emails:', err.message);
+            console.log('Auto-fetch:', err.message);
+            // Tentar só leads se emails falharem
+            fetchLeads().then(function(leads) {
+                currentLeads = leads || [];
+                renderAll();
+            }).catch(function() {});
         });
 
     // Hide loading
@@ -1360,13 +1394,15 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('loadingOverlay').classList.add('hidden');
     }, 400);
 
-    // Auto-refresh every 5 min
+    // Auto-refresh emails every 5 min
     setInterval(() => {
         fetchEmails()
             .then(function(data) {
-                if (data.emails) currentEmails = data.emails;
-                renderEmailWidget();
-                renderInbox();
+                if (data.emails) {
+                    currentEmails = data.emails;
+                    currentLeads = autoDetectStatus(currentLeads, currentEmails);
+                    renderAll();
+                }
             })
             .catch(function() {});
     }, 5 * 60 * 1000);
@@ -1927,8 +1963,8 @@ function renderLeadsTable() {
             <td>${l.email}</td>
             <td>${l.localizacao}</td>
             <td><span class="state-badge ${badgeClass}">${badgeLabel}</span></td>
-            <td><span class="date-relative" title="${l.dataContacto || ''}">${timeAgo(l.dataContacto)}</span></td>
-            <td><span class="date-relative" title="${l.dataAtividade || ''}">${timeAgo(l.dataAtividade)}</span></td>
+            <td><span class="date-relative" title="${l.contactado || l.dataContacto || ''}">${timeAgo(l.contactado || l.dataContacto)}</span></td>
+            <td><span class="date-relative" title="${l.ultimaResposta || l.dataAtividade || ''}">${timeAgo(l.ultimaResposta || l.dataAtividade)}</span></td>
             <td>${l.responsavel || '—'}</td>
             <td>${actionsHtml}</td>
         </tr>`;
