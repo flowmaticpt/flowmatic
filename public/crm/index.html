@@ -1210,6 +1210,137 @@
             margin-top: 0.2rem;
         }
 
+        /* ==================== CALENDAR WIDGET ==================== */
+        .calendar-widget-list { list-style: none; }
+        .calendar-widget-item {
+            display: flex; gap: 0.75rem; padding: 0.65rem 0.35rem;
+            border-bottom: 1px solid rgba(0,0,0,0.04); align-items: flex-start;
+            cursor: pointer; border-radius: 6px; transition: background 0.15s;
+        }
+        .calendar-widget-item:hover { background: rgba(29,78,216,0.04); }
+        .calendar-widget-item:last-child { border-bottom: none; }
+        .calendar-widget-date {
+            min-width: 42px; text-align: center; background: #fffbeb;
+            border-radius: 8px; padding: 0.3rem 0.4rem; flex-shrink: 0;
+        }
+        .calendar-widget-date .cal-day {
+            font-size: 1.1rem; font-weight: 700; color: #d97706; line-height: 1.2;
+        }
+        .calendar-widget-date .cal-month {
+            font-size: 0.6rem; font-weight: 600; color: #92400e;
+            text-transform: uppercase; letter-spacing: 0.03em;
+        }
+        .calendar-widget-info { flex: 1; min-width: 0; }
+        .calendar-widget-title {
+            font-size: 0.82rem; font-weight: 600; color: #1a1a2e;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+        .calendar-widget-time { font-size: 0.72rem; color: #555770; }
+        .calendar-widget-link {
+            font-size: 0.68rem; color: #1d4ed8; text-decoration: none;
+            flex-shrink: 0; align-self: center;
+        }
+        .calendar-widget-link:hover { text-decoration: underline; }
+        .calendar-widget-empty {
+            text-align: center; padding: 1.5rem; color: #999; font-size: 0.82rem;
+        }
+
+        /* ==================== GLOBAL SEARCH ==================== */
+        .header-search {
+            position: relative; flex: 1; max-width: 320px; margin: 0 1rem;
+        }
+        .header-search-input {
+            width: 100%; padding: 0.4rem 0.7rem 0.4rem 2rem;
+            border: 1px solid rgba(0,0,0,0.1); border-radius: 8px;
+            font-size: 0.8rem; font-family: inherit; outline: none;
+            background: #f5f7fa; transition: all 0.2s ease;
+        }
+        .header-search-input:focus {
+            background: #fff; border-color: #1d4ed8;
+            box-shadow: 0 0 0 3px rgba(29,78,216,0.1);
+        }
+        .header-search-input::placeholder { color: #8b8fa3; }
+        .header-search svg {
+            position: absolute; left: 0.6rem; top: 50%; transform: translateY(-50%);
+            width: 14px; height: 14px; color: #8b8fa3; pointer-events: none;
+        }
+        .header-search-kbd {
+            position: absolute; right: 0.5rem; top: 50%; transform: translateY(-50%);
+            font-size: 0.62rem; color: #8b8fa3; background: #fff;
+            border: 1px solid rgba(0,0,0,0.1); border-radius: 4px;
+            padding: 0.1rem 0.35rem; pointer-events: none; font-family: inherit;
+        }
+        .header-search-results {
+            position: absolute; top: calc(100% + 4px); left: 0; right: 0;
+            background: #fff; border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            z-index: 200; max-height: 320px; overflow-y: auto;
+            display: none;
+        }
+        .header-search-results.visible { display: block; }
+        .search-result-item {
+            display: flex; align-items: center; gap: 0.6rem;
+            padding: 0.55rem 0.75rem; cursor: pointer; transition: background 0.1s;
+        }
+        .search-result-item:hover { background: #f5f7fa; }
+        .search-result-item:first-child { border-radius: 10px 10px 0 0; }
+        .search-result-item:last-child { border-radius: 0 0 10px 10px; }
+        .search-result-name { font-size: 0.82rem; font-weight: 600; }
+        .search-result-detail { font-size: 0.72rem; color: #555770; }
+        .search-result-badge {
+            font-size: 0.65rem; font-weight: 500; padding: 0.1rem 0.4rem;
+            border-radius: 4px; margin-left: auto; flex-shrink: 0;
+        }
+
+        /* ==================== PIPELINE CONTEXT BADGES ==================== */
+        .card-days-badge {
+            display: inline-flex; align-items: center; gap: 0.2rem;
+            font-size: 0.62rem; font-weight: 600; padding: 0.12rem 0.4rem;
+            border-radius: 4px; margin-top: 0.2rem;
+        }
+        .card-days-badge.red { background: #fef2f2; color: #dc2626; }
+        .card-days-badge.yellow { background: #fffbeb; color: #d97706; }
+        .card-days-badge.green { background: #f0fdf4; color: #16a34a; }
+        .card-email-snippet {
+            font-size: 0.65rem; color: #8b8fa3; margin-top: 0.2rem;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+            font-style: italic;
+        }
+
+        /* ==================== MODAL VALUE INPUTS ==================== */
+        .lead-modal-value-row {
+            display: flex; gap: 0.75rem; margin-top: 0.35rem;
+        }
+        .lead-modal-value-group { flex: 1; }
+        .lead-modal-value-group label {
+            font-size: 0.7rem; font-weight: 500; color: #555770; display: block; margin-bottom: 0.2rem;
+        }
+        .lead-modal-value-group input {
+            width: 100%; padding: 0.4rem 0.6rem; border: 1px solid rgba(0,0,0,0.12);
+            border-radius: 8px; font-size: 0.82rem; font-family: inherit; outline: none;
+        }
+        .lead-modal-value-group input:focus {
+            border-color: #1d4ed8; box-shadow: 0 0 0 3px rgba(29,78,216,0.1);
+        }
+        .lead-modal-meeting-item {
+            display: flex; align-items: center; gap: 0.5rem;
+            padding: 0.4rem 0; border-bottom: 1px solid rgba(0,0,0,0.04);
+            font-size: 0.78rem;
+        }
+        .lead-modal-meeting-item:last-child { border-bottom: none; }
+        .lead-modal-meeting-icon { font-size: 0.85rem; }
+        .lead-modal-meeting-info { flex: 1; }
+        .lead-modal-meeting-date { font-size: 0.7rem; color: #8b8fa3; }
+
+        /* ==================== CSV EXPORT BUTTON ==================== */
+        .btn-export {
+            background: #fff; border: 1px solid rgba(0,0,0,0.12);
+            border-radius: 8px; padding: 0.45rem 0.85rem; font-size: 0.8rem;
+            font-weight: 500; font-family: inherit; cursor: pointer;
+            color: #555770; transition: all 0.2s ease; margin-left: auto;
+        }
+        .btn-export:hover { background: #f5f7fa; color: #1a1a2e; border-color: #1d4ed8; }
+
         /* Mini email widget on dashboard */
         .email-widget-item {
             display: flex; align-items: center; gap: 0.6rem;
@@ -1267,6 +1398,12 @@
             <span class="crm-badge">CRM</span>
         </div>
     </div>
+    <div class="header-search" id="headerSearch">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="header-search-input" id="globalSearchInput" placeholder="Pesquisar leads..." autocomplete="off">
+        <span class="header-search-kbd" id="searchKbd">&#8984;K</span>
+        <div class="header-search-results" id="globalSearchResults"></div>
+    </div>
     <div class="header-right">
         <div class="header-status">
             <div class="status-dot" id="statusDot"></div>
@@ -1318,13 +1455,24 @@
             </div>
         </div>
 
-        <!-- Email Widget -->
-        <div class="card-panel">
-            <div class="section-title" style="display:flex;justify-content:space-between;align-items:center;">
-                Emails Recentes <span class="count" id="emailWidgetCount"></span>
-                <span style="font-size:0.72rem;font-weight:500;color:#1d4ed8;cursor:pointer;" onclick="document.querySelector('.nav-tab[data-tab=inbox]').click()">Ver todos &rarr;</span>
+        <!-- Two Column: Email Widget + Calendar Widget -->
+        <div class="two-col">
+            <!-- Email Widget -->
+            <div class="card-panel">
+                <div class="section-title" style="display:flex;justify-content:space-between;align-items:center;">
+                    Emails Recentes <span class="count" id="emailWidgetCount"></span>
+                    <span style="font-size:0.72rem;font-weight:500;color:#1d4ed8;cursor:pointer;" onclick="document.querySelector('.nav-tab[data-tab=inbox]').click()">Ver todos &rarr;</span>
+                </div>
+                <div id="emailWidgetList"></div>
             </div>
-            <div id="emailWidgetList"></div>
+
+            <!-- Calendar Widget -->
+            <div class="card-panel">
+                <div class="section-title" style="display:flex;justify-content:space-between;align-items:center;">
+                    Pr&oacute;ximas Reuni&otilde;es <span class="count" id="calendarWidgetCount"></span>
+                </div>
+                <ul class="calendar-widget-list" id="calendarWidgetList"></ul>
+            </div>
         </div>
 
         <!-- Sector Chart -->
@@ -1377,6 +1525,7 @@
                 <option value="Ricardo">Ricardo</option>
                 <option value="Vasco">Vasco</option>
             </select>
+            <button class="btn-export" onclick="exportLeadsCSV()">&#11123; Exportar CSV</button>
         </div>
         <div class="table-wrapper">
             <table>
@@ -1443,6 +1592,7 @@ const DEMO_ACTIVITIES = [];
 let currentLeads = [];
 let currentActivities = [...DEMO_ACTIVITIES];
 let currentEmails = [];
+let currentCalendarEvents = [];
 let inboxFilter = 'all';
 let webAppUrl = localStorage.getItem('flowmatica_crm_url') || '';
 let sortCol = '';
@@ -1474,11 +1624,17 @@ function applySavedStates(leads) {
     const states = getSavedStates();
     return leads.map(function(lead) {
         var saved = states[(lead.email || '').toLowerCase()];
-        if (saved && saved.estado) {
-            return Object.assign({}, lead, {
-                estado: saved.estado,
-                dataAtividade: saved.dataAtividade || lead.dataAtividade
-            });
+        if (saved) {
+            var updates = {};
+            if (saved.estado) {
+                updates.estado = saved.estado;
+                updates.dataAtividade = saved.dataAtividade || lead.dataAtividade;
+            }
+            if (saved.valorSetup !== undefined) updates.valorSetup = saved.valorSetup;
+            if (saved.valorMensal !== undefined) updates.valorMensal = saved.valorMensal;
+            if (Object.keys(updates).length > 0) {
+                return Object.assign({}, lead, updates);
+            }
         }
         return lead;
     });
@@ -1543,6 +1699,38 @@ function autoDetectStatus(leads, emails) {
             });
         }
         return lead;
+    });
+}
+
+function fetchCalendarEvents() {
+    return fetch('/api/crm/calendar')
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            if (data.error) { console.log('Calendar:', data.error); return []; }
+            return data.events || [];
+        })
+        .catch(function(err) { console.log('Calendar fetch error:', err.message); return []; });
+}
+
+function findLeadForEvent(event) {
+    if (!event || !event.summary) return null;
+    const title = event.summary.toLowerCase();
+    const desc = (event.description || '').toLowerCase();
+    return currentLeads.find(function(l) {
+        const empresa = l.empresa.toLowerCase();
+        return title.includes(empresa) || desc.includes(empresa) ||
+               desc.includes((l.email || '').toLowerCase());
+    }) || null;
+}
+
+function getLeadCalendarEvents(lead) {
+    if (!lead) return [];
+    const empresa = lead.empresa.toLowerCase();
+    const email = (lead.email || '').toLowerCase();
+    return currentCalendarEvents.filter(function(ev) {
+        const title = (ev.summary || '').toLowerCase();
+        const desc = (ev.description || '').toLowerCase();
+        return title.includes(empresa) || desc.includes(empresa) || desc.includes(email);
     });
 }
 
@@ -1637,12 +1825,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Render placeholder
     renderAll();
 
-    // Auto-carregar leads + emails em paralelo
-    Promise.all([fetchLeads(), fetchEmails()])
+    // Auto-carregar leads + emails + calendar em paralelo
+    Promise.all([fetchLeads(), fetchEmails(), fetchCalendarEvents()])
         .then(function(results) {
             var leads = results[0] || [];
             var emailData = results[1] || {};
             currentEmails = emailData.emails || [];
+            currentCalendarEvents = results[2] || [];
             // Auto-detetar quem respondeu
             currentLeads = autoDetectStatus(leads, currentEmails);
             renderAll();
@@ -1661,18 +1850,55 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('loadingOverlay').classList.add('hidden');
     }, 400);
 
-    // Auto-refresh emails every 5 min
+    // Auto-refresh emails + calendar every 5 min
     setInterval(() => {
-        fetchEmails()
-            .then(function(data) {
-                if (data.emails) {
-                    currentEmails = data.emails;
+        Promise.all([fetchEmails(), fetchCalendarEvents()])
+            .then(function(results) {
+                var emailData = results[0] || {};
+                if (emailData.emails) {
+                    currentEmails = emailData.emails;
                     currentLeads = autoDetectStatus(currentLeads, currentEmails);
-                    renderAll();
                 }
+                currentCalendarEvents = results[1] || [];
+                renderAll();
             })
             .catch(function() {});
     }, 5 * 60 * 1000);
+
+    // Global search: Cmd+K / Ctrl+K
+    document.addEventListener('keydown', function(e) {
+        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+            e.preventDefault();
+            var input = document.getElementById('globalSearchInput');
+            if (input) { input.focus(); input.select(); }
+        }
+        if (e.key === 'Escape') {
+            var results = document.getElementById('globalSearchResults');
+            if (results) results.classList.remove('visible');
+            var input = document.getElementById('globalSearchInput');
+            if (input) input.blur();
+        }
+    });
+
+    // Global search input handler
+    var globalInput = document.getElementById('globalSearchInput');
+    if (globalInput) {
+        globalInput.addEventListener('input', renderGlobalSearch);
+        globalInput.addEventListener('focus', renderGlobalSearch);
+        // Hide when clicking outside
+        document.addEventListener('click', function(e) {
+            var search = document.getElementById('headerSearch');
+            if (search && !search.contains(e.target)) {
+                document.getElementById('globalSearchResults').classList.remove('visible');
+            }
+        });
+    }
+
+    // Show Ctrl+K on non-Mac
+    if (!/Mac|iPhone|iPad/.test(navigator.userAgent)) {
+        var kbd = document.getElementById('searchKbd');
+        if (kbd) kbd.innerHTML = 'Ctrl+K';
+    }
 });
 
 // ==================== RENDER ALL ====================
@@ -1683,6 +1909,7 @@ function renderAll() {
     renderActivityFeed();
     renderAlerts();
     renderEmailWidget();
+    renderCalendarWidget();
     renderSectorChart();
     renderLeadsTable();
     renderInbox();
@@ -1748,6 +1975,25 @@ function renderMetrics() {
         return diff > 2;
     }).length;
 
+    // 6. Reuniões esta semana — calendar events in next 7 days
+    const in7days = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
+    const reunioesEstaSemana = currentCalendarEvents.filter(ev => {
+        const start = new Date(ev.start);
+        return start >= today && start <= in7days;
+    }).length;
+
+    // 7. Leads inativas >14d — active leads without contact for 14+ days (exclude Ganho/Perdido/Prospecto)
+    const leadsInativas14d = leads.filter(l => {
+        if (['Ganho','Perdido','Prospecto'].includes(l.estado)) return false;
+        if (!l.dataAtividade) return true;
+        const diff = (today - new Date(l.dataAtividade)) / (1000 * 60 * 60 * 24);
+        return diff > 14;
+    }).length;
+
+    // 8. Taxa de resposta — % of contactados that responded or advanced
+    const respondeuOuAdiante = leads.filter(l => ['Respondeu','Reuniao','Proposta','Ganho'].includes(l.estado)).length;
+    const taxaResposta = contactados.length > 0 ? Math.round((respondeuOuAdiante / contactados.length) * 100) : 0;
+
     const grid = document.getElementById('metricsGrid');
     grid.innerHTML = `
         <div class="metric-card">
@@ -1774,6 +2020,21 @@ function renderMetrics() {
             <div class="metric-label">Ações Pendentes</div>
             <div class="metric-value ${pendentesColor}">${totalPendentes}</div>
             <div class="metric-sub">${urgentes} urgentes, ${semana} esta semana</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Reuniões 7 dias</div>
+            <div class="metric-value amber">${reunioesEstaSemana}</div>
+            <div class="metric-sub">próximos 7 dias</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Inativas >14d</div>
+            <div class="metric-value ${leadsInativas14d > 0 ? 'red' : ''}">${leadsInativas14d}</div>
+            <div class="metric-sub">leads sem contacto</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Taxa Resposta</div>
+            <div class="metric-value blue">${taxaResposta}%</div>
+            <div class="metric-sub">${respondeuOuAdiante} de ${contactados.length} contactados</div>
         </div>
         ${contratosPorEnviar > 0 ? `<div class="metric-card">
             <div class="metric-label">Contratos por Enviar</div>
@@ -1831,6 +2092,7 @@ function scrollToColumn(state) {
 
 // ==================== PIPELINE ====================
 function renderPipeline() {
+    const today = new Date();
     // Focus Kanban on actionable stages only
     const states = [
         { key: 'Respondeu', label: 'Respondeu' },
@@ -1890,8 +2152,36 @@ function renderPipeline() {
             const notePreview = savedState && savedState.notas
                 ? `<div class="card-note-preview" title="${escapeHtml(savedState.notas)}">&#9998; ${escapeHtml(savedState.notas)}</div>`
                 : '';
-            const meetingBadge = savedState && savedState.dataReuniao
-                ? `<div class="card-meeting-badge">&#128197; ${new Date(savedState.dataReuniao).toLocaleDateString('pt-PT', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}</div>`
+
+            // Calendar meeting badge (from API, cross-referenced)
+            const leadEvents = getLeadCalendarEvents(l);
+            const nextEvent = leadEvents.length > 0 ? leadEvents[0] : null;
+            let meetingBadge = '';
+            if (nextEvent) {
+                const evDate = new Date(nextEvent.start);
+                meetingBadge = `<div class="card-meeting-badge">&#128197; ${evDate.toLocaleDateString('pt-PT', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}</div>`;
+            } else if (savedState && savedState.dataReuniao) {
+                meetingBadge = `<div class="card-meeting-badge">&#128197; ${new Date(savedState.dataReuniao).toLocaleDateString('pt-PT', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}</div>`;
+            }
+
+            // Days without contact badge
+            let daysBadge = '';
+            if (l.dataAtividade && !['Ganho','Perdido'].includes(l.estado)) {
+                const daysSince = Math.floor((today - new Date(l.dataAtividade)) / (1000 * 60 * 60 * 24));
+                if (daysSince > 14) {
+                    daysBadge = `<div class="card-days-badge red">${daysSince}d sem contacto</div>`;
+                } else if (daysSince > 7) {
+                    daysBadge = `<div class="card-days-badge yellow">${daysSince}d sem contacto</div>`;
+                }
+            }
+
+            // Last email snippet
+            const leadEmailAddr = (l.email || '').toLowerCase();
+            const lastEmail = currentEmails.find(function(e) {
+                return (e.from || '').toLowerCase().includes(leadEmailAddr);
+            });
+            const snippetHtml = lastEmail && lastEmail.snippet
+                ? `<div class="card-email-snippet">"${escapeHtml(lastEmail.snippet.substring(0, 60))}${lastEmail.snippet.length > 60 ? '...' : ''}"</div>`
                 : '';
 
             const safeEmail = l.email.replace(/'/g, "\\'");
@@ -1900,8 +2190,10 @@ function renderPipeline() {
                 <div class="card-name">${l.empresa}</div>
                 <div class="card-sector">${l.setor}</div>
                 ${valueStr ? `<div class="card-value">${valueStr}</div>` : ''}
-                ${notePreview}
+                ${daysBadge}
                 ${meetingBadge}
+                ${snippetHtml}
+                ${notePreview}
                 <div class="card-footer">
                     <span class="date-relative" title="${l.dataAtividade || ''}">${timeAgo(l.dataAtividade)}</span>
                     <span class="card-avatar ${avatarClass}">${avatar}</span>
@@ -2537,6 +2829,8 @@ function openLeadModal(email) {
     const saved = getLeadState(email) || {};
     const notas = saved.notas || '';
     const dataReuniao = saved.dataReuniao || '';
+    const valorSetup = saved.valorSetup !== undefined ? saved.valorSetup : (lead.valorSetup || '');
+    const valorMensal = saved.valorMensal !== undefined ? saved.valorMensal : (lead.valorMensal || '');
 
     // Find related emails
     const leadEmailAddr = (lead.email || '').toLowerCase();
@@ -2545,7 +2839,7 @@ function openLeadModal(email) {
         return from.includes(leadEmailAddr) || (e.to && e.to.toLowerCase().includes(leadEmailAddr));
     });
 
-    // Build email history HTML
+    // Build email history HTML with snippets
     let emailHistoryHtml = '';
     if (relatedEmails.length > 0) {
         emailHistoryHtml = relatedEmails.map(e => {
@@ -2556,16 +2850,39 @@ function openLeadModal(email) {
             const dateObj = new Date(e.date);
             const dateStr = dateObj.toLocaleDateString('pt-PT', { day: 'numeric', month: 'short' }) +
                 ' ' + dateObj.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' });
+            const snippetText = e.snippet ? `<div style="font-size:0.72rem;color:#8b8fa3;margin-top:0.15rem;font-style:italic;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${escapeHtml(e.snippet.substring(0, 100))}</div>` : '';
             return `<li class="lead-email-item">
                 <span class="lead-email-dir ${dirClass}">${dirLabel}</span>
                 <div class="lead-email-info">
                     <div class="lead-email-subject">${escapeHtml(e.subject || '(sem assunto)')}</div>
+                    ${snippetText}
                     <div class="lead-email-date">${dateStr}</div>
                 </div>
             </li>`;
         }).join('');
     } else {
         emailHistoryHtml = '<div class="lead-modal-empty">Nenhum email encontrado para esta lead.</div>';
+    }
+
+    // Calendar events for this lead
+    const leadCalEvents = getLeadCalendarEvents(lead);
+    let calendarEventsHtml = '';
+    if (leadCalEvents.length > 0) {
+        calendarEventsHtml = leadCalEvents.map(ev => {
+            const evDate = new Date(ev.start);
+            const dateStr = evDate.toLocaleDateString('pt-PT', { day: 'numeric', month: 'short', year: 'numeric' }) +
+                ' ' + evDate.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' });
+            return `<div class="lead-modal-meeting-item">
+                <span class="lead-modal-meeting-icon">&#128197;</span>
+                <div class="lead-modal-meeting-info">
+                    <div>${escapeHtml(ev.summary)}</div>
+                    <div class="lead-modal-meeting-date">${dateStr}</div>
+                </div>
+                ${ev.link ? `<a href="${ev.link}" target="_blank" style="font-size:0.7rem;color:#1d4ed8;">Abrir</a>` : ''}
+            </div>`;
+        }).join('');
+    } else {
+        calendarEventsHtml = '<div class="lead-modal-empty">Nenhuma reunião agendada.</div>';
     }
 
     // State dropdown options
@@ -2609,6 +2926,20 @@ function openLeadModal(email) {
                 </div>
 
                 <div class="lead-modal-section">
+                    <div class="lead-modal-section-title">Valor do Neg&oacute;cio</div>
+                    <div class="lead-modal-value-row">
+                        <div class="lead-modal-value-group">
+                            <label>Setup (&euro;)</label>
+                            <input type="number" id="leadModalValorSetup" value="${valorSetup}" placeholder="0" min="0" step="50">
+                        </div>
+                        <div class="lead-modal-value-group">
+                            <label>Mensal (&euro;/m&ecirc;s)</label>
+                            <input type="number" id="leadModalValorMensal" value="${valorMensal}" placeholder="0" min="0" step="10">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lead-modal-section">
                     <div class="lead-modal-section-title">Datas</div>
                     <div class="lead-modal-row">
                         <span class="lead-modal-label">1.º Contacto</span>
@@ -2630,6 +2961,11 @@ function openLeadModal(email) {
                         <input type="datetime-local" id="leadModalReuniao" value="${dataReuniao}">
                         <button class="modal-btn primary" id="leadModalCalendarBtn" style="white-space:nowrap;">Criar Evento</button>
                     </div>
+                </div>
+
+                <div class="lead-modal-section">
+                    <div class="lead-modal-section-title">Reuniões Agendadas</div>
+                    ${calendarEventsHtml}
                 </div>
 
                 <div class="lead-modal-section">
@@ -2656,10 +2992,16 @@ function openLeadModal(email) {
 
     // Event: close
     const closeModal = () => {
-        // Save notas before closing
+        // Save notas and values before closing
         const notasVal = document.getElementById('leadModalNotas').value;
         const reuniaoVal = document.getElementById('leadModalReuniao').value;
-        saveLeadState(email, { notas: notasVal, dataReuniao: reuniaoVal });
+        const setupVal = parseFloat(document.getElementById('leadModalValorSetup').value) || 0;
+        const mensalVal = parseFloat(document.getElementById('leadModalValorMensal').value) || 0;
+        saveLeadState(email, { notas: notasVal, dataReuniao: reuniaoVal, valorSetup: setupVal, valorMensal: mensalVal });
+        // Update lead object in memory for metrics recalculation
+        const leadObj = currentLeads.find(l => l.email === email);
+        if (leadObj) { leadObj.valorSetup = setupVal; leadObj.valorMensal = mensalVal; }
+        renderAll();
         overlay.remove();
     };
     overlay.querySelector('#leadModalClose').onclick = closeModal;
@@ -2688,9 +3030,11 @@ function openLeadModal(email) {
     const advanceBtn = overlay.querySelector('#leadModalAdvance');
     if (advanceBtn) {
         advanceBtn.onclick = () => {
-            // Save notas first
+            // Save notas and values first
             const notasVal = document.getElementById('leadModalNotas').value;
-            saveLeadState(email, { notas: notasVal });
+            const setupVal = parseFloat(document.getElementById('leadModalValorSetup').value) || 0;
+            const mensalVal = parseFloat(document.getElementById('leadModalValorMensal').value) || 0;
+            saveLeadState(email, { notas: notasVal, valorSetup: setupVal, valorMensal: mensalVal });
             const idx = STATE_ORDER.indexOf(lead.estado);
             // Skip to next non-terminal state
             let nextState = STATE_ORDER[idx + 1];
@@ -2707,7 +3051,9 @@ function openLeadModal(email) {
     if (loseBtn) {
         loseBtn.onclick = () => {
             const notasVal = document.getElementById('leadModalNotas').value;
-            saveLeadState(email, { notas: notasVal });
+            const setupVal = parseFloat(document.getElementById('leadModalValorSetup').value) || 0;
+            const mensalVal = parseFloat(document.getElementById('leadModalValorMensal').value) || 0;
+            saveLeadState(email, { notas: notasVal, valorSetup: setupVal, valorMensal: mensalVal });
             confirmAction(
                 'Marcar como perdido?',
                 `Tens a certeza que queres marcar <strong>${lead.empresa}</strong> como perdido?`,
@@ -2725,6 +3071,158 @@ function openLeadModal(email) {
         }
         createCalendarEvent(lead, reuniaoDate, overlay);
     };
+}
+
+// ==================== CALENDAR WIDGET ====================
+function renderCalendarWidget() {
+    const list = document.getElementById('calendarWidgetList');
+    const countEl = document.getElementById('calendarWidgetCount');
+    if (!list) return;
+
+    const now = new Date();
+    const in7days = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000);
+
+    const upcoming = currentCalendarEvents.filter(function(ev) {
+        const start = new Date(ev.start);
+        return start >= now && start <= in7days;
+    });
+
+    if (countEl) countEl.textContent = upcoming.length > 0 ? upcoming.length : '';
+
+    if (upcoming.length === 0) {
+        list.innerHTML = '<li class="calendar-widget-empty">Nenhuma reunião nos próximos 7 dias.</li>';
+        return;
+    }
+
+    list.innerHTML = upcoming.map(function(ev) {
+        const evDate = new Date(ev.start);
+        const day = evDate.getDate();
+        const month = evDate.toLocaleDateString('pt-PT', { month: 'short' }).replace('.', '');
+        const time = evDate.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' });
+
+        const matchedLead = findLeadForEvent(ev);
+        const onclick = matchedLead
+            ? `onclick="openLeadModal('${matchedLead.email.replace(/'/g, "\\'")}')" title="Clique para ver lead"`
+            : (ev.link ? `onclick="window.open('${ev.link}', '_blank')" title="Abrir no Google Calendar"` : '');
+
+        return `<li class="calendar-widget-item" ${onclick}>
+            <div class="calendar-widget-date">
+                <div class="cal-day">${day}</div>
+                <div class="cal-month">${month}</div>
+            </div>
+            <div class="calendar-widget-info">
+                <div class="calendar-widget-title">${escapeHtml(ev.summary)}</div>
+                <div class="calendar-widget-time">${time}</div>
+            </div>
+            ${ev.link ? `<a class="calendar-widget-link" href="${ev.link}" target="_blank" onclick="event.stopPropagation()">&#8599;</a>` : ''}
+        </li>`;
+    }).join('');
+}
+
+// ==================== GLOBAL SEARCH ====================
+function renderGlobalSearch() {
+    const input = document.getElementById('globalSearchInput');
+    const resultsEl = document.getElementById('globalSearchResults');
+    if (!input || !resultsEl) return;
+
+    const query = input.value.trim().toLowerCase();
+    if (query.length < 2) {
+        resultsEl.classList.remove('visible');
+        return;
+    }
+
+    const matches = currentLeads.filter(function(l) {
+        return l.empresa.toLowerCase().includes(query) ||
+               l.email.toLowerCase().includes(query) ||
+               l.setor.toLowerCase().includes(query) ||
+               (l.localizacao || '').toLowerCase().includes(query);
+    }).slice(0, 8);
+
+    if (matches.length === 0) {
+        resultsEl.innerHTML = '<div style="padding:0.75rem;font-size:0.8rem;color:#999;text-align:center;">Nenhum resultado</div>';
+        resultsEl.classList.add('visible');
+        return;
+    }
+
+    const stateColors = {
+        Prospecto: '#f1f5f9', Contactado: '#eff6ff', Respondeu: '#f5f3ff',
+        Reuniao: '#fffbeb', Proposta: '#fff7ed', Ganho: '#f0fdf4', Perdido: '#fef2f2'
+    };
+    const stateTextColors = {
+        Prospecto: '#555770', Contactado: '#1d4ed8', Respondeu: '#7c3aed',
+        Reuniao: '#d97706', Proposta: '#ea580c', Ganho: '#16a34a', Perdido: '#dc2626'
+    };
+
+    resultsEl.innerHTML = matches.map(function(l) {
+        const safeEmail = l.email.replace(/'/g, "\\'");
+        const label = l.estado === 'Reuniao' ? 'Reunião' : l.estado;
+        return `<div class="search-result-item" onclick="document.getElementById('globalSearchResults').classList.remove('visible');document.getElementById('globalSearchInput').value='';openLeadModal('${safeEmail}')">
+            <div>
+                <div class="search-result-name">${escapeHtml(l.empresa)}</div>
+                <div class="search-result-detail">${escapeHtml(l.setor)} · ${escapeHtml(l.email)}</div>
+            </div>
+            <span class="search-result-badge" style="background:${stateColors[l.estado] || '#f5f7fa'};color:${stateTextColors[l.estado] || '#555770'}">${label}</span>
+        </div>`;
+    }).join('');
+
+    resultsEl.classList.add('visible');
+}
+
+// ==================== CSV EXPORT ====================
+function exportLeadsCSV() {
+    const search = document.getElementById('searchInput').value.toLowerCase();
+    const filterState = document.getElementById('filterState').value;
+    const filterSetor = document.getElementById('filterSetor').value;
+    const filterResp = document.getElementById('filterResp').value;
+
+    let filtered = currentLeads.filter(function(l) {
+        if (search && !(
+            l.empresa.toLowerCase().includes(search) ||
+            l.email.toLowerCase().includes(search) ||
+            l.setor.toLowerCase().includes(search) ||
+            (l.localizacao || '').toLowerCase().includes(search)
+        )) return false;
+        if (filterState && l.estado !== filterState) return false;
+        if (filterSetor && l.setor !== filterSetor) return false;
+        if (filterResp && l.responsavel !== filterResp) return false;
+        return true;
+    });
+
+    const headers = ['Empresa', 'Setor', 'Email', 'Telefone', 'Localização', 'Estado', 'Data Contacto', 'Última Atividade', 'Responsável'];
+    const rows = filtered.map(function(l) {
+        return [
+            l.empresa || '',
+            l.setor || '',
+            l.email || '',
+            l.telefone || '',
+            l.localizacao || '',
+            l.estado === 'Reuniao' ? 'Reunião' : (l.estado || ''),
+            l.contactado || l.dataContacto || '',
+            l.dataAtividade || '',
+            l.responsavel || ''
+        ].map(function(val) {
+            // Escape CSV: wrap in quotes if contains comma/quote/newline
+            val = String(val);
+            if (val.includes('"') || val.includes(',') || val.includes('\n')) {
+                val = '"' + val.replace(/"/g, '""') + '"';
+            }
+            return val;
+        }).join(',');
+    });
+
+    // BOM UTF-8 for Excel compatibility
+    const bom = '\uFEFF';
+    const csvContent = bom + headers.join(',') + '\n' + rows.join('\n');
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'flowmatica-leads-' + new Date().toISOString().split('T')[0] + '.csv';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    showToast(`${filtered.length} leads exportadas`, 'success');
 }
 
 // ==================== GOOGLE CALENDAR ====================
