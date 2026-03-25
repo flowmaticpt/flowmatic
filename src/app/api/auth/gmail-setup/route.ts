@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 const GMAIL_CLIENT_ID = process.env.GMAIL_CLIENT_ID || "";
 
-// Generates the OAuth consent URL with Gmail + Calendar scopes
+// TEMPORÁRIO — gera URL de consentimento OAuth com scopes Gmail + Calendar
 export async function GET() {
   if (!GMAIL_CLIENT_ID) {
     return NextResponse.json(
@@ -16,8 +16,7 @@ export async function GET() {
     "https://www.googleapis.com/auth/calendar.events",
   ];
 
-  // Use OOB redirect for manual token copy
-  const redirectUri = "urn:ietf:wg:oauth:2.0:oob";
+  const redirectUri = "http://localhost:3000/api/auth/callback";
 
   const authUrl =
     "https://accounts.google.com/o/oauth2/v2/auth?" +
@@ -31,8 +30,7 @@ export async function GET() {
     }).toString();
 
   return NextResponse.json({
-    message:
-      "Abre o URL abaixo no browser, autoriza com a conta Google, e copia o código de autorização. Depois troca-o por um refresh token usando: curl -s -X POST https://oauth2.googleapis.com/token -d client_id=CLIENT_ID -d client_secret=CLIENT_SECRET -d code=AUTH_CODE -d redirect_uri=urn:ietf:wg:oauth:2.0:oob -d grant_type=authorization_code",
+    message: "Abre o URL abaixo no browser e autoriza com a conta Google. O callback vai mostrar o refresh_token.",
     authUrl,
     scopes,
   });
