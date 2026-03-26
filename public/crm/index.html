@@ -146,6 +146,39 @@
         .metric-value.blue { color: #1d4ed8; }
         .metric-value.amber { color: #d97706; }
         .metric-value.red { color: #dc2626; }
+        .metric-icon {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+            opacity: 0.7;
+        }
+
+        /* ==================== QUICK STATS BANNER ==================== */
+        .quick-stats-banner {
+            background: linear-gradient(135deg, #0a0f1c 0%, #1a2744 100%);
+            color: #fff;
+            border-radius: 14px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .quick-stats-greeting {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+        .quick-stats-greeting span { opacity: 0.7; font-size: 0.85rem; font-family: 'Inter', sans-serif; }
+        .quick-stats-items {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .quick-stat-item { text-align: center; }
+        .quick-stat-value { font-size: 1.4rem; font-weight: 700; }
+        .quick-stat-label { font-size: 0.68rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.04em; }
 
         /* ==================== PIPELINE / KANBAN ==================== */
         .pipeline-section { margin-bottom: 1.25rem; }
@@ -1428,6 +1461,9 @@
     <!-- ==================== TAB: DASHBOARD ==================== -->
     <div class="tab-content active" id="tab-dashboard">
 
+        <!-- Quick Stats Banner -->
+        <div class="quick-stats-banner" id="quickStatsBanner"></div>
+
         <!-- Metrics Row -->
         <div class="metrics-grid" id="metricsGrid"></div>
 
@@ -1903,6 +1939,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ==================== RENDER ALL ====================
 function renderAll() {
+    renderQuickStats();
     renderMetrics();
     renderFunnel();
     renderPipeline();
@@ -1925,6 +1962,46 @@ function animateCards() {
     });
 }
 
+// ==================== QUICK STATS BANNER ====================
+function renderQuickStats() {
+    const banner = document.getElementById('quickStatsBanner');
+    if (!banner) return;
+
+    const leads = currentLeads;
+    const total = leads.length;
+    const contactados = leads.filter(l => l.estado !== 'Prospecto').length;
+    const responderam = leads.filter(l => ['Respondeu','Reuniao','Proposta','Ganho'].includes(l.estado)).length;
+    const ganhos = leads.filter(l => l.estado === 'Ganho').length;
+
+    const hour = new Date().getHours();
+    const greeting = hour < 13 ? 'Bom dia' : hour < 20 ? 'Boa tarde' : 'Boa noite';
+
+    banner.innerHTML = `
+        <div>
+            <div class="quick-stats-greeting">${greeting}, Ricardo</div>
+            <div class="quick-stats-greeting"><span>Resumo do pipeline Flowmatica</span></div>
+        </div>
+        <div class="quick-stats-items">
+            <div class="quick-stat-item">
+                <div class="quick-stat-value">${total}</div>
+                <div class="quick-stat-label">Total Leads</div>
+            </div>
+            <div class="quick-stat-item">
+                <div class="quick-stat-value">${contactados}</div>
+                <div class="quick-stat-label">Contactados</div>
+            </div>
+            <div class="quick-stat-item">
+                <div class="quick-stat-value">${responderam}</div>
+                <div class="quick-stat-label">Responderam</div>
+            </div>
+            <div class="quick-stat-item">
+                <div class="quick-stat-value">${ganhos}</div>
+                <div class="quick-stat-label">Clientes</div>
+            </div>
+        </div>
+    `;
+}
+
 // ==================== METRICS ====================
 function renderMetrics() {
     const leads = currentLeads;
@@ -1945,11 +2022,11 @@ function renderMetrics() {
     const contactados = leads.filter(l => l.estado !== 'Prospecto');
     const conversao = contactados.length > 0 ? Math.round((ganhos.length / contactados.length) * 100) : 0;
 
-    // 5. Ações Pendentes — overdue + no activity in 7d
+    // 5. Ações Pendentes — overdue + no activity in 7d (only Respondeu/Reuniao/Proposta)
     let urgentes = 0;
     let semana = 0;
     leads.forEach(l => {
-        if (['Ganho','Perdido','Prospecto'].includes(l.estado)) return;
+        if (!['Respondeu','Reuniao','Proposta'].includes(l.estado)) return;
         // Overdue actions
         if (l.dataProximaAcao && new Date(l.dataProximaAcao) < today) {
             urgentes++;
@@ -1982,9 +2059,9 @@ function renderMetrics() {
         return start >= today && start <= in7days;
     }).length;
 
-    // 7. Leads inativas >14d — active leads without contact for 14+ days (exclude Ganho/Perdido/Prospecto)
+    // 7. Leads inativas >14d — only Respondeu/Reuniao/Proposta without contact for 14+ days
     const leadsInativas14d = leads.filter(l => {
-        if (['Ganho','Perdido','Prospecto'].includes(l.estado)) return false;
+        if (!['Respondeu','Reuniao','Proposta'].includes(l.estado)) return false;
         if (!l.dataAtividade) return true;
         const diff = (today - new Date(l.dataAtividade)) / (1000 * 60 * 60 * 24);
         return diff > 14;
@@ -1997,46 +2074,49 @@ function renderMetrics() {
     const grid = document.getElementById('metricsGrid');
     grid.innerHTML = `
         <div class="metric-card">
+            <div class="metric-icon">&#128176;</div>
             <div class="metric-label">MRR</div>
             <div class="metric-value green">${mrr.toLocaleString('pt-PT')}€</div>
             <div class="metric-sub">de ${ganhos.length} clientes ativos</div>
         </div>
         <div class="metric-card">
-            <div class="metric-label">Clientes Ativos</div>
-            <div class="metric-value blue">${ganhos.length}</div>
-            <div class="metric-sub">${setupTotal.toLocaleString('pt-PT')}€ em setup cobrado</div>
-        </div>
-        <div class="metric-card">
+            <div class="metric-icon">&#127919;</div>
             <div class="metric-label">Pipeline</div>
             <div class="metric-value amber">${pipelineValue.toLocaleString('pt-PT')}€</div>
             <div class="metric-sub">${pipelineLeads.length} leads em negociação</div>
         </div>
         <div class="metric-card">
+            <div class="metric-icon">&#128200;</div>
             <div class="metric-label">Conversão</div>
             <div class="metric-value blue">${conversao}%</div>
             <div class="metric-sub">${ganhos.length} ganhos de ${contactados.length} contactados</div>
         </div>
         <div class="metric-card">
-            <div class="metric-label">Ações Pendentes</div>
-            <div class="metric-value ${pendentesColor}">${totalPendentes}</div>
-            <div class="metric-sub">${urgentes} urgentes, ${semana} esta semana</div>
-        </div>
-        <div class="metric-card">
-            <div class="metric-label">Reuniões 7 dias</div>
-            <div class="metric-value amber">${reunioesEstaSemana}</div>
-            <div class="metric-sub">próximos 7 dias</div>
-        </div>
-        <div class="metric-card">
-            <div class="metric-label">Inativas >14d</div>
-            <div class="metric-value ${leadsInativas14d > 0 ? 'red' : ''}">${leadsInativas14d}</div>
-            <div class="metric-sub">leads sem contacto</div>
-        </div>
-        <div class="metric-card">
+            <div class="metric-icon">&#128172;</div>
             <div class="metric-label">Taxa Resposta</div>
             <div class="metric-value blue">${taxaResposta}%</div>
             <div class="metric-sub">${respondeuOuAdiante} de ${contactados.length} contactados</div>
         </div>
+        <div class="metric-card">
+            <div class="metric-icon">&#128197;</div>
+            <div class="metric-label">Reuniões 7 dias</div>
+            <div class="metric-value amber">${reunioesEstaSemana}</div>
+            <div class="metric-sub">próximos 7 dias</div>
+        </div>
+        ${totalPendentes > 0 ? `<div class="metric-card">
+            <div class="metric-icon">&#9888;&#65039;</div>
+            <div class="metric-label">Ações Pendentes</div>
+            <div class="metric-value ${pendentesColor}">${totalPendentes}</div>
+            <div class="metric-sub">${urgentes} urgentes, ${semana} esta semana</div>
+        </div>` : ''}
+        ${leadsInativas14d > 0 ? `<div class="metric-card">
+            <div class="metric-icon">&#128564;</div>
+            <div class="metric-label">Inativas >14d</div>
+            <div class="metric-value red">${leadsInativas14d}</div>
+            <div class="metric-sub">leads sem contacto</div>
+        </div>` : ''}
         ${contratosPorEnviar > 0 ? `<div class="metric-card">
+            <div class="metric-icon">&#128220;</div>
             <div class="metric-label">Contratos por Enviar</div>
             <div class="metric-value red">${contratosPorEnviar}</div>
             <div class="metric-sub">Reunião feita, falta proposta</div>
@@ -2218,7 +2298,7 @@ function renderActivityFeed() {
     const list = document.getElementById('activityList');
 
     if (currentActivities.length === 0) {
-        list.innerHTML = '<li class="activity-item" style="color:#999;font-size:0.8rem;padding:1rem;">Conecte ao Google Sheets para ver atividades.</li>';
+        list.innerHTML = '<li class="activity-item" style="color:#999;font-size:0.8rem;padding:1.5rem;text-align:center;flex-direction:column;align-items:center;gap:0.5rem;"><span style="font-size:1.5rem;opacity:0.5;">&#128203;</span>As atividades aparecem quando avançares leads no pipeline.</li>';
         return;
     }
 
@@ -2256,7 +2336,8 @@ function renderAlerts() {
     const alerts = [];
 
     currentLeads.forEach(l => {
-        if (l.estado === 'Ganho' || l.estado === 'Perdido') return;
+        // Only alert for actionable leads (not bulk Contactado/Prospecto)
+        if (['Ganho','Perdido','Prospecto','Contactado'].includes(l.estado)) return;
 
         const diffAtividade = l.dataAtividade ? (today - new Date(l.dataAtividade)) / (1000 * 60 * 60 * 24) : null;
 
@@ -2284,20 +2365,8 @@ function renderAlerts() {
             return;
         }
 
-        // "Sem resposta há X dias" — Contactado há mais de 7 dias
-        if (l.estado === 'Contactado' && diffAtividade !== null && diffAtividade > 7) {
-            alerts.push({
-                type: 'atencao',
-                empresa: l.empresa,
-                detail: `Contactado há ${Math.floor(diffAtividade)} dias sem resposta`,
-                action: 'Re-enviar ou ligar',
-                sort: diffAtividade,
-            });
-            return;
-        }
-
-        // No activity in 7+ days (other active states)
-        if (diffAtividade !== null && diffAtividade >= 7 && !['Prospecto','Contactado'].includes(l.estado)) {
+        // No activity in 7+ days (Respondeu/Reuniao/Proposta)
+        if (diffAtividade !== null && diffAtividade >= 7) {
             alerts.push({
                 type: 'urgente',
                 empresa: l.empresa,
@@ -2342,7 +2411,7 @@ function renderAlerts() {
     alerts.sort((a, b) => order[a.type] - order[b.type] || b.sort - a.sort);
 
     if (alerts.length === 0) {
-        list.innerHTML = '<li class="alert-item" style="color:#555770;font-size:0.8rem;">Nenhum alerta ativo</li>';
+        list.innerHTML = '<li class="alert-item" style="color:#16a34a;font-size:0.8rem;padding:1.5rem;text-align:center;flex-direction:column;align-items:center;gap:0.5rem;"><span style="font-size:1.5rem;">&#9989;</span>Tudo em dia! Nenhuma lead precisa de atenção.</li>';
         return;
     }
 
