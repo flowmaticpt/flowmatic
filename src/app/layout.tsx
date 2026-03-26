@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     locale: "pt_PT",
   },
   icons: {
-    icon: "/assets/logo.png",
+    icon: "/assets/icon.png",
   },
 };
 
