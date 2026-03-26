@@ -1473,7 +1473,7 @@
         }
         .calendar-day:hover { background: #f5f7fa; }
         .calendar-day.today { box-shadow: inset 0 0 0 2px #1d4ed8; }
-        .calendar-day.selected { background: #eff6ff; }
+        .calendar-day.selected { background: #dbeafe; box-shadow: inset 0 0 0 2px #93c5fd; }
         .calendar-day.other-month { opacity: 0.35; }
         .calendar-day-number {
             font-size: 0.78rem;
@@ -2218,21 +2218,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load calendar meetings from localStorage (synchronous)
     currentCalendarEvents = loadMeetingsAsEvents();
 
-    // Auto-carregar leads + emails em paralelo
-    Promise.all([fetchLeads(), fetchEmails()])
+    // Auto-carregar leads + emails em paralelo (email failure não bloqueia)
+    Promise.all([fetchLeads(), fetchEmails().catch(function() { return {}; })])
         .then(function(results) {
             var leads = results[0] || [];
             var emailData = results[1] || {};
             currentEmails = emailData.emails || [];
-            // Auto-detetar quem respondeu
+            // Auto-detetar quem respondeu + aplicar estados localStorage
             currentLeads = autoDetectStatus(leads, currentEmails);
             renderAll();
         })
         .catch(function(err) {
             console.log('Auto-fetch:', err.message);
-            // Tentar só leads se emails falharem
+            // Tentar só leads se tudo falhar — manter estados localStorage
             fetchLeads().then(function(leads) {
-                currentLeads = leads || [];
+                currentLeads = autoDetectStatus(leads || [], []);
                 renderAll();
             }).catch(function() {});
         });
