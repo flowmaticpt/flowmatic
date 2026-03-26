@@ -2,18 +2,23 @@ import { NextRequest, NextResponse } from "next/server";
 
 export const maxDuration = 15;
 
-const GMAIL_CLIENT_ID = process.env.GMAIL_CLIENT_ID || "";
-const GMAIL_CLIENT_SECRET = process.env.GMAIL_CLIENT_SECRET || "";
-const GMAIL_REFRESH_TOKEN = process.env.GMAIL_REFRESH_TOKEN || "";
+function getGmailCreds() {
+  return {
+    clientId: process.env.GMAIL_CLIENT_ID || "",
+    clientSecret: process.env.GMAIL_CLIENT_SECRET || "",
+    refreshToken: process.env.GMAIL_REFRESH_TOKEN || "",
+  };
+}
 
 async function getAccessToken(): Promise<string> {
+  const { clientId, clientSecret, refreshToken } = getGmailCreds();
   const response = await fetch("https://oauth2.googleapis.com/token", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams({
-      client_id: GMAIL_CLIENT_ID,
-      client_secret: GMAIL_CLIENT_SECRET,
-      refresh_token: GMAIL_REFRESH_TOKEN,
+      client_id: clientId,
+      client_secret: clientSecret,
+      refresh_token: refreshToken,
       grant_type: "refresh_token",
     }),
   });
@@ -41,7 +46,8 @@ interface GmailMessage {
 }
 
 export async function GET(request: NextRequest) {
-  if (!GMAIL_CLIENT_ID || !GMAIL_CLIENT_SECRET || !GMAIL_REFRESH_TOKEN) {
+  const { clientId, clientSecret, refreshToken } = getGmailCreds();
+  if (!clientId || !clientSecret || !refreshToken) {
     return NextResponse.json(
       { error: "Gmail API não configurada. Adiciona GMAIL_CLIENT_ID, GMAIL_CLIENT_SECRET e GMAIL_REFRESH_TOKEN nas env vars." },
       { status: 500 }
