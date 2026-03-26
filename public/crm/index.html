@@ -1392,6 +1392,285 @@
             white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
         }
         .email-widget-time { font-size: 0.68rem; color: #999; white-space: nowrap; }
+
+        /* ==================== CALENDAR VIEW (Tab) ==================== */
+        .calendar-view {
+            display: flex;
+            gap: 1rem;
+            min-height: 520px;
+        }
+        .calendar-main {
+            flex: 7;
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid rgba(0,0,0,0.08);
+            padding: 1rem 1.25rem;
+        }
+        .calendar-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        .calendar-nav-title {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 1.15rem;
+            font-weight: 400;
+        }
+        .calendar-nav-btn {
+            background: none;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 6px;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #555770;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+        .calendar-nav-btn:hover { background: #f5f7fa; color: #1a1a2e; }
+        .calendar-nav-arrows { display: flex; gap: 0.35rem; }
+        .calendar-nav-today {
+            background: none;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 6px;
+            padding: 0.3rem 0.7rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            font-family: inherit;
+            cursor: pointer;
+            color: #555770;
+            transition: all 0.2s ease;
+        }
+        .calendar-nav-today:hover { background: #f5f7fa; color: #1a1a2e; }
+        .calendar-header-row {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            text-align: center;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #8b8fa3;
+            margin-bottom: 0.35rem;
+            padding: 0.35rem 0;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 1px;
+        }
+        .calendar-day {
+            min-height: 68px;
+            padding: 0.35rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.15s ease;
+            position: relative;
+        }
+        .calendar-day:hover { background: #f5f7fa; }
+        .calendar-day.today { box-shadow: inset 0 0 0 2px #1d4ed8; }
+        .calendar-day.selected { background: #eff6ff; }
+        .calendar-day.other-month { opacity: 0.35; }
+        .calendar-day-number {
+            font-size: 0.78rem;
+            font-weight: 500;
+            color: #1a1a2e;
+            margin-bottom: 0.2rem;
+        }
+        .calendar-day.today .calendar-day-number {
+            background: #1d4ed8;
+            color: #fff;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.72rem;
+        }
+        .calendar-event-dot {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+            font-size: 0.6rem;
+            color: #d97706;
+            font-weight: 600;
+        }
+        .calendar-event-dot::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #f59e0b;
+            flex-shrink: 0;
+        }
+        .calendar-sidebar {
+            flex: 3;
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid rgba(0,0,0,0.08);
+            padding: 1rem 1.15rem;
+            overflow-y: auto;
+            max-height: 600px;
+        }
+        .calendar-sidebar-title {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 1.05rem;
+            font-weight: 400;
+            margin-bottom: 0.85rem;
+        }
+        .calendar-sidebar-empty {
+            font-size: 0.8rem;
+            color: #8b8fa3;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .calendar-sidebar-event {
+            background: #f5f7fa;
+            border-radius: 8px;
+            padding: 0.65rem 0.75rem;
+            margin-bottom: 0.5rem;
+            border-left: 3px solid #f59e0b;
+            cursor: pointer;
+            transition: background 0.15s ease;
+        }
+        .calendar-sidebar-event:hover { background: #eef1f6; }
+        .calendar-sidebar-event.editing { background: #fffbeb; border-left-color: #1d4ed8; }
+        .calendar-sidebar-event-title {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+        .calendar-sidebar-event-time {
+            font-size: 0.72rem;
+            color: #555770;
+            margin-top: 0.15rem;
+        }
+        .calendar-sidebar-event-notes {
+            font-size: 0.7rem;
+            color: #8b8fa3;
+            margin-top: 0.15rem;
+            font-style: italic;
+        }
+        .calendar-sidebar-event-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.45rem;
+        }
+        .calendar-sidebar-event-actions button {
+            border: none;
+            border-radius: 5px;
+            padding: 0.2rem 0.55rem;
+            font-size: 0.68rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .cal-btn-edit { background: #eff6ff; color: #1d4ed8; }
+        .cal-btn-edit:hover { background: #dbeafe; }
+        .cal-btn-delete { background: #fef2f2; color: #dc2626; }
+        .cal-btn-delete:hover { background: #fee2e2; }
+        .btn-new-meeting {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1.5px dashed rgba(0,0,0,0.15);
+            border-radius: 8px;
+            background: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            font-family: inherit;
+            color: #1d4ed8;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 0.5rem;
+        }
+        .btn-new-meeting:hover { background: #eff6ff; border-color: #1d4ed8; }
+        .meeting-form {
+            background: #f5f7fa;
+            border-radius: 8px;
+            padding: 0.75rem;
+            margin-top: 0.5rem;
+        }
+        .meeting-form label {
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #555770;
+            display: block;
+            margin-bottom: 0.15rem;
+            margin-top: 0.4rem;
+        }
+        .meeting-form label:first-child { margin-top: 0; }
+        .meeting-form input,
+        .meeting-form select,
+        .meeting-form textarea {
+            width: 100%;
+            padding: 0.4rem 0.6rem;
+            border: 1px solid rgba(0,0,0,0.12);
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-family: inherit;
+            outline: none;
+        }
+        .meeting-form input:focus,
+        .meeting-form select:focus,
+        .meeting-form textarea:focus {
+            border-color: #1d4ed8;
+            box-shadow: 0 0 0 3px rgba(29,78,216,0.1);
+        }
+        .meeting-form textarea { resize: vertical; min-height: 48px; }
+        .meeting-form-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.6rem;
+        }
+        .meeting-form-actions button {
+            flex: 1;
+            padding: 0.4rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+        }
+        .mf-btn-save { background: #1d4ed8; color: #fff; }
+        .mf-btn-save:hover { background: #1e40af; }
+        .mf-btn-cancel { background: #f1f5f9; color: #555770; }
+        .mf-btn-cancel:hover { background: #e2e8f0; }
+        .meeting-autocomplete {
+            position: relative;
+        }
+        .meeting-autocomplete-list {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #fff;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            z-index: 10;
+            max-height: 150px;
+            overflow-y: auto;
+            display: none;
+        }
+        .meeting-autocomplete-list.visible { display: block; }
+        .meeting-autocomplete-item {
+            padding: 0.4rem 0.6rem;
+            font-size: 0.78rem;
+            cursor: pointer;
+            transition: background 0.1s;
+        }
+        .meeting-autocomplete-item:hover { background: #f5f7fa; }
+        @media (max-width: 900px) {
+            .calendar-view { flex-direction: column; }
+            .calendar-sidebar { max-height: none; }
+        }
     </style>
 </head>
 <body>
@@ -1452,6 +1731,7 @@
     <div class="nav-tab active" data-tab="dashboard">Dashboard</div>
     <div class="nav-tab" data-tab="inbox">Inbox</div>
     <div class="nav-tab" data-tab="leads">Leads</div>
+    <div class="nav-tab" data-tab="calendario">Calend&aacute;rio</div>
     <div class="nav-tab" data-tab="config">Configura&ccedil;&otilde;es</div>
 </nav>
 
@@ -1506,6 +1786,7 @@
             <div class="card-panel">
                 <div class="section-title" style="display:flex;justify-content:space-between;align-items:center;">
                     Pr&oacute;ximas Reuni&otilde;es <span class="count" id="calendarWidgetCount"></span>
+                    <span style="font-size:0.72rem;font-weight:500;color:#1d4ed8;cursor:pointer;" onclick="document.querySelector('.nav-tab[data-tab=calendario]').click()">Ver calend&aacute;rio &rarr;</span>
                 </div>
                 <ul class="calendar-widget-list" id="calendarWidgetList"></ul>
             </div>
@@ -1583,6 +1864,32 @@
         </div>
     </div>
 
+    <!-- ==================== TAB: CALENDÁRIO ==================== -->
+    <div class="tab-content" id="tab-calendario">
+        <div class="calendar-view">
+            <div class="calendar-main">
+                <div class="calendar-nav">
+                    <div class="calendar-nav-arrows">
+                        <button class="calendar-nav-btn" onclick="calNavigate(-1)">&#8249;</button>
+                        <button class="calendar-nav-btn" onclick="calNavigate(1)">&#8250;</button>
+                    </div>
+                    <div class="calendar-nav-title" id="calMonthTitle"></div>
+                    <button class="calendar-nav-today" onclick="calGoToday()">Hoje</button>
+                </div>
+                <div class="calendar-header-row">
+                    <div>Seg</div><div>Ter</div><div>Qua</div><div>Qui</div><div>Sex</div><div>S&aacute;b</div><div>Dom</div>
+                </div>
+                <div class="calendar-grid" id="calendarGrid"></div>
+            </div>
+            <div class="calendar-sidebar" id="calendarSidebar">
+                <div class="calendar-sidebar-title" id="calSidebarTitle">Seleciona um dia</div>
+                <div id="calSidebarContent">
+                    <div class="calendar-sidebar-empty">Clica num dia para ver ou criar reuniões.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- ==================== TAB: CONFIG ==================== -->
     <div class="tab-content" id="tab-config">
         <div class="settings-panel">
@@ -1630,6 +1937,11 @@ let currentActivities = [...DEMO_ACTIVITIES];
 let currentEmails = [];
 let currentCalendarEvents = [];
 let inboxFilter = 'all';
+// Calendar state
+const MEETINGS_KEY = 'flowmatica_crm_meetings';
+let calViewYear = new Date().getFullYear();
+let calViewMonth = new Date().getMonth();
+let calSelectedDate = null; // 'YYYY-MM-DD'
 let webAppUrl = localStorage.getItem('flowmatica_crm_url') || '';
 let sortCol = '';
 let sortDir = 'asc';
@@ -1739,13 +2051,55 @@ function autoDetectStatus(leads, emails) {
 }
 
 function fetchCalendarEvents() {
-    return fetch('/api/crm/calendar')
-        .then(function(r) { return r.json(); })
-        .then(function(data) {
-            if (data.error) { console.log('Calendar:', data.error); return []; }
-            return data.events || [];
-        })
-        .catch(function(err) { console.log('Calendar fetch error:', err.message); return []; });
+    // Load from localStorage instead of Google Calendar API
+    return Promise.resolve(loadMeetingsAsEvents());
+}
+
+function getMeetings() {
+    try { return JSON.parse(localStorage.getItem(MEETINGS_KEY) || '[]'); }
+    catch(e) { return []; }
+}
+
+function saveMeetings(meetings) {
+    localStorage.setItem(MEETINGS_KEY, JSON.stringify(meetings));
+}
+
+function loadMeetingsAsEvents() {
+    return getMeetings().map(function(m) {
+        const start = new Date(m.date + 'T' + m.time);
+        const end = new Date(start.getTime() + (m.duration || 60) * 60000);
+        return {
+            summary: 'Reunião — ' + m.empresa,
+            start: start.toISOString(),
+            end: end.toISOString(),
+            description: m.notas || '',
+            _meetingId: m.id
+        };
+    });
+}
+
+function addMeeting(meeting) {
+    const meetings = getMeetings();
+    meeting.id = Date.now();
+    meetings.push(meeting);
+    saveMeetings(meetings);
+    currentCalendarEvents = loadMeetingsAsEvents();
+    return meeting;
+}
+
+function updateMeeting(id, updates) {
+    const meetings = getMeetings();
+    const idx = meetings.findIndex(m => m.id === id);
+    if (idx === -1) return;
+    Object.assign(meetings[idx], updates);
+    saveMeetings(meetings);
+    currentCalendarEvents = loadMeetingsAsEvents();
+}
+
+function deleteMeeting(id) {
+    const meetings = getMeetings().filter(m => m.id !== id);
+    saveMeetings(meetings);
+    currentCalendarEvents = loadMeetingsAsEvents();
 }
 
 function findLeadForEvent(event) {
@@ -1861,13 +2215,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Render placeholder
     renderAll();
 
-    // Auto-carregar leads + emails + calendar em paralelo
-    Promise.all([fetchLeads(), fetchEmails(), fetchCalendarEvents()])
+    // Load calendar meetings from localStorage (synchronous)
+    currentCalendarEvents = loadMeetingsAsEvents();
+
+    // Auto-carregar leads + emails em paralelo
+    Promise.all([fetchLeads(), fetchEmails()])
         .then(function(results) {
             var leads = results[0] || [];
             var emailData = results[1] || {};
             currentEmails = emailData.emails || [];
-            currentCalendarEvents = results[2] || [];
             // Auto-detetar quem respondeu
             currentLeads = autoDetectStatus(leads, currentEmails);
             renderAll();
@@ -1886,16 +2242,14 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('loadingOverlay').classList.add('hidden');
     }, 400);
 
-    // Auto-refresh emails + calendar every 5 min
+    // Auto-refresh emails every 5 min
     setInterval(() => {
-        Promise.all([fetchEmails(), fetchCalendarEvents()])
-            .then(function(results) {
-                var emailData = results[0] || {};
-                if (emailData.emails) {
+        fetchEmails()
+            .then(function(emailData) {
+                if (emailData && emailData.emails) {
                     currentEmails = emailData.emails;
                     currentLeads = autoDetectStatus(currentLeads, currentEmails);
                 }
-                currentCalendarEvents = results[1] || [];
                 renderAll();
             })
             .catch(function() {});
@@ -1947,6 +2301,7 @@ function renderAll() {
     renderAlerts();
     renderEmailWidget();
     renderCalendarWidget();
+    renderCalendar();
     renderSectorChart();
     renderLeadsTable();
     renderInbox();
@@ -2233,7 +2588,7 @@ function renderPipeline() {
                 ? `<div class="card-note-preview" title="${escapeHtml(savedState.notas)}">&#9998; ${escapeHtml(savedState.notas)}</div>`
                 : '';
 
-            // Calendar meeting badge (from API, cross-referenced)
+            // Calendar meeting badge (from localStorage)
             const leadEvents = getLeadCalendarEvents(l);
             const nextEvent = leadEvents.length > 0 ? leadEvents[0] : null;
             let meetingBadge = '';
@@ -3168,11 +3523,12 @@ function renderCalendarWidget() {
         const day = evDate.getDate();
         const month = evDate.toLocaleDateString('pt-PT', { month: 'short' }).replace('.', '');
         const time = evDate.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' });
+        const dateStr = evDate.getFullYear() + '-' + String(evDate.getMonth()+1).padStart(2,'0') + '-' + String(evDate.getDate()).padStart(2,'0');
 
         const matchedLead = findLeadForEvent(ev);
         const onclick = matchedLead
             ? `onclick="openLeadModal('${matchedLead.email.replace(/'/g, "\\'")}')" title="Clique para ver lead"`
-            : (ev.link ? `onclick="window.open('${ev.link}', '_blank')" title="Abrir no Google Calendar"` : '');
+            : `onclick="calSelectedDate='${dateStr}';document.querySelector('.nav-tab[data-tab=calendario]').click()" title="Ver no calendário"`;
 
         return `<li class="calendar-widget-item" ${onclick}>
             <div class="calendar-widget-date">
@@ -3183,7 +3539,6 @@ function renderCalendarWidget() {
                 <div class="calendar-widget-title">${escapeHtml(ev.summary)}</div>
                 <div class="calendar-widget-time">${time}</div>
             </div>
-            ${ev.link ? `<a class="calendar-widget-link" href="${ev.link}" target="_blank" onclick="event.stopPropagation()">&#8599;</a>` : ''}
         </li>`;
     }).join('');
 }
@@ -3294,41 +3649,283 @@ function exportLeadsCSV() {
     showToast(`${filtered.length} leads exportadas`, 'success');
 }
 
-// ==================== GOOGLE CALENDAR ====================
+// ==================== CALENDAR TAB ====================
+function calNavigate(delta) {
+    calViewMonth += delta;
+    if (calViewMonth > 11) { calViewMonth = 0; calViewYear++; }
+    if (calViewMonth < 0) { calViewMonth = 11; calViewYear--; }
+    renderCalendar();
+}
+
+function calGoToday() {
+    const today = new Date();
+    calViewYear = today.getFullYear();
+    calViewMonth = today.getMonth();
+    calSelectedDate = today.getFullYear() + '-' + String(today.getMonth()+1).padStart(2,'0') + '-' + String(today.getDate()).padStart(2,'0');
+    renderCalendar();
+    renderCalendarSidebar();
+}
+
+function calSelectDay(dateStr) {
+    calSelectedDate = dateStr;
+    document.querySelectorAll('.calendar-day').forEach(d => d.classList.remove('selected'));
+    const el = document.querySelector(`.calendar-day[data-date="${dateStr}"]`);
+    if (el) el.classList.add('selected');
+    renderCalendarSidebar();
+}
+
+function renderCalendar() {
+    const grid = document.getElementById('calendarGrid');
+    const titleEl = document.getElementById('calMonthTitle');
+    if (!grid || !titleEl) return;
+
+    const monthNames = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+    titleEl.textContent = monthNames[calViewMonth] + ' ' + calViewYear;
+
+    const firstDay = new Date(calViewYear, calViewMonth, 1);
+    const lastDay = new Date(calViewYear, calViewMonth + 1, 0);
+    // Monday = 0 in our grid
+    let startDow = firstDay.getDay() - 1;
+    if (startDow < 0) startDow = 6; // Sunday
+
+    const today = new Date();
+    const todayStr = today.getFullYear() + '-' + String(today.getMonth()+1).padStart(2,'0') + '-' + String(today.getDate()).padStart(2,'0');
+
+    const meetings = getMeetings();
+    // Count meetings per date
+    const meetingCounts = {};
+    meetings.forEach(function(m) {
+        meetingCounts[m.date] = (meetingCounts[m.date] || 0) + 1;
+    });
+
+    let html = '';
+
+    // Days from previous month
+    const prevMonthLast = new Date(calViewYear, calViewMonth, 0);
+    for (let i = startDow - 1; i >= 0; i--) {
+        const d = prevMonthLast.getDate() - i;
+        const pm = calViewMonth === 0 ? 12 : calViewMonth;
+        const py = calViewMonth === 0 ? calViewYear - 1 : calViewYear;
+        const ds = py + '-' + String(pm).padStart(2,'0') + '-' + String(d).padStart(2,'0');
+        html += `<div class="calendar-day other-month" data-date="${ds}" onclick="calSelectDay('${ds}')">
+            <div class="calendar-day-number">${d}</div>
+        </div>`;
+    }
+
+    // Days of current month
+    for (let d = 1; d <= lastDay.getDate(); d++) {
+        const ds = calViewYear + '-' + String(calViewMonth+1).padStart(2,'0') + '-' + String(d).padStart(2,'0');
+        const isToday = ds === todayStr;
+        const isSelected = ds === calSelectedDate;
+        let cls = 'calendar-day';
+        if (isToday) cls += ' today';
+        if (isSelected) cls += ' selected';
+
+        const count = meetingCounts[ds] || 0;
+        const dotHtml = count > 0 ? `<div class="calendar-event-dot">${count} reunião${count > 1 ? 'es' : ''}</div>` : '';
+
+        html += `<div class="${cls}" data-date="${ds}" onclick="calSelectDay('${ds}')">
+            <div class="calendar-day-number">${d}</div>
+            ${dotHtml}
+        </div>`;
+    }
+
+    // Fill remaining cells to complete the grid
+    const totalCells = startDow + lastDay.getDate();
+    const remaining = totalCells % 7 === 0 ? 0 : 7 - (totalCells % 7);
+    for (let d = 1; d <= remaining; d++) {
+        const nm = calViewMonth + 2;
+        const ny = nm > 12 ? calViewYear + 1 : calViewYear;
+        const nmAdj = nm > 12 ? 1 : nm;
+        const ds = ny + '-' + String(nmAdj).padStart(2,'0') + '-' + String(d).padStart(2,'0');
+        html += `<div class="calendar-day other-month" data-date="${ds}" onclick="calSelectDay('${ds}')">
+            <div class="calendar-day-number">${d}</div>
+        </div>`;
+    }
+
+    grid.innerHTML = html;
+}
+
+function renderCalendarSidebar() {
+    const titleEl = document.getElementById('calSidebarTitle');
+    const contentEl = document.getElementById('calSidebarContent');
+    if (!titleEl || !contentEl) return;
+
+    if (!calSelectedDate) {
+        titleEl.textContent = 'Seleciona um dia';
+        contentEl.innerHTML = '<div class="calendar-sidebar-empty">Clica num dia para ver ou criar reuniões.</div>';
+        return;
+    }
+
+    const parts = calSelectedDate.split('-');
+    const dateObj = new Date(parseInt(parts[0]), parseInt(parts[1])-1, parseInt(parts[2]));
+    titleEl.textContent = dateObj.toLocaleDateString('pt-PT', { weekday: 'long', day: 'numeric', month: 'long' });
+
+    const meetings = getMeetings().filter(m => m.date === calSelectedDate);
+    meetings.sort((a, b) => a.time.localeCompare(b.time));
+
+    let html = '';
+
+    if (meetings.length === 0) {
+        html += '<div class="calendar-sidebar-empty">Nenhuma reunião neste dia.</div>';
+    } else {
+        meetings.forEach(function(m) {
+            const endTime = calcEndTime(m.time, m.duration || 60);
+            const notesHtml = m.notas ? `<div class="calendar-sidebar-event-notes">${escapeHtml(m.notas).substring(0, 80)}</div>` : '';
+            html += `<div class="calendar-sidebar-event" id="cal-event-${m.id}">
+                <div class="calendar-sidebar-event-title">${escapeHtml(m.empresa)}</div>
+                <div class="calendar-sidebar-event-time">${m.time} — ${endTime} (${m.duration || 60}min)</div>
+                ${notesHtml}
+                <div class="calendar-sidebar-event-actions">
+                    <button class="cal-btn-edit" onclick="calEditMeeting(${m.id})">Editar</button>
+                    <button class="cal-btn-delete" onclick="calDeleteMeeting(${m.id})">Eliminar</button>
+                </div>
+            </div>`;
+        });
+    }
+
+    html += `<button class="btn-new-meeting" onclick="calShowMeetingForm()">+ Nova Reunião</button>`;
+    html += '<div id="calMeetingFormContainer"></div>';
+
+    contentEl.innerHTML = html;
+}
+
+function calcEndTime(time, duration) {
+    const [h, m] = time.split(':').map(Number);
+    const totalMin = h * 60 + m + duration;
+    return String(Math.floor(totalMin / 60) % 24).padStart(2,'0') + ':' + String(totalMin % 60).padStart(2,'0');
+}
+
+function calShowMeetingForm(editMeeting) {
+    const container = document.getElementById('calMeetingFormContainer');
+    if (!container) return;
+
+    const m = editMeeting || { empresa: '', time: '10:00', duration: 60, notas: '' };
+    const isEdit = !!editMeeting;
+
+    // Build autocomplete suggestions from leads
+    const empresaValue = escapeHtml(m.empresa);
+
+    container.innerHTML = `
+        <div class="meeting-form">
+            <label>Empresa</label>
+            <div class="meeting-autocomplete">
+                <input type="text" id="mfEmpresa" value="${empresaValue}" placeholder="Nome da empresa..." autocomplete="off" oninput="calFilterEmpresas()">
+                <div class="meeting-autocomplete-list" id="mfEmpresaList"></div>
+            </div>
+            <label>Hora</label>
+            <input type="time" id="mfTime" value="${m.time}">
+            <label>Duração</label>
+            <select id="mfDuration">
+                <option value="30" ${m.duration==30?'selected':''}>30 min</option>
+                <option value="60" ${m.duration==60?'selected':''}>60 min</option>
+                <option value="90" ${m.duration==90?'selected':''}>90 min</option>
+                <option value="120" ${m.duration==120?'selected':''}>120 min</option>
+            </select>
+            <label>Notas</label>
+            <textarea id="mfNotas" rows="2" placeholder="Notas opcionais...">${escapeHtml(m.notas || '')}</textarea>
+            <div class="meeting-form-actions">
+                <button class="mf-btn-cancel" onclick="renderCalendarSidebar()">Cancelar</button>
+                <button class="mf-btn-save" onclick="calSaveMeeting(${isEdit ? m.id : 'null'})">${isEdit ? 'Guardar' : 'Criar'}</button>
+            </div>
+        </div>
+    `;
+
+    document.getElementById('mfEmpresa').focus();
+}
+
+function calFilterEmpresas() {
+    const input = document.getElementById('mfEmpresa');
+    const list = document.getElementById('mfEmpresaList');
+    if (!input || !list) return;
+
+    const q = input.value.trim().toLowerCase();
+    if (q.length < 1) { list.classList.remove('visible'); return; }
+
+    const matches = currentLeads
+        .map(l => l.empresa)
+        .filter((v, i, a) => a.indexOf(v) === i) // unique
+        .filter(e => e.toLowerCase().includes(q))
+        .slice(0, 6);
+
+    if (matches.length === 0) { list.classList.remove('visible'); return; }
+
+    list.innerHTML = matches.map(e =>
+        `<div class="meeting-autocomplete-item" onmousedown="document.getElementById('mfEmpresa').value='${escapeHtml(e).replace(/'/g,"\\'")}';document.getElementById('mfEmpresaList').classList.remove('visible')">${escapeHtml(e)}</div>`
+    ).join('');
+    list.classList.add('visible');
+
+    input.onblur = function() { setTimeout(() => list.classList.remove('visible'), 150); };
+}
+
+function calSaveMeeting(editId) {
+    const empresa = document.getElementById('mfEmpresa').value.trim();
+    const time = document.getElementById('mfTime').value;
+    const duration = parseInt(document.getElementById('mfDuration').value);
+    const notas = document.getElementById('mfNotas').value.trim();
+
+    if (!empresa) { showToast('Preenche o nome da empresa', 'error'); return; }
+    if (!time) { showToast('Seleciona uma hora', 'error'); return; }
+
+    const data = { empresa: empresa, date: calSelectedDate, time: time, duration: duration, notas: notas };
+
+    if (editId) {
+        updateMeeting(editId, data);
+        showToast('Reunião atualizada', 'success');
+    } else {
+        addMeeting(data);
+        showToast('Reunião criada: ' + empresa, 'success');
+    }
+
+    renderAll();
+    renderCalendarSidebar();
+}
+
+function calEditMeeting(id) {
+    const meetings = getMeetings();
+    const m = meetings.find(x => x.id === id);
+    if (!m) return;
+    calShowMeetingForm(m);
+}
+
+function calDeleteMeeting(id) {
+    confirmAction('Eliminar reunião', 'Tens a certeza que queres eliminar esta reunião?', function() {
+        deleteMeeting(id);
+        showToast('Reunião eliminada', 'success');
+        renderAll();
+        renderCalendarSidebar();
+    });
+}
+
+// ==================== CALENDAR (localStorage) ====================
 function createCalendarEvent(lead, dateTimeStr, modalOverlay) {
     const btn = document.getElementById('leadModalCalendarBtn');
     if (btn) { btn.disabled = true; btn.textContent = 'A criar...'; }
 
-    fetch('/api/crm/calendar', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            summary: `Reunião — ${lead.empresa}`,
-            description: `Lead: ${lead.empresa}\nSetor: ${lead.setor}\nEmail: ${lead.email}\nLocal: ${lead.localizacao || '—'}`,
-            dateTime: dateTimeStr,
-            durationMinutes: 60,
-        }),
-    })
-    .then(r => r.json())
-    .then(data => {
-        if (data.error) {
-            showToast('Erro Calendar: ' + data.error, 'error');
-            if (btn) { btn.disabled = false; btn.textContent = 'Criar Evento'; }
-            return;
-        }
-        // Save meeting date
+    try {
+        const dt = new Date(dateTimeStr);
+        const dateStr = dt.getFullYear() + '-' + String(dt.getMonth()+1).padStart(2,'0') + '-' + String(dt.getDate()).padStart(2,'0');
+        const timeStr = String(dt.getHours()).padStart(2,'0') + ':' + String(dt.getMinutes()).padStart(2,'0');
+
+        addMeeting({
+            empresa: lead.empresa,
+            date: dateStr,
+            time: timeStr,
+            duration: 60,
+            notas: `Setor: ${lead.setor}\nEmail: ${lead.email}\nLocal: ${lead.localizacao || '—'}`
+        });
+
         saveLeadState(lead.email, { dataReuniao: dateTimeStr });
-        // Move to Reunião if not already past it
         if (!stateIsMoreAdvanced(lead.estado, 'Reuniao') && lead.estado !== 'Reuniao') {
             executeEstadoUpdate(lead.email, 'Reuniao');
         }
         showToast(`Reunião criada: ${lead.empresa}`, 'success');
+        renderAll();
         if (modalOverlay) modalOverlay.remove();
-    })
-    .catch(err => {
+    } catch(err) {
         showToast('Erro ao criar evento: ' + err.message, 'error');
         if (btn) { btn.disabled = false; btn.textContent = 'Criar Evento'; }
-    });
+    }
 }
 </script>
 
